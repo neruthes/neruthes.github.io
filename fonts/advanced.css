@@ -1,0 +1,18 @@
+* {
+    -webkit-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures;
+    -moz-font-feature-settings: "kern=1";
+    -webkit-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern";
+    font-feature-settings: "kern";
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased;
+}
+
+code {
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}

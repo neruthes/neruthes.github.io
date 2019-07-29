@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Zeit</title>
+	<link rel="shortcut icon" href="/favicon.ico"/>
+	<link rel="apple-touch-icon" href="/joyneop.png"/>
+	<style type="text/css">
+	@import url(/fonts/seravek.css);
+	* {
+		text-rendering: optimizeLegibility;
+	}
+	body {
+		font-family: Seravek, 'Helvetica Neue', Helvetica, Ubuntu, Arial, 'Arial Black', 'Lantinghei SC', 'Hiragino Sans GB', 'Heiti SC', 'STHeiti', sans-serif;
+		font-weight: 300;
+		color: #FFF;
+		background: #000 center fixed no-repeat;
+		background-size: cover;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+		margin: 0 0 0 0;
+		overflow: hidden;
+	}
+	a, a:hover, a:visited, a:link {
+		color: #FFF;
+		text-decoration: none;
+		transition: all 300ms ease;
+	}
+	#cont {
+		position: fixed;
+		top: 50%;
+		left: 0;
+		font-weight: 400;
+		width: 100%;
+		box-sizing: border-box;
+		margin-top: -100px;
+		overflow: visible;
+		z-index: 42;
+	}
+	#content {
+		width: 660px;
+		margin: 0 auto;
+		opacity: 0.966;
+	}
+	#time {
+		font-size: 100px;
+		font-weight: 100;
+		text-align: center;
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0 auto;
+		z-index: 900;
+	}
+	h1 {
+		position: relative;
+		top: -50px;
+		font-size: 32px;
+		font-weight: 400;
+		text-align: center;
+		width: 100%;
+		padding: 0 0 30px;
+		margin: 0;
+		border-bottom: 1px solid #FFF;
+		z-index: 100;
+	}
+	#date {
+		font-size: 48px;
+		font-weight: 400;
+		text-align: center;
+		letter-spacing: 2px;
+		padding: 20px 0 0;
+	}
+	footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		font-size: 14px;
+		font-weight: normal;
+		text-align: center;
+		padding: 30px 0 10px;
+		opacity: 0.2;
+	}
+	footer:hover {
+		opacity: 1;
+	}
+	</style>
+</head>
+<body>
+	<div id="cont">
+		<div id="content">
+			<div id="time">&nbsp;</div>
+		</div>
+	</div>
+	<footer><a href="http://www.joyneop.com/">&copy; Copyright <script type="text/javascript">document.write((new Date()).getFullYear());</script> All Rights Reserved by Joy Neop</a></footer>
+	<script type="text/javascript">
+	var JNClock = function () {
+		var da = new Date();
+		var h = da.getHours().toString();
+		var min = da.getMinutes().toString();
+		if (min.length == 1) {
+			min = "0" + min;
+		}
+		document.getElementById("time").innerHTML = h + ":" + min;
+	};
+	// document.body.style.backgroundImage = "linear-gradient(#_AAA_, #_BBB_)".replace("_AAA_", colorA).replace("_BBB_", colorB);
+	var yooo = window.setInterval(JNClock, 1000);
+	</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@media screen and (min-width: 1000px) {
+	html, body {
+		font-size: 10px;
+	}
+
+	.global {
+		text-align: center;
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 60px;
+	}
+
+	#global-header {
+		padding-top: 50px;
+	}
+
+	#global-header a {
+		width: 240px;
+		margin: 0 auto;
+	}
+
+	.global h1 {
+		font-size: 4.8em;
+		margin: 35px 0;
+	}
+
+	.global h2 {
+		font-size: 2em;
+		margin: 15px 0;
+	}
+
+	#global-footer {
+		padding: 50px;
+	}
+
+	#cont.cont {
+		width: 740px;
+		margin: 60px auto;
+	}
+
+	.post {
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.post-text {
+		font-size: 2em;
+	}
+
+	.post-text figure img {
+		max-width: 100%;
+	}
+
+	.post time {
+		transition: all 200ms ease;
+	}
+
+	nav.prevandnext {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+}

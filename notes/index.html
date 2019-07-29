@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Notes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/joyneop.ico">
+	<link rel="apple-touch-icon" href="/joyneop.png">
+	<style type="text/css">
+	@import url(/fonts/seravek.css);
+	@import url(/fonts/erato.css);
+	* {
+		text-rendering: optimizeLegibility;
+		cursor: text;
+	}
+	body {
+		font-family: Seravek, 'Myraid Pro', 'Myriad Set', Myriad, 'Open Sans', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+		font-weight: 200;
+		font-size: 18px;
+		color: #555556;
+		line-height: 31.5px;
+		background: #FFF;
+		min-height: 100vh;
+		padding: 0;
+		margin: 0;
+	}
+	#cont {
+		box-sizing: border-box;
+		margin: 0 auto;
+		overflow: auto;
+	}
+	@media screen and (max-width: 768px) {
+		#cont {
+			padding: 20px 10px 20px;
+		}
+	}
+	@media screen and (min-width: 769px) {
+		#cont {
+			max-width: 700px;
+			padding: 40px 60px;
+		}
+	}
+	h1 {
+		font-size: 2em;
+		font-weight: 500;
+		color: #CCC;
+		margin: 0 0 15px;
+	}
+	#text {
+		min-height: 80vh;
+	}
+	#text, #text * {
+		font-family: 'Erato', 'Charter', 'Georgia', 'Times New Roman', Times, 'Hiragino Sans GB', 'Microsoft YaHei UI', 'Microsoft YaHei', serif;
+		font-weight: 300;
+		font-size: 18px;
+		color: #555556;
+		line-height: 29px;
+		background: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		border: none;
+		outline: none;
+		overflow: auto;
+		resize: none;
+	}
+	</style>
+	<script type="text/javascript">
+	var upadateData = function () {
+		localStorage['joyneop-note-data-html'] = document.getElementById('text').innerHTML;
+	};
+	var foc = function () {
+		document.getElementById('text').focus();
+	};
+	window.addEventListener('load', foc);
+	</script>
+</head>
+<body>
+	<div id="cont">
+		<h1>NOTES</h1>
+		<div id="text" contenteditable></div>
+		<script type="text/javascript">
+		if (localStorage['joyneop-note-data-html'] === undefined) {
+			localStorage['joyneop-note-data-html'] = '<br>';
+		};
+		document.getElementById('text').innerHTML = localStorage['joyneop-note-data-html'];
+		document.getElementById('text').oninput = upadateData;
+		foc();
+		window.setInterval(upadateData, 80);
+		</script>
+	</div>
+</body>
+</html>

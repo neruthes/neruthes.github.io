@@ -1,0 +1,261 @@
+@import url(/fonts/seravek.css);
+@import url(/fonts/realtimerounded.css);
+@import url(/fonts/inconsolata.css);
+@import url(/fonts/erato.css);
+
+* {
+	text-rendering: optimizeLegibility;
+	box-sizing: border-box !important;
+}
+
+html, body {
+	/* font-family: 'Seravek', 'Myriad Pro', 'Myriad', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+	font-family: 'RealtimeRounded', 'Myriad Pro', 'Myriad', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+	font-size: 10px;
+	font-weight: 300;
+	color: #000;
+	background-color: #FAFAFA;
+}
+
+header.global a {
+	display: block;
+}
+
+header.global h1, header.global h2 {
+	color: #000;
+	font-weight: 200;
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	text-decoration: none;
+	padding: 20px 0 10px;
+}
+
+header.global h2 {
+	font-variant-numeric: tabular-nums lining-nums;
+	padding: 10px 0;
+	margin: 0;
+}
+
+.avatar {
+	width: 180px;
+	height: 180px;
+	margin: 0 auto;
+	background: #FFF url(/joyneop.png) center no-repeat scroll;
+	background-size: contain;
+	border-radius: 2000px;
+	box-shadow: rgba(0, 0, 0, 0.21322) 0 0 5px inset;
+	-webkit-transition: all 270ms ease;
+	-moz-transition: all 270ms ease;
+	transition: all 270ms ease !important;
+}
+
+.avatar:hover {
+	box-shadow: rgba(0, 0, 0, 0.432222) 0 0 5px inset;
+	transform: scale(1.03) !important;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.global a {
+	text-decoration: none;
+}
+
+.post {
+	font-weight: 300;
+	padding-top: 60px;
+	margin-bottom: 90px;
+	background: #FFF;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.024322) 0 0 4px;
+}
+
+.post-h2 {
+	font-size: 2.6rem;
+	font-weight: 400;
+	padding: 0 10px;
+	margin: 0 0 0;
+}
+
+.post-date {
+	padding: 0 10px;
+}
+
+.post-h2, .post-h2 a {
+	color: #2B8CD2;
+}
+
+.post-text {
+	font-weight: 400;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	padding-top: 10px;
+}
+
+.post-text > h3 {
+	font-size: 2.6rem;
+	font-weight: 300;
+	padding: 0 10px;
+	margin: 20px 0 20px;
+}
+
+h1, h2, h3 {
+	-webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}
+
+.post-text > p, .post-text > pre, .post-text > aside {
+	line-height: 1.5em;
+	padding: 0 10px;
+	margin: 17px 0;
+}
+
+.post-text > aside {
+	font-size: 0.75em;
+	font-weight: 100;
+	color: #AAA;
+}
+
+.post-text > aside:last-child {
+	margin-top: 30px;
+}
+
+.post-text > aside:last-child::before {
+	content: " ";
+	background: #DDD;
+	display: block;
+	width: 110px;
+	height: 1px;
+	margin: 0 0 18px;
+}
+
+.post-text > p a {
+	color: #2B8CD2;
+}
+
+.post-text > p a:hover {
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.post-text em {
+	font-style: italic;
+}
+
+.post-text strong {
+	font-weight: 400;
+}
+
+.post-text > ol, .post-text > ul {
+	padding: 0 15px 0 30px;
+}
+
+.post-text > ol > li, .post-text > ul > li {
+	line-height: 1.5em;
+	margin: 0 0 12px;
+}
+
+.post-text code {
+	font-family: 'RealtimeRounded', 'Inconsolata', 'Menlo', monospace;
+	background: #F9F9F9;
+	border-radius: 3px;
+	padding: 0 3px;
+}
+
+.post-text figure {
+	width: 100%;
+	margin: 17px 0;
+}
+
+.post-text img {
+	border-radius: 3px;
+}
+
+.post-text img.custom {
+	border-radius: 0px !important;
+}
+
+.post-text figure img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.post-text figure figcaption {
+	font-size: 1.2rem;
+	font-style: italic;
+	text-align: center;
+	padding: 0.5rem 0 0;
+}
+
+.post-text p > img {
+	float: right;
+}
+
+.post-text blockquote {
+	font-style: italic;
+	border-left: 3px solid #F5F5F5;
+	padding-left: 7px;
+	/* margin-left: -17px; */
+}
+
+.post-text pre {
+	font-family: 'RealtimeRounded', 'Inconsolata', 'Menlo', monospace;
+	line-height: 1.5em;
+	color: #333;
+	background: #F9F9F9;
+	border-radius: 4px;
+	overflow-x: scroll;
+
+	padding: 10px;
+}
+
+.post-text > canvas {
+}
+
+.post-date {
+	font-size: 1.6rem;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: #999;
+	display: block;
+	margin: 0 0 27px;
+}
+
+.post-date:hover {
+	color: #777;
+}
+
+.post-date a {
+	color: inherit;
+}
+
+.post.more li > a {
+	/*font-size: 2.6em;*/
+	/*font-weight: normal;*/
+	/*color: #2B8CD2;*/
+}
+
+nav.prevandnext span, nav.prevandnext span a {
+	font-size: 1.4rem;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: block;
+	padding: 1em 0.4em;
+}
+
+footer.global {
+	font-size: 1.4rem;
+	font-weight: 300;
+	color: #585858;
+	text-align: center;
+}

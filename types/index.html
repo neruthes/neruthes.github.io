@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>May the Types be with thee — Neruthes (a.k.a. Joy Neop)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/joyneop.png">
+	<style type="text/css">
+	@import url(/fonts/seravek.css);
+	* {
+		text-rendering: optimizeLegibility;
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Seravek, 'Myriad Pro', Myriad, 'Myriad Set', 'Open Sans', 'Helvetica Neue', 'Helvetica Neue', Helvetica, Lucida Grande, Arial, 'Arial-Black', 'Arial Black', sans-serif;
+		font-size: 20px;
+		font-weight: 200;
+		color: #585858;
+		padding: 0;
+		margin: 0;
+		background: #FAFAFA;
+	}
+	a {
+		color: inherit;
+		text-decoration: inherit;
+	}
+	header {
+		display: table-cell;
+		vertical-align: middle;
+		height: 44.792vw;
+	}
+	@media screen and (min-width: 768px) {
+		.title-in {
+			padding: 0 160px;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		.title-in {
+			padding: 40px;
+		}
+	}
+	h1 {
+		font-size: 40px;
+		font-weight: 400;
+		letter-spacing: 0.12rem;
+		padding: 0 0 0.5em;
+		margin: 0;
+	}
+	p {
+		padding: 0.25em 0;
+		margin: 0;
+	}
+	.main {
+		background: #000;
+		min-height: 80vh;
+	}
+	.main a {
+		display: block;
+	}
+	.main a img {
+		display: block;
+		width: 100%;
+	}
+	.main a:hover img {
+	}
+	@media screen and (min-width: 768px) {
+		.main a img {
+			opacity: 0.34;
+			transition: all 200ms ease;
+		}
+		.main a:hover img {
+			opacity: 1;
+		}
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="title-in">
+			<a href="./">
+				<h1>MAY THE TYPES BE WITH YOU</h1>
+			</a>
+			<p>
+				Buy a font following the links, and I will get 10% referral fee from your purchase.
+			</p>
+			<p>
+				Thanks for your cup of coffee : )
+			</p>
+		</div>
+	</header>
+	<div class="main" id="list-of-types">
+	</div>
+	<script type="text/javascript">
+	(function(dom, list){
+		for (var i = 0; i < list.length; i++) {
+			var anchor = document.createElement('a');
+			var img = document.createElement('img');
+			anchor.href = 'https://www.myfonts.com/fonts/' + list[i].url + '/';
+			anchor.setAttribute('rel', 'nofollow');
+			img.src = encodeURIComponent('img/' + list[i].name + (window.innerWidth*window.devicePixelRatio >= 1920 ? '@2x' : '') +  '.jpg');
+			anchor.appendChild(img);
+			dom.appendChild(anchor);
+		};
+	})(document.getElementById('list-of-types'), [
+		{ 'name' : 'Seravek', 'url' : 'processtype/seravek' },
+		{ 'name' : 'Glober', 'url' : 'font-fabric/glober' },
+		{ 'name' : 'Erato', 'url' : 'hoftype/erato' },
+		{ 'name' : 'Museo', 'url' : 'exljbris/museo' },
+		{ 'name' : 'Votle', 'url' : 'indian-type-foundry/volte' },
+		{ 'name' : 'Mangerica', 'url' : 'ndiscovered/mangerica' },
+		{ 'name' : 'ZionTrain Pro', 'url' : 'andrijtype/zion-train-pro' },
+		{ 'name' : 'Libertad', 'url' : 'tipotype/libertad' },
+		{ 'name' : 'Lapidaria', 'url' : 'andreas-stotzner/lapidaria' },
+		{ 'name' : 'Marine', 'url' : 'tipotype/marine' }
+	]);
+	</script>
+</body>
+</html>

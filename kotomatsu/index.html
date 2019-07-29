@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Kotomatsu / コトマツ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/joyneop.png">
+	<style type="text/css">
+	@import url(/fonts/seravek.css);
+	* {
+		text-rendering: optimizeLegibility;
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Seravek, 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, Ubuntu, 'Hiragino Kaku Gothic Pro', sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		padding: 0;
+		margin: 0;
+	}
+	header {
+		max-height: 220px;
+		font-size: 2.4em;
+		font-weight: 500;
+		color: rgba(255, 255, 255, 0.94);
+		line-height: 1.2em;
+		text-transform: uppercase;
+		padding: 0;
+		margin: 0;
+		background: #FE8A2A;
+		overflow: hidden;
+	}
+	header a {
+		display: block;
+		height: 220px;
+		color: inherit;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+	header h1 {
+		font-size: 1em;
+		font-weight: 500;
+		letter-spacing: 10px;
+		margin: 0 0 10px 0;
+	}
+	header h2 {
+		font-size: 0.46em;
+		font-weight: 500;
+		color: #F2F2F2;
+		letter-spacing: 7px;
+		margin: 0 0 10px 0;
+	}
+	@media screen and (max-width: 729px) {
+		header a {
+			text-align: center;
+			background: rgba(0, 0, 0, 0) url(bg1.png) center scroll no-repeat;
+			background-size: 290px;
+			padding: 66px 0;
+		}
+		.cont {
+			margin: 0 auto;
+		}
+		li {
+			font-size: 1.42em;
+			margin: 10px auto;
+		}
+		p {
+		}
+	}
+	@media screen and (min-width: 730px) {
+		header a {
+			max-width: 640px;
+			padding: 66px 40px;
+			background: rgba(0, 0, 0, 0) url(bg1.png) scroll no-repeat;
+			background-position: center left;
+			background-size: 290px;
+		}
+		header a h1, header a h2 {
+			text-align: right;
+		}
+		.cont {
+			width: 720px;
+			margin: 0 auto;
+			overflow: auto;
+		}
+		li {
+			float: left;
+			font-size: 1em;
+			padding: 10px 10px;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		footer .contact {
+			max-width: 720px;
+		}
+	}
+	.grand-cont {
+		background: #FFF;
+		padding: 30px 0 0;
+	}
+	ol, li {
+		display: block;
+		overflow: auto;
+	}
+	ol {
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		color: #FF8C2C;
+		border-radius: 8px;
+		width: 240px;
+		height: 240px;
+		padding: 35px 0 0;
+		text-align: center;
+	}
+	li a {
+		display: block;
+		color: #FF8C2C;
+		line-height: 30px;
+		padding: 20px 0;
+		margin: 0 auto;
+		border-radius: 4px;
+		box-sizing: border-box;
+		-webkit-transition: all 100ms ease;
+		-moz-transition: all 100ms ease;
+		transition: all 100ms ease;
+	}
+	li:hover {
+		color: #FFF;
+		background: #FF8C2C;
+	}
+	li img {
+		display: block;
+		width: 130px;
+		margin: 0 auto 10px;
+		overflow: hidden;
+	}
+	li:hover img {
+	}
+	p {
+		max-width: 580px;
+		font-size: 1.1em;
+		color: #666;
+		text-align: center;
+		line-height: 1.75em;
+		margin: 1.1em auto;
+	}
+	footer {
+		font-size: 14px;
+		font-weight: 300;
+		color: #888;
+		line-height: 1.6em;
+		text-align: center;
+		padding: 0 16px;
+		margin: 0;
+	}
+	footer .contact {
+		font-size: 28px;
+		font-weight: 500;
+		color: #FE8A2A;
+		line-height: 1.6em;
+		border-radius: 10px;
+		padding: 0;
+		margin: 1em auto;
+	}
+	.contact a {
+		border: 3px solid #FE8A2A;
+		border-radius: 10px;
+		overflow: hidden;
+		padding: 0.5em 10px 0.9em;
+	}
+	.contact a:hover {
+		color: #FFF;
+		background: #FE8A2A;
+	}
+	#contact-title {
+		display: block;
+	}
+	footer > a {
+		display: inline-block;
+	}
+	footer a {
+		color: inherit;
+	}
+	.link {
+		padding: 0 0 50px;
+	}
+	#website-sticker-pack-link-image {
+		display: block;
+		margin: 0 auto;
+	}
+	@-webkit-keyframes pop {
+		0% {
+			-webkit-transform: translateY(0px);
+			/*background: #000;*/
+		}
+		100% {
+			-webkit-transform: translateY(10px);
+			/*background: #2CF;*/
+		}
+	}
+	@media screen and (max-width: 729px) {
+		#website-sticker-pack-link-image {
+			width: 100%;
+		}
+	}
+	@media screen and (min-width: 730px) {
+		#website-sticker-pack-link-image {
+			width: 600px;
+		}
+		footer .contact a {
+			padding-top: 0.7em;
+		}
+		a:hover #website-sticker-pack-link-image {
+			-webkit-animation-name: pop;
+			-webkit-animation-duration: 3s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-direction: alternate;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-fill-mode: both;
+		}
+	}
+	a, a:link, a:visited, a:hover, a:active {
+		text-decoration: none;
+	}
+	#js-toggleDelegationLicenseDisplay {
+		cursor: pointer;
+	}
+	#delegation-license-text {
+		text-align: left;
+		max-width: 700px;
+		padding: 10px 20px;
+		margin: 0 auto;
+	}
+	#delegation-license-text[data-display="none"] {
+		display: none;
+	}
+	</style>
+</head>
+<body>
+<header>
+	<a href="./">
+		<h1>Kotomatsu</h1>
+		<h2>コトマツ・謎の生物</h2>
+	</a>
+</header>
+<div class="grand-cont">
+	<div class="cont">
+		<ol>
+		</ol>
+	</div>
+	<div class="cont">
+
+	</div>
+	<footer>
+		<div class="contact" id="contact">
+			<a id="contact-title" target="_blank" href="https://telegram.me/addstickers/kotomatsu">
+				<img src="./website-sticker-pack-link-image.png" id="website-sticker-pack-link-image">
+				Get the Sticker Pack for Telegram
+			</a>
+		</div>
+		<div class="" id="manga" style="padding: 40px 0; color: #FF8C2C; font-size: 28px; font-style: italic;">
+			<a id="manga-title" target="_blank" href="./manga/">
+				BTW: The Kotomatsu Manga Is Now Available
+			</a>
+		</div>
+		<div class="link">
+			<a href="/">&copy; Copyright <script type="text/javascript">document.write((new Date()).getFullYear());</script> All Rights Reserved by Joy Neop</a>
+			<div>
+				<span id="js-toggleDelegationLicenseDisplay" onclick="toggleDelegationLicenseDisplay()">App Store Distribution Delegation License</span>
+				<aside id="delegation-license-text" data-display="none">
+					I hereby grant Jinyu Meng (or "Megabits") fixed-term long (from 2016/12/22 to 2021/12/21), revokable, non-exclusive license to distribute these 18 "Kotomatsu" stickers on App Store, the software distribution platform operated by Apple Inc in California or its related parties, as long as the sticker pack abovementioned is provieded to any App Store user for free ($0.00) and is with the name "Kotomatsu by Joy Neop" or "Kotomatsu by Neruthes". Upon any DMCA take-down request, Megabits may take down the content without any notification. Upon termination of the term, the authorization is immediately expired, unless a renewal is issued.
+				</aside>
+				<script>
+				var toggleDelegationLicenseDisplay = function () {
+					if (document.getElementById('delegation-license-text').getAttribute('data-display') == 'none') {
+						document.getElementById('delegation-license-text').setAttribute('data-display', 'block');
+					} else {
+						document.getElementById('delegation-license-text').setAttribute('data-display', 'none');
+					};
+				};
+				</script>
+			</div>
+		</div>
+		<div class="link">
+		</div>
+	</footer>
+</div>
+<script type="text/javascript">
+var x = 18;
+for (var i = 1; i <= x; i++) {
+	var li = document.createElement("li");
+	// var a = document.createElement("a");
+	var img = document.createElement("img");
+	var span = document.createElement("span");
+	// a.setAttribute("href", i + ".jpg");
+	img.setAttribute("src", "./outlined/Kotomatsu-vw%20" + i + ".png");
+	// a.appendChild(img);
+	// a.appendChild(span);
+	span.innerHTML = "#" + i;
+	li.appendChild(img);
+	li.appendChild(span);
+	document.getElementsByTagName("ol")[0].appendChild(li);
+}
+</script>
+</body>
+</html>

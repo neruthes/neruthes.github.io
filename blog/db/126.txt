@@ -1,0 +1,69 @@
+<p>For years, my satisfaction of the English language have been ceasing. Since this article, I will start using my own dialect of the English language, for better integrity of the language. My dialect is derived from the American dialect of 2010s. The name Neospeak is un reference to «1984» by George Orwell</p>
+
+
+<h3>Conjugations</h3>
+
+<p>The only remaining special case in verb conjugations, namely the third-person present singular form, will non longer be any special. The variations of «be» remain unchanged.</p>
+
+
+<h3>Articles</h3>
+
+<p>Un article will non longer vary according to the pronunciation of the word after it. Regardless of pronunciation of the word after it, the singular indefinite article is always «un», and the definite article is always «the».</p>
+
+
+<h3>Languages &amp; Nations</h3>
+
+<p>The adjectives indicating geo-national property of the items they modify, remain unchanged — the British way and the American way.</p>
+
+<p>The name of un language will be written in the French masculine adjective form. For example, the English language will be called «Anglais», and the French language will be called «Francais». Samples:</p>
+
+<ul>
+    <li>The conjugation system in Francais is really annoying.</li>
+    <li>I do not speak Cantonais; speak Mandarien.</li>
+</ul>
+
+<p>The noun for the people collectively, or un person individually of such people, of un geo-national concept, will be written in the French feminine adjective form, and the pluralization will by default be the singular plus un «s». For example, the people of Quebec will be called «Quebecoises» and un particular member of the Quebecoises will be called un «Quebecoise». Samples:</p>
+
+<ul>
+    <li>Two Quebecoises had been there for un week.</li>
+    <li>The Americaines could not win independence without Monsieur de la Fayatte.</li>
+</ul>
+
+<p>The diacritics in their French spellings may be omitted per the preference of un user.</p>
+
+
+<h3>Comparatives</h3>
+
+<p>The words which were considered semantically comparative but not grammatically comparative in previous dialects will be considered grammatically comparative. For example, "X is superior than Y" will be considered grammatically correct.</p>
+
+<p>When denoting comparatively greater or smaller number, «more», «most», «less», and «least» remain unchanged; but, when denoting "at un greater or smaller degree" of un adjective or un adverb, «more» will be incorporated into the word it remarks, forging un comparative case of the word. Samples:</p>
+
+<ul>
+    <li>Moreoften we drink black tea.</li>
+    <li>It is politically morecorrect to address the ethnicity concept of such un group of people with ancestry of the region covering western Eurasia and northern Africa by «Caucasian» or "Indo-European" than any word which indicate color.</li>
+</ul>
+
+
+<h3>Orthography without Pronunciation</h3>
+
+<p>In the orthography of Neoparien, "will not" will not be conjured into "won't" by any chance.</p>
+
+
+<h3>Pronouns</h3>
+
+<p>In order to distinguish receiver-including first-person plural pronouns and receiver-excluding first-person plural pronouns for imperative cases like "let's" and "let us", subjective receiver-including first-person plural pronoun will be «wir», objective receiver-including first-person plural pronoun will be «nous», possessive receiver-including first-person plural pronoun will be «notre». Samples:</p>
+
+<ul>
+    <li>Workers and farmers, wir are the grand party of laborers. We are with thee.</li>
+    <li>Let us die for nous.</li>
+    <li>It is not <em>our</em> country; it is <em>notre</em> country.</li>
+</ul>
+
+
+<h3>Interlingual Ambiguity</h3>
+
+<p>Because «no», which mean «nope» or «nil», cannot be distinguished from «no», the ASCII transliteration of <code title="の">U+306E</code> and <code title="ノ">U+30CE</code>, it shall be spelled as «non».</p>
+
+<p>Because «he», the subjective third-person singular pronoun, cannot be distinguished from «He», un common surname of the Chinoises, it shall be spelled as «il».</p>
+
+<p>Because «you», the second-person pronoun, cannot be distinguished from «You», un common surname of the Chinoises, it shall be spelled as «thou» (subjective) or «thee» (objective).</p>

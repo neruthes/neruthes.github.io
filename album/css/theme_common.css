@@ -1,0 +1,280 @@
+@import url(/fonts/seravek.css);
+@import url(/fonts/realtimerounded.css);
+@import url(/fonts/erato.css);
+
+* {
+	text-rendering: optimizeLegibility;
+	box-sizing: border-box !important;
+}
+
+html, body, pre, code {
+	font-family: 'Seravek', 'Myriad Pro', 'Myriad', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'RealtimeRounded', 'Seravek', 'Myriad Pro', 'Myriad', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+	font-size: 10px;
+	font-weight: 300;
+	color: #000;
+	background-color: #FAFAFA;
+}
+
+header.global a {
+	display: block;
+}
+
+header.global {
+	color: #000;
+	font-weight: 300;
+	text-align: left;
+	margin: 0 auto;
+}
+
+h1 {
+	font-weight: 200;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 0 0 15px;
+	margin: 0;
+}
+
+h1 .weak {
+	opacity: 0.5;
+}
+
+header.global h2 {
+	padding: 10px 0;
+	margin: 0;
+}
+
+.avatar {
+	display: inline-block;
+	margin: 0;
+	background: #FFF url(/joyneop.png) center no-repeat scroll;
+	background-size: contain;
+	box-shadow: rgba(0, 0, 0, 0.21322) 0 0 4px inset;
+	border-radius: 2000px;
+	-webkit-transition: all 360ms ease;
+	-moz-transition: all 360ms ease;
+	transition: all 360ms ease;
+}
+
+.avatar:hover {
+	box-shadow: rgba(0, 0, 0, 0.432222) 0 0 5px inset;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.global a {
+	text-decoration: none;
+}
+
+.cont {
+	display: block;
+	padding: 0;
+}
+
+.entry {
+	border-radius: 4px;
+	display: block;
+	overflow: hidden;
+}
+
+.entry-anchor {
+	display: block;
+}
+
+.entry-img {
+	display: block;
+	width: 100%;
+}
+
+.post {
+	font-weight: 300;
+	margin-bottom: 90px;
+}
+
+.post h2 {
+	font-size: 3.2rem;
+	font-weight: 400;
+	margin: 0;
+}
+
+.post h2, .post h2 a {
+	/*color: #2B8CD2;*/
+}
+
+h1, h2, h3 {
+	-webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}
+
+.post-text {
+	font-weight: 400;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	/*padding-top: 10px;*/
+}
+
+.post-text > h3 {
+	font-size: 2.8rem;
+	font-weight: 500;
+	margin: 3.5rem 0 1.8rem;
+}
+
+.post-text > h4 {
+	font-size: 2.0rem;
+	font-weight: 500;
+	margin: 1.8rem 0 1.6rem;
+}
+
+.post-text > p, .post-text > ul > li, .post-text > ol > li, .post-text > pre, .post-text > aside {
+	line-height: 1.65em;
+	margin: 17px 0;
+}
+
+.post-text > aside {
+	font-size: 0.75em;
+	font-weight: 100;
+	color: #AAA;
+}
+
+.post-text > aside:last-child {
+	margin-top: 30px;
+}
+
+.post-text > aside:last-child::before {
+	content: " ";
+	background: #DDD;
+	display: block;
+	width: 110px;
+	height: 1px;
+	margin: 0 0 18px;
+}
+
+.post-text > p a {
+	color: #2B8CD2;
+}
+
+.post-text > p a:hover {
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.post-text em {
+	font-style: italic;
+}
+
+.post-text strong {
+	font-weight: 400;
+}
+
+p code {
+	background: #F4F4F4;
+	border-radius: 4px;
+	padding: 0 3px;
+}
+
+.post-text figure {
+	width: 100%;
+	margin: 3.4rem 0;
+}
+
+.post-text img {
+	border-radius: 4px;
+}
+
+.post-text figure img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.post-text figure figcaption {
+	font-size: 1.4rem;
+	font-style: italic;
+	text-align: center;
+	padding: 1.4rem 0 0;
+}
+
+.post-text p > img {
+	float: right;
+}
+
+.post-text blockquote {
+	font-style: italic;
+	border-left: 3px solid #F5F5F5;
+	padding-left: 14px;
+	margin-left: -17px;
+}
+
+.post-text pre {
+	background: #F4F4F4;
+	border-radius: 4px;
+	overflow-x: scroll;
+
+	box-sizing: content-box;
+	padding: 10px;
+	margin-left: -10px;
+}
+
+.post-text > canvas {
+}
+
+.post-date {
+	font-size: 1.6rem;
+	font-weight: 300;
+	color: #999;
+	margin: 0 0 0;
+}
+
+.post-date:hover {
+	color: #777;
+}
+
+.post-date a {
+	color: inherit;
+}
+
+.post.more li > a {
+	/*font-size: 2.6em;*/
+	/*font-weight: normal;*/
+	/*color: #2B8CD2;*/
+}
+
+nav.prevandnext {
+	/*display: none;*/
+}
+
+nav.prevandnext span, nav.prevandnext span a {
+	font-size: 1.4rem;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: block;
+	padding: 1em 0;
+}
+
+footer.global {
+	font-size: 1.4rem;
+	font-weight: 300;
+	color: #585858;
+	text-align: center;
+}
+
+/* Transitable */
+
+.entry {
+	position: relative;
+	top: 25px;
+	opacity: 0;
+	transition: opacity 320ms ease 60ms, top 380ms ease, zoom 380ms ease;
+}
+
+.entry.initialization-done {
+	top: 0;
+	opacity: 1;
+}

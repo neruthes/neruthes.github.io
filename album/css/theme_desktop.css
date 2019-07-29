@@ -1,0 +1,144 @@
+@media screen and (min-width: 769px) {
+	html, body {
+		font-size: 10px;
+	}
+
+	.global {
+		width: 612px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 60px;
+	}
+
+	#global-header {
+		padding-top: 50px;
+	}
+
+	.global h1 {
+		font-size: 2.8em;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	.global h2 {
+		font-size: 2em;
+		margin: 15px 0;
+	}
+
+	#global-footer {
+		text-align: left;
+		padding: 50px 0px;
+	}
+
+	.avatar {
+		width: 50px;
+		height: 50px;
+	}
+
+	.avatar:hover {
+	    transform: scale(1.04);
+	}
+
+	body[data-page-mode="index"] #cont.cont {
+		font-size: 0px;
+		width: 1030px;
+		margin: 30px auto 25px;
+	}
+
+	body[data-page-mode="single"] #cont.cont {
+		margin: 25px auto;
+	}
+
+	body[data-page-mode="index"] .entry {
+		display: inline-block;
+		width: 200px;
+		margin: 3px 3px;
+		transition: 270ms;
+	}
+
+	body[data-page-mode="index"] .entry:hover {
+		/* -webkit-filter: saturate(0.7) contrast(0.7) brightness(1.27); */
+		transform: scale(1.10);
+		z-index: 9999;
+		box-shadow: rgba(0, 0, 0, 0.25) 0 2px 15px 0;
+	}
+
+	.post {
+	}
+
+	.post-text {
+		font-size: 2em;
+	}
+
+	.post h2, .post h3, .post h4, .post-text > p, .post-text > aside {
+		width: 612px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.post-text figure {
+	}
+
+	.post-text figure img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.post-text figure img.full {
+		border-radius: 0;
+		width: 100%;
+	}
+
+	.post-text figure img.lg {
+		width: 1200px;
+	}
+
+	.post-text figure img.md {
+		width: 780px;
+	}
+
+	.post-text figure img.sm {
+		width: 612px;
+	}
+
+	.post-text figure img.xs {
+		width: 420px;
+	}
+
+	.post-text figure img.xxs {
+		width: 210px;
+	}
+
+	.post-text figure img.shadow {
+		box-shadow: rgba(0, 0, 0, 0.25) 0 1px 3px 0;
+	}
+
+	.post-text figure img.custom.id3-s2-g { width: 222.51669mm; max-width: 222.51669mm; }
+	.post-text figure img.custom.id3-s2 { width: 208.22906mm; max-width: 208.22906mm; }
+	.post-text figure img.custom.id3-s1 { width: 104.77599mm; max-width: 104.77599mm; }
+	.post-text figure img.custom.id3-l1 { width: 148.1681mm; max-width: 148.1681mm; }
+
+	.post-text figure img.custom.id2-s2-g { width: 185.73926mm; max-width: 185.73926mm; }
+
+	.post-text figure img.custom.id1-l2-g { width: 211.66868mm; max-width: 211.66868mm; }
+	.post-text figure img.custom.id1-s2-g { width: 138.64299mm; max-width: 138.64299mm; }
+	.post-text figure img.custom.id1-l1 { width: 100.0135mm; max-width: 100.0135mm; }
+
+	.post-text figure img.custom.coin-2-g { width: 78.3174116mm; max-width: 78.3174116mm; }
+
+	.post-text figure img.custom.a4-s1 { width: 243.41898mm; max-width: 243.41898mm; }
+	.post-text figure img.custom.a5-s1 { width: 172.50997mm; max-width: 172.50997mm; }
+
+	.post-text figure img.custom.banknote-l1 { width: 186.79790mm; max-width: 186.79790mm; }
+
+	.post-text figure img.custom.boardingpass-l1 { width: 234.9522348mm; max-width: 234.9522348mm; }
+
+	.post-text figure img.custom.iphone { width: 79.90492mm; max-width: 79.90492mm; }
+
+	nav.prevandnext {
+		max-width: 612px;
+		margin: 0 auto;
+	}
+}
