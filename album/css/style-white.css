@@ -18,3 +18,7 @@ h1, h1 * {
 }
 .post-text a:link, .post-text a:visited, .post-text a:hover {
 }
+
+.post figure img.custom {
+    border-radius: 0px !important;
+}
