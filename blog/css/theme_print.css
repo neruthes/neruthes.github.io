@@ -8,6 +8,7 @@
 	}
 
 	body {
+		font-family: 'Seravek', sans-serif;
 		font-size: 12pt;
 		margin: 0pt auto;
 	}
@@ -39,11 +40,12 @@
 		font-size: 18pt;
 		line-height: 1.25em;
 		margin: 0.75em 0;
+		page-break-after: avoid;
 	}
 
 	.post-text > p {
 		font-size: 12pt;
-		line-height: 1.25em;
+		line-height: 1.4em;
 		margin: 0.75em 0;
 	}
 

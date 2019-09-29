@@ -1,6 +1,6 @@
 * {
-    -webkit-font-variant-ligatures: common-ligatures;
-    font-variant-ligatures: common-ligatures;
+    -webkit-font-variant-ligatures: none;
+    font-variant-ligatures: none;
     -moz-font-feature-settings: "kern=1";
     -webkit-font-feature-settings: "kern";
     -moz-font-feature-settings: "kern";
