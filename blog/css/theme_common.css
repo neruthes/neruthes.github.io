@@ -46,10 +46,9 @@ header.global h2 {
 	width: 180px;
 	height: 180px;
 	margin: 0 auto;
-	background: #FFF url(/joyneop.png) center no-repeat scroll;
+	background: url(/neruthes-force-circle-for-circle-transparent.png) center no-repeat scroll;
 	background-size: contain;
 	border-radius: 2000px;
-	box-shadow: rgba(0, 0, 0, 0.21322) 0 0 5px inset;
 	-webkit-transition: all 270ms ease;
 	-moz-transition: all 270ms ease;
 	transition: all 270ms ease !important;

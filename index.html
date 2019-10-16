@@ -5,10 +5,11 @@
     	<title>NERUTHES (a.k.a. Joy Neop)</title>
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<script type="text/javascript" src="/js/themes.js" async></script>
-    	<link rel="shortcut icon" href="/favicon.ico">
-    	<link rel="apple-touch-icon" href="/joyneop.png">
+        <link rel="shortcut icon" href="/neruthes-for-square.png">
+    	<link rel="apple-touch-icon" href="/neruthes-for-square.png">
     	<link rel="subresource" href="/blog/list.json">
     	<link rel="subresource" href="/album/list.json">
+    	<link rel="subresource" href="/neruthes-force-circle-for-circle-transparent.png">
     	<link rel="subresource" href="/kotomatsu/1.jpg">
     	<link rel="subresource" href="/kotomatsu/2.jpg">
     	<link rel="subresource" href="/kotomatsu/3.jpg">
@@ -75,10 +76,8 @@
     		width: 180px;
     		height: 180px;
     		margin: 0 auto;
-    		background: #FFF url(/joyneop.png) center no-repeat scroll;
+    		background: url(/neruthes-force-circle-for-circle-transparent.png) center no-repeat scroll;
     		background-size: contain;
-    		border-radius: 50%;
-    		box-shadow: rgba(0, 0, 0, 0.21322) 0 0 5px inset;
     		position: relative;
     		overflow: hidden;
     		-webkit-transition: all 270ms ease;
@@ -88,7 +87,6 @@
     	.avatar [data-avatar-index] {
     		background-size: 180px;
     		border-radius: 50%;
-    		box-shadow: rgba(0, 0, 0, 0.21322) 0 0 5px inset;
     		opacity: 0;
     		position: absolute;
     		top: 0;
@@ -103,8 +101,6 @@
     	    transform: scale(1.03);
     	}
     	.avatar:hover, .avatar:hover [data-avatar-index] {
-    		border-radius: 50%;
-    		box-shadow: rgba(0, 0, 0, 0.432222) 0 0 5px inset;
     	}
         h1 {
             font-size: 42px;
@@ -263,17 +259,11 @@
             			<div id="title-in">
             				<a href="/">
             					<div id="avatar" class="avatar"></div>
-            					<script>
-            					if (window.theStyleForNow == "general.css") {
-            						document.getElementById('avatar').style.backgroundImage = 'url(/kotomatsu/MY.jpg)'.replace(/MY/, Math.floor(Math.random()*17+1));
-            					};
-            					</script>
-            					<script src="/js/avatar-animation.js" async></script>
             					<h1>NERUTHES</h1>
             				</a>
-            				<p>
+            				<p style="text-transform: uppercase;">
             					A.k.a. Joy Neop<br />
-                                Male / 1995 / Sino-Korean / Homosexual<br />Existentialist / Nihilist / Communist / Skeuomorphist<br />(Fake)&nbsp;Product&nbsp;Designer / (Half)&nbsp;Web&nbsp;Developer<br />Citizen of Cyberspace<br />Cybercommunist Party Comrade<br /><strong>CB0A&nbsp;BC77&nbsp;5644&nbsp;0D12&nbsp;915E 3F25&nbsp;AFB3&nbsp;373F&nbsp;5200&nbsp;DF38</strong>
+                                Male · 1995 · Sino-Korean · Homosexual<br ·>Existentialist · Nihilist · Communist · Skeuomorphist<br ·>(Fake)&nbsp;Product&nbsp;Designer · (Half)&nbsp;Web&nbsp;Developer<br />Cyberspace Patriot<br />Cybercommunist Party Comrade<br /><strong>CB0A&nbsp;BC77&nbsp;5644&nbsp;0D12&nbsp;915E 3F25&nbsp;AFB3&nbsp;373F&nbsp;5200&nbsp;DF38</strong>
             				</p>
             			</div>
             		</div>
