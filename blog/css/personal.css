@@ -13,7 +13,7 @@ header.global h2 > span.pgp-pubkey-fingerprint > span {
 	transition: none;
 	position: relative;
 }
-.avatar [data-avatar-index] {
+/* .avatar [data-avatar-index] {
 	background-size: 180px;
 	border-radius: 50%;
 	box-shadow: rgba(0, 0, 0, 0.21322) 0 0 5px inset;
@@ -31,4 +31,4 @@ header.global h2 > span.pgp-pubkey-fingerprint > span {
 .avatar:hover, .avatar:hover [data-avatar-index] {
 	border-radius: 50%;
 	box-shadow: rgba(0, 0, 0, 0.432222) 0 0 5px inset;
-}
+} */

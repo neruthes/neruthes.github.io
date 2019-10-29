@@ -47,15 +47,17 @@ header.global h2 {
 	height: 180px;
 	margin: 0 auto;
 	background: url(/neruthes-force-circle-for-circle-transparent.png) center no-repeat scroll;
-	background-size: contain;
+	background-size: 90%;
+	/* background-size: contain; */
 	border-radius: 2000px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 0 40px 2px;
 	-webkit-transition: all 270ms ease;
 	-moz-transition: all 270ms ease;
 	transition: all 270ms ease !important;
 }
 
 .avatar:hover {
-	box-shadow: rgba(0, 0, 0, 0.432222) 0 0 5px inset;
+	/* box-shadow: rgba(0, 0, 0, 0.432222) 0 0 5px inset; */
 	transform: scale(1.03) !important;
 }
 
