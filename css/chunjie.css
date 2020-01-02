@@ -1,6 +1,6 @@
 body {
     /* color: #FFC954; */
-    background: #4E150F url(/JN-Lab/other-images/dark-red-bg-with-noise-tile-export.png) center repeat scroll;
+    background: #4E150F url(/assets/other-images/dark-red-bg-with-noise-tile-export.png) center repeat scroll;
     background-size: 100px;
 }
 
@@ -16,7 +16,7 @@ header, footer, header *, footer, h1, .prevandnext {
 }
 .content {
     color: #FFC954;
-    background: #E1320C url(/JN-Lab/other-images/fresh-red-bg-with-noise-tile-export.png) center repeat scroll;
+    background: #E1320C url(/assets/other-images/fresh-red-bg-with-noise-tile-export.png) center repeat scroll;
     background-size: 100px;
 	box-shadow: rgba(255, 201, 84, 0.5) 0 0 40px 0px;
 }

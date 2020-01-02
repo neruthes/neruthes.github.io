@@ -11,7 +11,7 @@ body {
 	min-height: 1500px;
 	padding: 0;
 	margin: 0;
-	background: #7495BC url(/JN-Lab/other-images/winter-snow-500254.jpg) fixed top no-repeat;
+	background: #7495BC url(/assets/other-images/winter-snow-500254.jpg) fixed top no-repeat;
 	background-size: cover;
 }
 header a:link, header a:visited, header a:hover, header a:active, footer a {
@@ -119,7 +119,7 @@ section h2:hover {
 	transition: all 270ms ease;
 }
 .circle.blog {
-	background-image: url(/JN-Lab/other-images/nav-blog-360px.jpg);
+	background-image: url(/assets/other-images/nav-blog-360px.jpg);
 }
 .circle.lab {
 	background-image: linear-gradient(rgb(31, 97, 190), rgb(177, 206, 227));
