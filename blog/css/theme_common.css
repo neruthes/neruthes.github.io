@@ -46,7 +46,7 @@ header.global h2 {
 	width: 180px;
 	height: 180px;
 	margin: 0 auto;
-	background: url(/neruthes-force-circle-for-circle-transparent.png) center no-repeat scroll;
+	background: #FFF url(/neruthes-force-circle-for-circle-transparent.png) center no-repeat scroll;
 	background-size: 90%;
 	/* background-size: contain; */
 	border-radius: 2000px;
