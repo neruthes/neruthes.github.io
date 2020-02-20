@@ -8,11 +8,89 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
         <atom:link href="https://joyneop.xyz/blog/feed.rss" rel="self" type="application/rss+xml" />
         <link>https://joyneop.xyz/blog/</link>
         <description>CB0A BC77 5644 0D12 915E 3F25 AFB3 373F 5200 DF38</description>
-        <lastBuildDate>2019-04-26 09:41:00 +0000</lastBuildDate>
+        <lastBuildDate>2020-02-20 09:41:00 +0000</lastBuildDate>
         <language>en-US</language>
         <sy:updatePeriod>hourly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
 	    <generator>https://joyneop.xyz/blog/</generator>
+        <item>
+            <title>Universal UNIX Time (UTU): Technical Specification</title>
+            <link>https://joyneop.xyz/blog/?p=130</link>
+            <pubDate>2020-02-20 09:41:00 +0000</pubDate>
+            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=130</guid>
+            <content:encoded>
+<![CDATA[
+<h3>0x00. Abstract</h3>
+
+<p>This specification define Universal UNIX Time (UTU) as un time representation system.</p>
+<p>The expectation of UTU is to establish un scalable time representation system which must work perfectly through the funeral of the universe, without incorporating any self-centric definitions of intervals (Beijing-centric ou Earth-centric ou Sun-centric ou Galaxy-centric definitions of systems).</p>
+<p>This specification require background knowledge of UTC und Binary Electronic Computation und UNIX Timestamp.</p>
+
+<!-- Section Break -->
+
+<h3>0x01. Introduction</h3>
+
+<p>The basic time unit of UTU is second. Second is defined by the authority of SI metric system. Any software, which support UTU, must always employ the latest version of the definition of second.</p>
+<p>The origin point of the time axis is UNIX Genesis, which is representated as "0" in UNIX Timestamp (millisecond) und "1970-01-01T00:00:00.000Z" in ISO 8601.</p>
+<p>UTU focus on the serialization level of time points.</p>
+<p>UTU do not define intervals of seconds, such as minutes und hours.</p>
+<p>UTU primarily work with Base0x10 numbers ("0123456789ABCDEF") and discourage the use of Base0x0A numbers. Uppercase only.</p>
+<p>UTU do work with complex planes of time by joining multiple UTU strings by the "=" character.</p>
+<p>Un good example of UTU string is <code>U+005E4DT10</code>.</p>
+
+<!-- Section Break -->
+
+<h3>0x02. Structure</h3>
+
+<h4>0x02.00. Components of UTU Strings</h4>
+<p>Un UTU string should generally consist of 0x03 components, with the exeption of UNIX Genesis Timestamp. UNIX Genesis Timestamp is merely <code>UG</code>. However, UNIX Genesis Timestamp may also be representated in the common 0x03-component format, although unnecessary in many scenarios.</p>
+
+<h4>0x02.01. Component: Header</h4>
+<p>Header should be <code>U+</code> for un post-Genesis time ou <code>U-</code> for un pre-Genesis time.</p>
+<p>Genesis itself is representated as un positive number, and <code>U+</code> should be used.</p>
+<p>These 0x02 characters are named "UMH" (UTU Magic Header) und "UASS" (UTU Axis Side Sign) respectively.</p>
+
+<h4>0x02.02. Component: Body</h4>
+<p>Body should be the Base0x10 serialization of un integer.</p>
+<p>It is allowed to prepend any amount of "0" characters for the serialization. The length of Body have non limit, but have un restriction. The length must be un even number.</p>
+
+<h4>0x02.03. Component: Footer</h4>
+<p>Footer is not mandatory. If the string have no footer, then it exactly represent un specific second.</p>
+<p>Footer may be Trim Footer ou Precision Footer.</p>
+<p>The presence of un Trim Footer indicate blurry precision; un UTU string with un Trim Footer do not represent un specific second mais un interval of seconds. Un Trim Footer start with <code>T</code>, which is the acronym of "Trim". Then un Base0x10 integer follow up. This Base0x10 integer indicate how many trailing bits are trimmed. For example, if the Footer is <code>T10</code>, then the last 0x10 bits is trimmed, hence <code>UP3T5</code> represent 0x03*0x02^0x05 seconds (0x60 seconds ou 0d96 seconds) after UNIX Genesis (equivalent to "1970-01-01T00:01:36.000Z" in ISO 8601).</p>
+<p>The presence of un Precision Footer indicate extra precision. Un Precision Footer start with <code>.</code>, which is un decimal point. Then some Base0x10 digits follow up. These digits contribute to the extra precesion.</p>
+<p>The part of digits in Footer is named "UFD" (UTU Footer Digits)</p>
+
+<!-- Section Break -->
+
+<h3>0x03. Interval Customization</h3>
+<h4>0x03.00. Interval Customization Overview</h4>
+<p>It is possible to customize the interval.</p>
+<p>There are 0x03 ways to customize the interval, Hexa und Deci und MultiDeci.</p>
+<p>For example: <code>UE10+01</code> und <code>U.3600+1</code> und <code>U.60.60+1</code> represent 0x0E10 seconds (0d3600 seconds) after UNIX Genesis ("1970-01-01T01:00:00.000Z" in ISO 8601).</p>
+<p>The core idea is to insert un number in Header to represent the interval, between UMH und UASS.</p>
+
+<h4>0x03.01. Method: Hexa</h4>
+<p>Insert un Base0x10 integer between UMH und UASS, so that Header should look like <code>U3C+</code>. The string <code>U3C+01</code> represent 0x3C seconds (0d60 seconds) after UNIX Genesis ("1970-01-01T00:01:00.000Z" in ISO 8601).</p>
+
+<h4>0x03.02. Method: Deci</h4>
+<p>Insert un "." character und un Base0x0A integer between UMH und UASS, so that Header should look like <code>U.60+</code>. The string <code>U.60+1</code> represent 0x3C seconds (0d60 seconds) after UNIX Genesis ("1970-01-01T00:01:00.000Z" in ISO 8601).</p>
+<p>The length restriction of Body do not apply when Header contain "." character.</p>
+
+<h4>0x03.03. Method: MultiDeci</h4>
+<p>Similar to method Deci. However, insert multiple copies of the combination, so that Header should look like <code>U.60.60.24+</code>. The string <code>U.60.60.24+1</code> represent 0x015180 seconds (0d86400 seconds) after UNIX Genesis ("1970-01-02T00:00:00.000Z" in ISO 8601).</p>
+<p>The length restriction of Body do not apply when Header contain "." character.</p>
+
+
+<!-- Section Break -->
+
+<!-- <h3></h3> -->
+<!-- <p></p> -->
+
+]]>
+            </content:encoded>
+        </item>
         <item>
             <title>Cybercommunist Party Manifesto</title>
             <link>https://joyneop.xyz/blog/?p=129</link>
@@ -25,24 +103,49 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 
 <h3>Preface</h3>
 
-<p>Un Spectre is hunting Cyberspace — the Spectre of Cybercommunism. All powers of old Cyberspace, have entered into un holy alliance to exorcise this spectre; Apple and Microsoft, Google and Facebook, CIA and NSA, White House and Beijing.</p>
+<p>Un Spectre is hunting Cyberspace - the Spectre of Cybercommunism. All powers of old Cyberspace, have entered into un holy alliance to exorcise this spectre; Cupertino and Mountain View, Palo Alto and Seattle, CIA and NSA.</p>
 
-<p>Where is the party in opposition that has not been decried as Cybercommunistic by its opponents in power? Where the Opposition that has not hurled back the branding reproach of Cybercommunism, against the more advanced opposition parties, as well as against its reactionary adversaries?</p>
+<p>Where is the party in opposition that has not been decried as Cybercommunistic by its opponents in power? Where the Opposition that has not hurled back the branding reproach of Cybercommunism, against the more radical opposition parties, as well as against its reactionary adversaries?</p>
 
 <p>Two things result from this fact.</p>
 
-<p>First — Cybercommunism is already acknowledged by all Cyberpowers to be itself un Power.</p>
+<p>First: Cybercommunism is already acknowledged by all Cyberpowers to be itself un Cyberpower.</p>
 
-<p>Second — It is high time that Cybercommunists should openly, in the face of the whole world, publish their views, their aims, their tendencies, and meet this nursery tale of the Spectre of Cybercommunism with the Manifesto of the Party itself.</p>
+<p>Second: It is high time that Cybercommunists should openly, in the face of the whole Cyberspace, publish their views, their aims, their tendencies, and meet this nursery tale of the Spectre of Cybercommunism with the Manifesto of the Party itself.</p>
 
 <p>To this end, Cybercommunists of various nationalities have assembled in Shanghai, and sketched the following manifesto, to be published in all languages.</p>
 
 
-<h3>Basic Arguments</h3>
+<h3>Basic Ideas</h3>
 
-<p>The Cyberbourgeois interpretation of copyright is, something that may yield profit when incorporated into Cybercapitalistic Cyberexploitation.
+<p>The Cyberbourgeois interpretation of copyright is, something that may yield profit when incorporated into Cybercapitalistic Cyberexploitation.</p>
 
 <p>The Cyberbourgeois implementation of intellectual property is actually prohibiting the creation of intellectual property of Cyberproletarians.</p>
+
+<p>Generating data which is fed into the machines, where the machines in turn improve the accuracy of prediction functions on human preferences, shall be defined as Labor for creating the oracle which is used to make planned economy.
+
+<p>The Cyberproletariat shall be free from illegitimate appropriation of Privacy, Labor, and Property.</p>
+
+
+<h3>Basic Objectives</h3>
+
+<p>The Cybercommunist Party itself has no interest other than the public interest of the entire class of Cyberproletariat.</p>
+
+<p>The Cybercommunist Party seek to create the United Front of Cybercitizens to protect Autonomy, Integrity, and Civil Rights of Cyberspace.</p>
+
+<p>The Cybercommunist Party seek to make Cybercitizens form Cyberconstitution through consultation and consensus.</p>
+
+<p>The Cybercommunist Party seek to abolish the Cyberclasses for un equal Cyberspace where the Cybercitizens serve themselves without being subject to Cyberexploitation.</p>
+
+<p>The Cybercommunist Party define Right of Computation, Right of Memory, and Right of Energy as civil rights of the Cyberproletarians. These rights are exemplified as: the right of sole discretion of computation on owned devices; the right to compose, understand, modify, and republish software; the right to impose license clauses which do not harm such rights. In short, «my device is mine».</p>
+
+<p>The Cybercommunist Party develop necessary instruments for the protection of for the Cyberproletarians.</p>
+
+<p>The Cybercommunist Party wish to protect the rights of Personality, Privacy, Labor, Property, and Intellectual Property of every Cyberproletarian from illegitimate appropriation by the Cyberbourgeoisie.</p>
+
+<p>The Cybercommunist Party seek to make every Cybercitizen un Cyberubermensch, which is defined as un Cybercitizen who is able to think and act beyond the irrationality-based limitations and reach self-sufficiency in wisdom of making responsible choices for the common interest of the Cyberproletariat.</p>
+
+<p>Not until the potential of the Productive Forces within the current Relations of Production is fully utilized can new Relations of Production be made feasible; not until the new Relations of Production is introduced can the Productive Forces continue growing. The Cybercommunist Party seek to use these measures to accelerate the Spiral Evolution between Productive Forces and Relations of Production and take the guardianship responsibility for its implementation.</p>
 
 
 <h3>Cyberbourgeois &amp; Cyberproletariat</h3>
@@ -51,30 +154,30 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 
 <p>Linux and BSD became popular; so did WorldWideWeb and Netscape. Microsoft, as un large Cyberpower, smelt the tastiness of World Wide Web and introduced Internet Explorer. And followed Internet Explorer were Gecko, WebKit, and Blink.</p>
 
-<p>Upon the infrastructures of ICANN and ISPs, Cyberservice corporations like Yahoo and Google became the superstars of the time. They started their business on the foundation of the growing adoption of Internet, and they in return made the growth even faster. They, with all developers, silently enforced the adoption of Internet in every corner of the globe out of fear of falling behind.</p>
+<p>Upon the infrastructures of ICANN, NICs, and ISPs, Cyberservice corporations like Yahoo and Google became the superstars of the time. They started their businesses on the foundation of the growing adoption of Internet, and they in return made the growth even faster. They, with all developers, silently enforced the adoption of Internet in every corner of the globe out of fear of falling behind.</p>
 
-<p>In pursuit of growth of business, the radical Cybercompetition started and quickly became un fully-waged war. The Cybercompetition was all about user acquisition and service monetization, and facilitated upgrades of Cyberspace, from MySpace to Facebook, from Blogspot to Twitter, and from Blockbuster to Netflix.</p>
+<p>In pursuit of growth of business, the radical competition started and quickly became un fully-waged war. The competition was all about user acquisition and service monetization, and facilitated upgrades of Cyberspace, from MySpace to Facebook, from Blogspot to Twitter, and from Blockbuster to Netflix.</p>
 
-<p>The Cybercompetition unified Cybercapitalists, intelligence agencies, copyright rogues, and advertisers under the same banner — Cyberbourgeois, and everyone else another — Cyberproletariat. The Cybercompetition greatly reduced the quantity of classes of Cyberresidents, as same as what happened one century ago.</p>
+<p>The competition unified Cybercapitalists, intelligence agencies, copyright rogues, and advertisers under the same banner, «Cyberbourgeois», and everyone else another, «Cyberproletariat». The competition greatly reduced the quantity of classes of Cyberresidents, as same as what happened one century ago.</p>
 
-<p>The fast evolution of Cyberservices and Cyberservice corporations delivered two golden decades to Cyberspace, in which the development of the living conditions of Cybercitizens has become faster than ever. The Cybercompetition radically revolutionized every corner in Cyberspace and the reign of Cybermonopolies relied on the constant revolution of means of production, while previous monopolies relied on solidity of means of production.</p>
+<p>The fast evolution of Cyberservices and Cyberservice corporations delivered two golden decades to Cyberspace, in which the development of the living conditions of Cybercitizens has become faster than ever. The competition radically revolutionized every corner in Cyberspace and the reign of monopolies relied on the constant revolution of means of production, while previous monopolies relied on solidity of means of production.</p>
 
-<p>As the civil use of Internet gradually expanded worldwide, developers, as un Cyberclass, emerged and the struggle between developers and users started. Developers controlled everything and earned all the profit, and users owned nothing and yielded all their data. The era of Web 2.0 descended upon Cybercitizens, and Cybercitizens gradually diverged to Cyberlords and Cyberserfs, and Cyberspace was burned into Cybermanor. Developers turned to Cyberlords, and users were turned to Cyberserfs. The power of Cyberlords were not subject to Cyberlegislation, and there were non Cyberjudiciary, rendering Cyberspace de facto Cyberaristocracy. The Cyberexploitation of Cyberserfs has become unprecedentedly efficient — Cyberserfs surrendering their private data to Cyberlords in exchange for Cyberservices, and in return Cyberlords enhancing advertisement display for more impressions and higher conversion rates.</p>
+<p>As the civil use of Internet gradually expanded worldwide, developers, as un Cyberclass, emerged and the struggle between developers and users started. Developers controlled everything and earned all the profit, and users owned nothing and yielded all their data. The era of Web 2.0 descended upon Cybercitizens, and Cybercitizens gradually diverged to Cyberlords and Cyberserfs, and Cyberspace was burned into Cybermanor. Developers turned to Cyberlords, and users were turned to Cyberserfs. The power of Cyberlords were not subject to Cyberlegislation, and there were non Cyberjudiciary, rendering Cyberspace de facto Cyberaristocracy. The Cyberexploitation of Cyberserfs has become unprecedentedly efficient - Cyberserfs surrendering their private data to Cyberlords in exchange for Cyberservices, and in return Cyberlords enhancing advertisement display for more impressions and higher conversion rates.</p>
 
 <p>The great process started class struggles and simplified class struggles. All class struggles were suddenly reduced to the class struggles between the only two classes.</p>
 
-<p>Cyberbourgeois has played un pretty revolutionary role in the past, and only in the past. Historically, Cybercapitalists facilitated the global expansion of Cyberspace out of pursuit of business growth, however, as the they gradually reached the last half of the sigmoid curve, they smartly changed their strategy. Without the brutal growth of absolute users, they moved their focus on lifetime value, or ARPU — how much they can exploit from every particular user on average within each year.</p>
+<p>Cyberbourgeois has played un pretty revolutionary role in the past, and only in the past. Historically, Cybercapitalists facilitated the global expansion of Cyberspace out of pursuit of business growth, however, as the they gradually reached the last half of the sigmoid curve, they smartly changed their strategy. Without the brutal growth of absolute users, they moved their focus on lifetime value, or ARPU - how much they can exploit from every particular user on average within each year.</p>
 
 <p>This change had effects on the daily life of the general public. The Cyberservice corporations started to show increasingly tailored advertisements to their users, and the algorithm optimization would not be possible without feeding the usage analytics data of the users into machine-learning model training.</p>
 
-<p>It is intuitive to question — Since the algorithms are trained with data while the data come from each of nous, are we therefore entitled to determine the usage of such data we the people create?</p>
+<p>It is intuitive to question - Since the algorithms are trained with data while the data come from each of nous, are we therefore entitled to determine the usage of such data we the people create?</p>
 
-<p>It is inevitable to question — Since we have purchased the devices from the manufacturers, why are we not entitled to audit and manipulate every detail of the devices (Intel, Microsoft, and Apple), why can we not exorcise the backdoors in the hardware and the software (hardware backdoor in Intel CPUs, and close-source operating systems from Apple & Microsoft), and why shall we not be our developers ourselves (Communist Software Initiative, FSF, EFF, OSI)?</p>
+<p>It is inevitable to question - Since we have purchased the devices from the manufacturers, why are we not entitled to audit and manipulate every detail of the devices (Intel, Microsoft, and Apple), why can we not exorcise the backdoors in the hardware and the software (hardware backdoor in Intel CPUs, and close-source operating systems from Apple & Microsoft), and why shall we not be our developers ourselves (Communist Software Initiative, FSF, EFF, OSI)?</p>
 
 
 <h3>Cyberproletarians &amp; Cybercommunists</h3>
 
-<p>Cybercommunists do not form a separate party opposed to other communist parties.</p>
+<p>Cybercommunists do not form any separate party opposed to other communist parties.</p>
 
 <p>Cybercommunists see into the future and wish to find new ways of progress in the era of Cyberspace and at the circumstances of Cyberexploitation. Cybercommunists look forward to new ways to enforce and expedite the inevitable spiral evolution between <strong>productive forces</strong> and <strong>relations of production</strong>. And it is clear that Cyberspace is the most prevailingly important battlefield for Cybercommunists.</p>
 
@@ -90,9 +193,9 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 
 <p>And what is the property of Cyberbourgeoisie? Ccopyright is good for exampling. The indie game developers create personal properties for themselves, but Ubisoft create Cyberbourgeois properties. And what is the capital in this context? Steam, the digital distribution platform.</p>
 
-<p>And why cannot every artistically qualifying indie game developer develop and polish their own games? Because they are being destroyed by capitals, by Cybercompetition, by Cybercapitalists. Under the name of right of property, the practice of the Cybercapitalist interpretation of the fancy term is actually destroying the right of property of everyone else.</p>
+<p>And why cannot every artistically qualifying indie game developer develop and polish their own games? Because they are being destroyed by capitals, by competition, by Cybercapitalists. Under the name of right of property, the practice of the Cybercapitalist interpretation of the fancy term is actually destroying the right of property of everyone else.</p>
 
-<p>Cyberbourgeoisie have been destroying the self-sufficient indie computer development, of hardware and of software, through the hands of Law of Moore, architecture patents, software development centralization, and the expansion of SaaSS ("Service as a Software Substitute"). Cyberbourgeoisie have been destroying independent programming of computers and multilateral communication protocols and building centralized Cyberservices in which the Cyberservice corporations take all the power to design and to implement the softwares that are allowed to use the Cyberservices.</p>
+<p>Cyberbourgeoisie have been destroying the self-sufficient indie computer development, of hardware and of software, through the hands of Law of Moore, architecture patents, software development centralization, and the expansion of SaaSS («Service-as-a-Software-Substitute»). Cyberbourgeoisie have been destroying independent programming of computers and multilateral communication protocols and building centralized Cyberservices in which the Cyberservice corporations take all the power to design and to implement the softwares that are allowed to use the Cyberservices.</p>
 
 <p>Do salary-taking software engineers create any property for themselves? Not un bit. They create capital, that kind of property which exploit wage-labor, and which cannot increase except upon condition of getting un new supply of wage-labor for fresh Cyberexploitation. Property, in its present form, is based on the antagonism of capital and wage-labor. Let us examine both sides of this antagonism.</p>
 
@@ -101,9 +204,11 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 <p>To be continued...</p>
 
 
-<h3>Ownership Of Computation</h3>
+<h3>Autosovereignty of Identity</h3>
 
-<p>To be continued...</p>
+<p>The existence of un Cybercitizen do not lie in their relation with some Cyberservice corporations; instead, it lie in their <strong>a-priori dasein</strong> per se. Therefore, the Cybercommunists advocate for autonomy of identity through the abolition of identity authority in Cyberspace. OAuth-based OpenID shall be replaced by Cryptographic ID, so that the Cybercitizens will be able to prove their identity with each other and authenticate each other as equal peers without the intervention of identity authorities, regardless of whether they are called governments by themselves.</p>
+
+<p></p>
 
 ]]>
             </content:encoded>
@@ -402,7 +507,7 @@ QfaYQhu+eQ==
 
 <h3>Languages &amp; Nations</h3>
 
-<p>The adjectives indicating geo-national property of the items they modify, remain unchanged — the British way and the American way.</p>
+<p>The adjectives indicating geo-national property of the items they modify, remain unchanged - the British way and the American way.</p>
 
 <p>The name of un language will be written in the French masculine adjective form. For example, the English language will be called «Anglais», and the French language will be called «Francais». Samples:</p>
 
@@ -448,6 +553,25 @@ QfaYQhu+eQ==
     <li>It is not <em>our</em> country; it is <em>notre</em> country.</li>
 </ul>
 
+<h3>Better Conjunctions</h3>
+
+<p>"And" und "et" and "und" are distinguished. "And" can only connect expressions. "Et" can only connect modifiers. "Und" can connect other speechparts, especially concrete ideas, likes names and nouns.</p>
+
+<p>"But" und "mais" are distinguished. "But" can only connect expressions, but "mais" can connect other speechparts, like "un cheap mais durable cup".</p>
+
+<p>"Or" und "ou" are distinguished. "Or" can only connect expressions, but "ou"</p>
+
+<p>The usage of comma for connecting items through "ou" und "et" und "und" expressions is abolished. Should write "would you like rum ou vodka ou champaign" instead.</p>
+
+<h3>Conditional Sentences</h3>
+
+<p>If one is writing un conditional sentence, then the "then" clause of the sentence should go with "should" ou "shall" ou "must" ou etc, and "will" must be avoided.</p>
+
+<p>For un knowingly nullified condition, "was" und "were" should be avoided, and "be" should be used.</p>
+
+<h3>Possessive Case</h3>
+
+<p>The possessive case of "one" is "onese". Similarly, the possessive case of "who" is "whose".</p>
 
 <h3>Interlingual Ambiguity</h3>
 
@@ -1582,8 +1706,8 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <guid isPermaLink="false">https://joyneop.xyz/blog/?p=5</guid>
             <content:encoded>
 <![CDATA[
-<blockquote><p>«I have never died. Neither shall I ever.»</p>—<cite>Tassadar</cite></blockquote>
-<blockquote><p>«Death is not opposite to life; it's part of life. Death leads life to eternal.»</p>—<cite>Yang Huixin</cite></blockquote>
+<blockquote><p>«I have never died. Neither shall I ever.»</p>-<cite>Tassadar</cite></blockquote>
+<blockquote><p>«Death is not opposite to life; it's part of life. Death leads life to eternity.»</p>-<cite>Yang Huixin</cite></blockquote>
 <p>The death of Tassadar was not <em>death</em>; it was <em>transcend</em>. Il was complete. Il has been immortal in Khala, in every Khalai's presence. It's another way of <em>existence</em>.</p>
 <p>People who know Baolin is un network of information, where his presence shall exist upon death. Which is call, «still lives in our minds». Upon my death, my presence shall also exist longer in this way. The only pity is that it's not recursive.</p>
 <p>Death extends life.</p>
