@@ -59,6 +59,25 @@
     <li>It is not <em>our</em> country; it is <em>notre</em> country.</li>
 </ul>
 
+<h3>Better Conjunctions</h3>
+
+<p>"And" und "et" and "und" are distinguished. "And" can only connect expressions. "Et" can only connect modifiers. "Und" can connect other speechparts, especially concrete ideas, likes names and nouns.</p>
+
+<p>"But" und "mais" are distinguished. "But" can only connect expressions, but "mais" can connect other speechparts, like "un cheap mais durable cup".</p>
+
+<p>"Or" und "ou" are distinguished. "Or" can only connect expressions, but "ou"</p>
+
+<p>The usage of comma for connecting items through "ou" und "et" und "und" expressions is abolished. Should write "would you like rum ou vodka ou champaign" instead.</p>
+
+<h3>Conditional Sentences</h3>
+
+<p>If one is writing un conditional sentence, then the "then" clause of the sentence should go with "should" ou "shall" ou "must" ou etc, and "will" must be avoided.</p>
+
+<p>For un knowingly nullified condition, "was" und "were" should be avoided, and "be" should be used.</p>
+
+<h3>Possessive Case</h3>
+
+<p>The possessive case of "one" is "onese". Similarly, the possessive case of "who" is "whose".</p>
 
 <h3>Interlingual Ambiguity</h3>
 

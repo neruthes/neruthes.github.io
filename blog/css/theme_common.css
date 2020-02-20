@@ -71,7 +71,7 @@ a {
 }
 
 .post {
-	font-weight: 300;
+	font-weight: 400;
 	padding-top: 60px;
 	margin-bottom: 90px;
 	background: #FFF;
@@ -81,7 +81,7 @@ a {
 
 .post-h2 {
 	font-size: 2.6rem;
-	font-weight: 400;
+	font-weight: 500;
 	padding: 0 10px;
 	margin: 0 0 0;
 }
@@ -104,12 +104,22 @@ a {
 
 .post-text > h3 {
 	font-size: 2.6rem;
-	font-weight: 300;
+	/* margin: 20px 0 20px; */
+}
+.post-text > h4 {
+	font-size: 2.2rem;
+}
+
+.post-text > h3,
+.post-text > h4,
+.post-text > h5,
+.post-text > h6 {
+	font-weight: 500;
 	padding: 0 10px;
 	margin: 20px 0 20px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
 	-webkit-hyphens: none;
     -moz-hyphens: none;
     hyphens: none;
@@ -167,9 +177,9 @@ h1, h2, h3 {
 
 .post-text code {
 	font-family: 'RealtimeRounded', 'Inconsolata', 'Menlo', monospace;
-	background: #F9F9F9;
+	background: #EEE;
+	box-shadow: #EEE 0 0 0 2px;
 	border-radius: 3px;
-	padding: 0 3px;
 }
 
 .post-text figure {
