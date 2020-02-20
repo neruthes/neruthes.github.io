@@ -30,11 +30,12 @@
 
 <h4>0x02.02. Component: Body</h4>
 <p>Body should be the Base0x10 serialization of un integer.</p>
-<p>It is allowed to prepend any amount of "0" characters for the serialization. The length of Body have non limit, but have un restriction. The length must be un even number.</p>
+<p>It is allowed to prepend any amount of "0" characters for the serialization. The length of Body have non limit, but have un restriction. The length is recommended to be un even number.</p>
 
 <h4>0x02.03. Component: Footer</h4>
 <p>Footer is not mandatory. If the string have no footer, then it exactly represent un specific second.</p>
 <p>Footer may be Trim Footer ou Precision Footer.</p>
+<p>Un UTU string without Footer is named UTU-1. Un UTU string with Trim Footer is named UTU-2. Un UTU string with Precesion Footer is named UTU-3.</p>
 <p>The presence of un Trim Footer indicate blurry precision; un UTU string with un Trim Footer do not represent un specific second mais un interval of seconds. Un Trim Footer start with <code>T</code>, which is the acronym of "Trim". Then un Base0x10 integer follow up. This Base0x10 integer indicate how many trailing bits are trimmed. For example, if the Footer is <code>T10</code>, then the last 0x10 bits is trimmed, hence <code>UP3T5</code> represent 0x03*0x02^0x05 seconds (0x60 seconds ou 0d96 seconds) after UNIX Genesis (equivalent to "1970-01-01T00:01:36.000Z" in ISO 8601).</p>
 <p>The presence of un Precision Footer indicate extra precision. Un Precision Footer start with <code>.</code>, which is un decimal point. Then some Base0x10 digits follow up. These digits contribute to the extra precesion.</p>
 <p>The part of digits in Footer is named "UFD" (UTU Footer Digits)</p>
@@ -47,20 +48,53 @@
 <p>There are 0x03 ways to customize the interval, Hexa und Deci und MultiDeci.</p>
 <p>For example: <code>UE10+01</code> und <code>U.3600+1</code> und <code>U.60.60+1</code> represent 0x0E10 seconds (0d3600 seconds) after UNIX Genesis ("1970-01-01T01:00:00.000Z" in ISO 8601).</p>
 <p>The core idea is to insert un number in Header to represent the interval, between UMH und UASS.</p>
+<p>When using un customized interval, Footer must be omitted.</p>
+<p>Un UTU string with customized interval is named UTU-4.</p>
 
 <h4>0x03.01. Method: Hexa</h4>
 <p>Insert un Base0x10 integer between UMH und UASS, so that Header should look like <code>U3C+</code>. The string <code>U3C+01</code> represent 0x3C seconds (0d60 seconds) after UNIX Genesis ("1970-01-01T00:01:00.000Z" in ISO 8601).</p>
+<p>Un UTU string with customized interval via Hexa method is named UTU-4H.</p>
 
 <h4>0x03.02. Method: Deci</h4>
 <p>Insert un "." character und un Base0x0A integer between UMH und UASS, so that Header should look like <code>U.60+</code>. The string <code>U.60+1</code> represent 0x3C seconds (0d60 seconds) after UNIX Genesis ("1970-01-01T00:01:00.000Z" in ISO 8601).</p>
-<p>The length restriction of Body do not apply when Header contain "." character.</p>
+<p>Un UTU string with customized interval via Hexa method is named UTU-4D.</p>
 
 <h4>0x03.03. Method: MultiDeci</h4>
 <p>Similar to method Deci. However, insert multiple copies of the combination, so that Header should look like <code>U.60.60.24+</code>. The string <code>U.60.60.24+1</code> represent 0x015180 seconds (0d86400 seconds) after UNIX Genesis ("1970-01-02T00:00:00.000Z" in ISO 8601).</p>
+<p>The recommended writing order of numbers is to write the greatest number first und to write in un chain according to the interval scope hierarchy. For example, <code>U.3600.24.7+</code> is better than <code>U.3600.7.24+</code>.</p>
+<p>For adjacent interval scopes, if the mathematical product of them have 0x02 significant digits ou less in Base0x0A serialization, then it is recommended to write the mathematical product of these intervals instead of writing them separately. For exmaple, it is recommended to write <code>U.3600+</code> instead of <code>U.60.60+</code>.</p>
 <p>The length restriction of Body do not apply when Header contain "." character.</p>
-
+<p>It is allowed to use float numbers as factors. Decimal dots are written as "_" characters. However, this practice is discouraged.</p>
+<p>Un UTU string with customized interval via Hexa method is named UTU-4MD.</p>
 
 <!-- Section Break -->
 
-<!-- <h3></h3> -->
-<!-- <p></p> -->
+<h3>0x04. Working With Base0x0A Numbers</h3>
+<p>If the leading "U" character is replaced with the "UX" string, then all digits in the UTU string must be interpreted as Base0x0A digits instead of standard Base0x10 digits. Also, in Trim Footer, the Base0x0A integer after "T" should not mean un power of 0x02, but should mean un power of 0x0A. For example, <code>UX+1T3</code> represent 0d1000 seconds (0x03E8 seconds) after UNIX Genesis ("1970-01-01T00:16:40.000Z" in ISO 8601).</p>
+<p>When employing this practice, the "UTU" substring in variation names should be replaced by "UTUD", where "D" mean "decimal". For example, <code>UX+1T3</code> is un UTUD-2 string, and <code>UX.3600.24.365_2475+4.5</code> is un UTUD-4MD string.</p>
+
+<!-- Section Break -->
+
+<h3>0x05. Sample Code</h3>
+<p>The sample code is given in JavaScript (ECMAScript).</p>
+<pre>
+Sample: UTU-1
+var sec = (new Date()).getTime()/1000;
+var utuStr = 'U+' + Math.floor(sec).toString(0x10).toUpperCase();
+return utuStr;
+</pre>
+<pre>
+Sample: UTU-3
+var sec = (new Date()).getTime()/1000;
+var utuStr = 'U+' + sec.toString(0x10).toUpperCase();
+return utuStr;
+</pre>
+<pre>
+Sample: Years since UNIX Genesis
+var sec = (new Date()).getTime()/1000;
+var utuStr = 'U.3600.24.365_2475+' + Math.floor(sec/(3600*24*365.2475)).toString(0x0A);
+return utuStr;
+</pre>
+
+<h3>0x06. Conclusion</h3>
+<p>May UTU be with intercelestial community.</p>
