@@ -1,9 +1,9 @@
 /*(function(text0, text, quadrant, position, style, size, keepAlive){
 	//
-	// @Author Joy Neop
-	// @Website http://www.joyneop.com/
+	// @Author Neruthes
+	// @Website http://neruthes.xyz/
 	// @GitHub https://github.com/neruthes
-	// © 2014 Joy Neop. All rights reserved.
+	// © 2014 Neruthes. All rights reserved.
 	//
 	window.jnalert = {};
 
@@ -84,8 +84,8 @@
 
 	console.log(text0);
 	console.log(text);
-})('<a href="http://www.joyneop.com/resume/">Hi, I\'m seeking 2015 summer internship...</a>',
-	'<a href="http://www.joyneop.com/resume/" style="display: block; width: 364px;" target="_blank">Does your company have an internship position? Maybe I can be one in your company this summer? Click here to see my resume, thanks : )</a>',
+})('<a href="http://neruthes.xyz/resume/">Hi, I\'m seeking 2015 summer internship...</a>',
+	'<a href="http://neruthes.xyz/resume/" style="display: block; width: 364px;" target="_blank">Does your company have an internship position? Maybe I can be one in your company this summer? Click here to see my resume, thanks : )</a>',
 	1,
 	"absolute",
 	null,

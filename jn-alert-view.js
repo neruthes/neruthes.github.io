@@ -1,10 +1,10 @@
 /*
 (function(text0, text, quadrant, position, style, size, keepAlive){
 	//
-	// Author Joy Neop
-	// @Website http://www.joyneop.com/
+	// Author Neruthes
+	// @Website https://neruthes.xyz/
 	// @GitHub https://github.com/neruthes
-	// © 2015 Joy Neop. All rights reserved.
+	// © 2015 Neruthes. All rights reserved.
 	//
 	window.jnalert = {};
 

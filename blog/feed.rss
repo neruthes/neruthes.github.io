@@ -5,20 +5,20 @@ xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modul
 xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
     <channel>
         <title>Neruthes (a.k.a. Joy Neop)</title>
-        <atom:link href="https://joyneop.xyz/blog/feed.rss" rel="self" type="application/rss+xml" />
-        <link>https://joyneop.xyz/blog/</link>
+        <atom:link href="https://neruthes.xyz/blog/feed.rss" rel="self" type="application/rss+xml" />
+        <link>https://neruthes.xyz/blog/</link>
         <description>CB0A BC77 5644 0D12 915E 3F25 AFB3 373F 5200 DF38</description>
         <lastBuildDate>2020-02-20 09:41:00 +0000</lastBuildDate>
         <language>en-US</language>
         <sy:updatePeriod>hourly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
-	    <generator>https://joyneop.xyz/blog/</generator>
+	    <generator>https://neruthes.xyz/blog/</generator>
         <item>
             <title>Universal UNIX Time (UTU): Technical Specification</title>
-            <link>https://joyneop.xyz/blog/?p=130</link>
+            <link>https://neruthes.xyz/blog/?p=130</link>
             <pubDate>2020-02-20 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=130</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=130</guid>
             <content:encoded>
 <![CDATA[
 <h3>0x00. Abstract</h3>
@@ -53,11 +53,12 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 
 <h4>0x02.02. Component: Body</h4>
 <p>Body should be the Base0x10 serialization of un integer.</p>
-<p>It is allowed to prepend any amount of "0" characters for the serialization. The length of Body have non limit, but have un restriction. The length must be un even number.</p>
+<p>It is allowed to prepend any amount of "0" characters for the serialization. The length of Body have non limit, but have un restriction. The length is recommended to be un even number.</p>
 
 <h4>0x02.03. Component: Footer</h4>
 <p>Footer is not mandatory. If the string have no footer, then it exactly represent un specific second.</p>
 <p>Footer may be Trim Footer ou Precision Footer.</p>
+<p>Un UTU string without Footer is named UTU-1. Un UTU string with Trim Footer is named UTU-2. Un UTU string with Precesion Footer is named UTU-3.</p>
 <p>The presence of un Trim Footer indicate blurry precision; un UTU string with un Trim Footer do not represent un specific second mais un interval of seconds. Un Trim Footer start with <code>T</code>, which is the acronym of "Trim". Then un Base0x10 integer follow up. This Base0x10 integer indicate how many trailing bits are trimmed. For example, if the Footer is <code>T10</code>, then the last 0x10 bits is trimmed, hence <code>UP3T5</code> represent 0x03*0x02^0x05 seconds (0x60 seconds ou 0d96 seconds) after UNIX Genesis (equivalent to "1970-01-01T00:01:36.000Z" in ISO 8601).</p>
 <p>The presence of un Precision Footer indicate extra precision. Un Precision Footer start with <code>.</code>, which is un decimal point. Then some Base0x10 digits follow up. These digits contribute to the extra precesion.</p>
 <p>The part of digits in Footer is named "UFD" (UTU Footer Digits)</p>
@@ -70,33 +71,66 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 <p>There are 0x03 ways to customize the interval, Hexa und Deci und MultiDeci.</p>
 <p>For example: <code>UE10+01</code> und <code>U.3600+1</code> und <code>U.60.60+1</code> represent 0x0E10 seconds (0d3600 seconds) after UNIX Genesis ("1970-01-01T01:00:00.000Z" in ISO 8601).</p>
 <p>The core idea is to insert un number in Header to represent the interval, between UMH und UASS.</p>
+<p>When using un customized interval, Footer must be omitted.</p>
+<p>Un UTU string with customized interval is named UTU-4.</p>
 
 <h4>0x03.01. Method: Hexa</h4>
 <p>Insert un Base0x10 integer between UMH und UASS, so that Header should look like <code>U3C+</code>. The string <code>U3C+01</code> represent 0x3C seconds (0d60 seconds) after UNIX Genesis ("1970-01-01T00:01:00.000Z" in ISO 8601).</p>
+<p>Un UTU string with customized interval via Hexa method is named UTU-4H.</p>
 
 <h4>0x03.02. Method: Deci</h4>
 <p>Insert un "." character und un Base0x0A integer between UMH und UASS, so that Header should look like <code>U.60+</code>. The string <code>U.60+1</code> represent 0x3C seconds (0d60 seconds) after UNIX Genesis ("1970-01-01T00:01:00.000Z" in ISO 8601).</p>
-<p>The length restriction of Body do not apply when Header contain "." character.</p>
+<p>Un UTU string with customized interval via Hexa method is named UTU-4D.</p>
 
 <h4>0x03.03. Method: MultiDeci</h4>
 <p>Similar to method Deci. However, insert multiple copies of the combination, so that Header should look like <code>U.60.60.24+</code>. The string <code>U.60.60.24+1</code> represent 0x015180 seconds (0d86400 seconds) after UNIX Genesis ("1970-01-02T00:00:00.000Z" in ISO 8601).</p>
+<p>The recommended writing order of numbers is to write the greatest number first und to write in un chain according to the interval scope hierarchy. For example, <code>U.3600.24.7+</code> is better than <code>U.3600.7.24+</code>.</p>
+<p>For adjacent interval scopes, if the mathematical product of them have 0x02 significant digits ou less in Base0x0A serialization, then it is recommended to write the mathematical product of these intervals instead of writing them separately. For exmaple, it is recommended to write <code>U.3600+</code> instead of <code>U.60.60+</code>.</p>
 <p>The length restriction of Body do not apply when Header contain "." character.</p>
-
+<p>It is allowed to use float numbers as factors. Decimal dots are written as "_" characters. However, this practice is discouraged.</p>
+<p>Un UTU string with customized interval via Hexa method is named UTU-4MD.</p>
 
 <!-- Section Break -->
 
-<!-- <h3></h3> -->
-<!-- <p></p> -->
+<h3>0x04. Working With Base0x0A Numbers</h3>
+<p>If the leading "U" character is replaced with the "UX" string, then all digits in the UTU string must be interpreted as Base0x0A digits instead of standard Base0x10 digits. Also, in Trim Footer, the Base0x0A integer after "T" should not mean un power of 0x02, but should mean un power of 0x0A. For example, <code>UX+1T3</code> represent 0d1000 seconds (0x03E8 seconds) after UNIX Genesis ("1970-01-01T00:16:40.000Z" in ISO 8601).</p>
+<p>When employing this practice, the "UTU" substring in variation names should be replaced by "UTUD", where "D" mean "decimal". For example, <code>UX+1T3</code> is un UTUD-2 string, and <code>UX.3600.24.365_2475+4.5</code> is un UTUD-4MD string.</p>
+
+<!-- Section Break -->
+
+<h3>0x05. Sample Code</h3>
+<p>The sample code is given in JavaScript (ECMAScript).</p>
+<pre>
+Sample: UTU-1
+var sec = (new Date()).getTime()/1000;
+var utuStr = 'U+' + Math.floor(sec).toString(0x10).toUpperCase();
+return utuStr;
+</pre>
+<pre>
+Sample: UTU-3
+var sec = (new Date()).getTime()/1000;
+var utuStr = 'U+' + sec.toString(0x10).toUpperCase();
+return utuStr;
+</pre>
+<pre>
+Sample: Years since UNIX Genesis
+var sec = (new Date()).getTime()/1000;
+var utuStr = 'U.3600.24.365_2475+' + Math.floor(sec/(3600*24*365.2475)).toString(0x0A);
+return utuStr;
+</pre>
+
+<h3>0x06. Conclusion</h3>
+<p>May UTU be with intercelestial community.</p>
 
 ]]>
             </content:encoded>
         </item>
         <item>
             <title>Cybercommunist Party Manifesto</title>
-            <link>https://joyneop.xyz/blog/?p=129</link>
+            <link>https://neruthes.xyz/blog/?p=129</link>
             <pubDate>2019-04-26 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=129</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=129</guid>
             <content:encoded>
 <![CDATA[
 <p>Le monde va changer de base. Nous ne sommes rien soyons tout.</p>
@@ -215,10 +249,10 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
         </item>
         <item>
             <title>My OpenPGP SECP256K1 Public Key (Since 2019)</title>
-            <link>https://joyneop.xyz/blog/?p=128</link>
+            <link>https://neruthes.xyz/blog/?p=128</link>
             <pubDate>2019-04-23 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=128</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=128</guid>
             <content:encoded>
 <![CDATA[
 <p>The fingerprint of the new public key is <code>CB0A BC77 5644 0D12 915E 3F25 AFB3 373F 5200 DF38</code>.</p>
@@ -352,10 +386,10 @@ QfaYQhu+eQ==
         </item>
         <item>
             <title>My OpenPGP RSA Public Key (Since 2018)</title>
-            <link>https://joyneop.xyz/blog/?p=127</link>
+            <link>https://neruthes.xyz/blog/?p=127</link>
             <pubDate>2018-12-04 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=127</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=127</guid>
             <content:encoded>
 <![CDATA[
 <p>Now I have un new <a href="https://keybase.io/neruthes">Keybase account.</a></p>
@@ -486,10 +520,10 @@ QfaYQhu+eQ==
         </item>
         <item>
             <title>Neospeak, The Neoparian Dialect Of The English Language</title>
-            <link>https://joyneop.xyz/blog/?p=126</link>
+            <link>https://neruthes.xyz/blog/?p=126</link>
             <pubDate>2018-11-26 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=126</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=126</guid>
             <content:encoded>
 <![CDATA[
 <p>For years, my satisfaction of the English language have been ceasing. Since this article, I will start using my own dialect of the English language, for better integrity of the language. My dialect is derived from the American dialect of 2010s. The name Neospeak is un reference to «1984» by George Orwell</p>
@@ -586,10 +620,10 @@ QfaYQhu+eQ==
         </item>
         <item>
             <title>GitHub + CloudFlare = CDN</title>
-            <link>https://joyneop.xyz/blog/?p=125</link>
+            <link>https://neruthes.xyz/blog/?p=125</link>
             <pubDate>2016-08-26 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=125</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=125</guid>
             <content:encoded>
 <![CDATA[
 <p>Today I discovered un new way to serve JS and CSS publicly over GitHub.</p>
@@ -625,10 +659,10 @@ $ git push cdn master
         </item>
         <item>
             <title>To Boldly Live</title>
-            <link>https://joyneop.xyz/blog/?p=124</link>
+            <link>https://neruthes.xyz/blog/?p=124</link>
             <pubDate>2016-08-16 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=124</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=124</guid>
             <content:encoded>
 <![CDATA[
 <p>
@@ -680,10 +714,10 @@ My answer to the meaning of the life is that there is non meaning granted by un 
         </item>
         <item>
             <title>Problems vs Solutions</title>
-            <link>https://joyneop.xyz/blog/?p=123</link>
+            <link>https://neruthes.xyz/blog/?p=123</link>
             <pubDate>2016-07-31 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=123</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=123</guid>
             <content:encoded>
 <![CDATA[
 <blockquote>
@@ -726,13 +760,13 @@ My answer to the meaning of the life is that there is non meaning granted by un 
         </item>
         <item>
             <title>The Story Behind RandomFont</title>
-            <link>https://joyneop.xyz/blog/?p=122</link>
+            <link>https://neruthes.xyz/blog/?p=122</link>
             <pubDate>2016-07-07 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=122</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=122</guid>
             <content:encoded>
 <![CDATA[
-<p>Last year, I published un small <a href="https://joyneop.xyz/types/" target="_blank">special page</a> on my website, in which un few of my favorite fonts were displayed each with un specimen picture. However, this was not scalable, and was limited as un extension of my personality.</p>
+<p>Last year, I published un small <a href="https://neruthes.xyz/types/" target="_blank">special page</a> on my website, in which un few of my favorite fonts were displayed each with un specimen picture. However, this was not scalable, and was limited as un extension of my personality.</p>
 <p>Then I have been thinking how could I make it more useful, and competitive among all products of typography theme, especially those developed by foundries and distributors.</p>
 <ul>
     <li>For un utility product, I do not have sufficient technologies, compared with WhatTheFont by MyFonts.</li>
@@ -751,10 +785,10 @@ My answer to the meaning of the life is that there is non meaning granted by un 
         </item>
         <item>
             <title>From Joy Neop To Neruthes</title>
-            <link>https://joyneop.xyz/blog/?p=121</link>
+            <link>https://neruthes.xyz/blog/?p=121</link>
             <pubDate>2016-03-10 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=121</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=121</guid>
             <content:encoded>
 <![CDATA[
 <p>For half decade I have been using the name «Joy Neop», but I will hopefully get rid of it half decade later.</p>
@@ -769,10 +803,10 @@ My answer to the meaning of the life is that there is non meaning granted by un 
         </item>
         <item>
             <title>America Ist Tot, Viva La America</title>
-            <link>https://joyneop.xyz/blog/?p=119</link>
+            <link>https://neruthes.xyz/blog/?p=119</link>
             <pubDate>2015-06-28 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=119</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=119</guid>
             <content:encoded>
 <![CDATA[
 <p>Federal Supreme Court judged States' banning same-gender marriage unconstitutional; five Justices supported whereas four disagreed.</p>
@@ -786,10 +820,10 @@ My answer to the meaning of the life is that there is non meaning granted by un 
         </item>
         <item>
             <title>My OpenPGP RSA Public Key (Since 2015)</title>
-            <link>https://joyneop.xyz/blog/?p=116</link>
+            <link>https://neruthes.xyz/blog/?p=116</link>
             <pubDate>2015-01-26 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=116</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=116</guid>
             <content:encoded>
 <![CDATA[
 <p>Well, it's time to get communications encrypted. Thanks for <a href="http://7in0.me">Chino</a>, I got un <a href="https://keyabse.io/joyneop">Keybase</a> invitation code and started using PGP in un larger space. «Privacy is un pleasure», and it's not un difficult work. <a href="https://gpgtools.org" rel="nofollow">GPG Tools</a> makes encryption easy to integrate with Mail on Mac.</p>
@@ -949,10 +983,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>I Can (Not) Restart</title>
-            <link>https://joyneop.xyz/blog/?p=115</link>
+            <link>https://neruthes.xyz/blog/?p=115</link>
             <pubDate>2015-01-23 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=115</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=115</guid>
             <content:encoded>
 <![CDATA[
 <p>I had never imagined my life would be like this. Going far from the original plan, getting more than expected loneness, and working so hard for living. Two persons I know have been going on this way, <a href="https://jysperm.me/2014/02/1493/" target="_blank">JySperm</a> and <a href="http://www.ricter.me" target="_blank">Ricter</a>, but, it's so dramatic happening to me. I-20 came, but I did not go for F-1.</p>
@@ -967,10 +1001,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Private Concepts</title>
-            <link>https://joyneop.xyz/blog/?p=113</link>
+            <link>https://neruthes.xyz/blog/?p=113</link>
             <pubDate>2014-11-15 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=113</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=113</guid>
             <content:encoded>
 <![CDATA[
 <p>The story came from un saying, «if thou cannot describe something clearly with only un few words, thou don't actually understand it».</p>
@@ -982,10 +1016,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>At This Age</title>
-            <link>https://joyneop.xyz/blog/?p=112</link>
+            <link>https://neruthes.xyz/blog/?p=112</link>
             <pubDate>2014-10-02 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=112</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=112</guid>
             <content:encoded>
 <![CDATA[
 <p>I had never imagined I could meet thee at eighteen. Despite I wished and desired, thou came to me so fast, before getting ready.</p>
@@ -999,10 +1033,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Into The Stage</title>
-            <link>https://joyneop.xyz/blog/?p=111</link>
+            <link>https://neruthes.xyz/blog/?p=111</link>
             <pubDate>2014-09-24 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=111</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=111</guid>
             <content:encoded>
 <![CDATA[
 <p>Due to some reasons that could not be described clearly with only few words, I failed catching up the deadline of Fall 2014. So I have been working in Beijing for four months, from September 10, 2014 to January 10, 2015, and will leave for the United States in January 2015.</p>
@@ -1016,10 +1050,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Woodstocky</title>
-            <link>https://joyneop.xyz/blog/?p=108</link>
+            <link>https://neruthes.xyz/blog/?p=108</link>
             <pubDate>2014-07-30 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=108</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=108</guid>
             <content:encoded>
 <![CDATA[
 <figure>
@@ -1030,10 +1064,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>On The Way Of Youth</title>
-            <link>https://joyneop.xyz/blog/?p=107</link>
+            <link>https://neruthes.xyz/blog/?p=107</link>
             <pubDate>2014-07-12 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=107</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=107</guid>
             <content:encoded>
 <![CDATA[
 <figure>
@@ -1044,10 +1078,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Visionary</title>
-            <link>https://joyneop.xyz/blog/?p=106</link>
+            <link>https://neruthes.xyz/blog/?p=106</link>
             <pubDate>2014-07-10 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=106</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=106</guid>
             <content:encoded>
 <![CDATA[
 <figure>
@@ -1058,10 +1092,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Auromna</title>
-            <link>https://joyneop.xyz/blog/?p=105</link>
+            <link>https://neruthes.xyz/blog/?p=105</link>
             <pubDate>2014-07-05 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=105</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=105</guid>
             <content:encoded>
 <![CDATA[
 <figure>
@@ -1072,10 +1106,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Vitality Lily</title>
-            <link>https://joyneop.xyz/blog/?p=102</link>
+            <link>https://neruthes.xyz/blog/?p=102</link>
             <pubDate>2014-06-24 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=102</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=102</guid>
             <content:encoded>
 <![CDATA[
 <p>There's freshness of life. Humans cannot live thousands of years, even if the physical body allows. Un human shall be bored by living, upon freshness runs out.</p>
@@ -1092,10 +1126,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Mortality</title>
-            <link>https://joyneop.xyz/blog/?p=101</link>
+            <link>https://neruthes.xyz/blog/?p=101</link>
             <pubDate>2014-04-25 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=101</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=101</guid>
             <content:encoded>
 <![CDATA[
 <p>The contract with Mephisto enabled our ancients to evolve, by forcing them die. Death made livings to breed, thus many, but few among all, mutations were selected by the nature to be spread.</p>
@@ -1107,10 +1141,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Macintosh, Thank Thee</title>
-            <link>https://joyneop.xyz/blog/?p=95</link>
+            <link>https://neruthes.xyz/blog/?p=95</link>
             <pubDate>2014-01-24 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=95</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=95</guid>
             <content:encoded>
 <![CDATA[
 <p>30 years hass passed since Steve Jobs introduced Macintosh to the world, and so far both Macintosh and Apple have been greatly appreciated around the world. Especially, I have benefited considerably from Macintosh, Apple, and Steve Jobs.</p>
@@ -1123,10 +1157,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Happy New Year 2014</title>
-            <link>https://joyneop.xyz/blog/?p=94</link>
+            <link>https://neruthes.xyz/blog/?p=94</link>
             <pubDate>2014-01-01 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=94</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=94</guid>
             <content:encoded>
 <![CDATA[
 <figure>
@@ -1137,10 +1171,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Milestone</title>
-            <link>https://joyneop.xyz/blog/?p=90</link>
+            <link>https://neruthes.xyz/blog/?p=90</link>
             <pubDate>2013-12-16 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=90</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=90</guid>
             <content:encoded>
 <![CDATA[
 <p>After having taken first IELTS test in life, I came back to Liaoyang yesterday.</p>
@@ -1154,10 +1188,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Prometheus</title>
-            <link>https://joyneop.xyz/blog/?p=88</link>
+            <link>https://neruthes.xyz/blog/?p=88</link>
             <pubDate>2013-11-09 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=88</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=88</guid>
             <content:encoded>
 <![CDATA[
 <p>Perhaps I will fail my dream? But I decide not to give up. Perhaps my hard work will be proved useless? But I decide not to betray.</p>
@@ -1171,10 +1205,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Lonely Leaf</title>
-            <link>https://joyneop.xyz/blog/?p=87</link>
+            <link>https://neruthes.xyz/blog/?p=87</link>
             <pubDate>2013-11-09 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=87</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=87</guid>
             <content:encoded>
 <![CDATA[
 <figure>
@@ -1185,10 +1219,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Leaves Horizon</title>
-            <link>https://joyneop.xyz/blog/?p=85</link>
+            <link>https://neruthes.xyz/blog/?p=85</link>
             <pubDate>2013-11-03 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=85</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=85</guid>
             <content:encoded>
 <![CDATA[
 <figure>
@@ -1200,10 +1234,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Live On The Internet</title>
-            <link>https://joyneop.xyz/blog/?p=78</link>
+            <link>https://neruthes.xyz/blog/?p=78</link>
             <pubDate>2013-08-29 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=78</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=78</guid>
             <content:encoded>
 <![CDATA[
 <p>I used to be poisoned away from Internet. I used to be offline. I used to sorrow about graduating from middle school and scattering from classmates. However, nowadays, I found that I would not worry about same things of secondary school. For I live on the Internet more than live in local.</p>
@@ -1216,10 +1250,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Betrayer</title>
-            <link>https://joyneop.xyz/blog/?p=71</link>
+            <link>https://neruthes.xyz/blog/?p=71</link>
             <pubDate>2013-07-07 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=71</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=71</guid>
             <content:encoded>
 <![CDATA[
 <p>After the tremendous controversy on the changes of GUI in iOS 7, people eventually took another breath to care about OS X Mavericks. According to the public introduction and preview, the trend of flat design has also appeared on OS X. The background tile images of Notification Center, Dashboard and Launchpad folders, got replaced or removed. OS X is going to be flattened.</p>
@@ -1235,10 +1269,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Mini White</title>
-            <link>https://joyneop.xyz/blog/?p=67</link>
+            <link>https://neruthes.xyz/blog/?p=67</link>
             <pubDate>2013-06-30 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=67</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=67</guid>
             <content:encoded>
 <![CDATA[
 <figure>
@@ -1249,10 +1283,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Next NeXT</title>
-            <link>https://joyneop.xyz/blog/?p=64</link>
+            <link>https://neruthes.xyz/blog/?p=64</link>
             <pubDate>2013-06-29 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=64</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=64</guid>
             <content:encoded>
 <![CDATA[
 <p>I've watched WWDC 2013 Keynote, and found iOS 7 terrible, and found my being betrayed. Apple will non longer hold on its spirit, and the loss can hardly be repaired. I used to believe that I love Apple, but recently I learned that I love un team consist of Steve Jobs, Scott Forstall, and Jonathan Ive.</p>
@@ -1265,10 +1299,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Hand In Hand</title>
-            <link>https://joyneop.xyz/blog/?p=63</link>
+            <link>https://neruthes.xyz/blog/?p=63</link>
             <pubDate>2013-06-29 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=63</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=63</guid>
             <content:encoded>
 <![CDATA[
 <p>I wanna hold your hand</p>
@@ -1287,10 +1321,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Such Looooooooooong A Week Eventually Gone</title>
-            <link>https://joyneop.xyz/blog/?p=62</link>
+            <link>https://neruthes.xyz/blog/?p=62</link>
             <pubDate>2013-06-10 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=62</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=62</guid>
             <content:encoded>
 <![CDATA[
 <p>The dance show in Jun 2, 2013 was successful, and Muhuan got famous among grade 10 students. The only pity was that my posters were not printed and then presented in front of all people in the school.</p>
@@ -1302,10 +1336,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Corner Flower</title>
-            <link>https://joyneop.xyz/blog/?p=61</link>
+            <link>https://neruthes.xyz/blog/?p=61</link>
             <pubDate>2013-06-09 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=61</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=61</guid>
             <content:encoded>
 <![CDATA[
 <figure>
@@ -1316,10 +1350,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Such Deep A Whole I Jumped</title>
-            <link>https://joyneop.xyz/blog/?p=60</link>
+            <link>https://neruthes.xyz/blog/?p=60</link>
             <pubDate>2013-05-17 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=60</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=60</guid>
             <content:encoded>
 <![CDATA[
 <p>Under Miserdux's invitation, I have joined the dance club of our school and get started to work as un music master in un break dance project, whose leader is Miserdux. My job is casting and cutting music for tho dance, supposed to be suitable, regardless how far changed.</p>
@@ -1333,10 +1367,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Bypassed Spring</title>
-            <link>https://joyneop.xyz/blog/?p=59</link>
+            <link>https://neruthes.xyz/blog/?p=59</link>
             <pubDate>2013-05-17 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=59</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=59</guid>
             <content:encoded>
 <![CDATA[
 <p>Before realizing Spring's stepping near, Summer has come. North East China is such strange un area that few people understand the real concept of Spring. Anyway I don't think I would like to consider the waves of temperature's increasing in early May as Spring's gift.</p>
@@ -1348,10 +1382,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Silent Walk</title>
-            <link>https://joyneop.xyz/blog/?p=58</link>
+            <link>https://neruthes.xyz/blog/?p=58</link>
             <pubDate>2013-05-12 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=58</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=58</guid>
             <content:encoded>
 <![CDATA[
 <p>As expected, the mid-semester exam has done. I have risen by 61 ranks, to the 580th out of about 780 science students in grade 11.</p>
@@ -1363,10 +1397,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Approaching Destination Of Current Life</title>
-            <link>https://joyneop.xyz/blog/?p=57</link>
+            <link>https://neruthes.xyz/blog/?p=57</link>
             <pubDate>2013-04-27 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=57</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=57</guid>
             <content:encoded>
 <![CDATA[
 <p>After these unremarkable and worthless days, un piece of news about mid-semester exam was published today afternoon. And months later this semester will draw to its end, in the way how semesters did in history. So far I haven't started un new state of working, or picked up my lost energies yet, thus non good grade will be gained in foreseeable future.</p>
@@ -1379,10 +1413,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>So Fast</title>
-            <link>https://joyneop.xyz/blog/?p=52</link>
+            <link>https://neruthes.xyz/blog/?p=52</link>
             <pubDate>2013-03-27 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=52</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=52</guid>
             <content:encoded>
 <![CDATA[
 <p>Two years' time have passed so fast. Previous visions are still floating over my sight, but only several single static frames have remained.</p>
@@ -1396,10 +1430,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Chaotic Wind</title>
-            <link>https://joyneop.xyz/blog/?p=51</link>
+            <link>https://neruthes.xyz/blog/?p=51</link>
             <pubDate>2013-03-19 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=51</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=51</guid>
             <content:encoded>
 <![CDATA[
 <p>Once the Spring approaches, but the temperature fluctuates rulelessly. The wind blows, blows, and blows. Different strengths, different directions, different temperatures, and different senses. With the twilight floating and sinking, with the stars blinking and hiding, various emotions in the wind were filling my mind.</p>
@@ -1410,10 +1444,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>White</title>
-            <link>https://joyneop.xyz/blog/?p=50</link>
+            <link>https://neruthes.xyz/blog/?p=50</link>
             <pubDate>2013-03-12 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=50</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=50</guid>
             <content:encoded>
 <![CDATA[
 <p>Again, snow droped. But, differently, this time, sky was clear. However the color is, snow was always similar, though I get various emotions from snow. And the secrets inside, were buried in snow.</p>
@@ -1427,10 +1461,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Snow And Memories</title>
-            <link>https://joyneop.xyz/blog/?p=48</link>
+            <link>https://neruthes.xyz/blog/?p=48</link>
             <pubDate>2013-02-28 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=48</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=48</guid>
             <content:encoded>
 <![CDATA[
 <p>Wind blows and snow flows. Dirty sky, tinted by clouds.</p>
@@ -1442,10 +1476,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Escape</title>
-            <link>https://joyneop.xyz/blog/?p=40</link>
+            <link>https://neruthes.xyz/blog/?p=40</link>
             <pubDate>2012-12-15 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=40</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=40</guid>
             <content:encoded>
 <![CDATA[
 <p>I knew little of the world for long ago.</p>
@@ -1466,10 +1500,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Cold Winter</title>
-            <link>https://joyneop.xyz/blog/?p=36</link>
+            <link>https://neruthes.xyz/blog/?p=36</link>
             <pubDate>2012-12-07 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=36</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=36</guid>
             <content:encoded>
 <![CDATA[
 <p>The temperature declines fast; declaring the descending of winter. After the boding snow around Thanks Giving Day, it definitely comes.</p>
@@ -1486,10 +1520,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>The Lost Campus</title>
-            <link>https://joyneop.xyz/blog/?p=33</link>
+            <link>https://neruthes.xyz/blog/?p=33</link>
             <pubDate>2012-11-10 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=33</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=33</guid>
             <content:encoded>
 <![CDATA[
 <figure>
@@ -1517,10 +1551,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Single Travel</title>
-            <link>https://joyneop.xyz/blog/?p=24</link>
+            <link>https://neruthes.xyz/blog/?p=24</link>
             <pubDate>2012-09-14 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=24</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=24</guid>
             <content:encoded>
 <![CDATA[
 <p>At the evening of yesterday, I was wandering around during the break, and noticed the street lamps and the shine.</p>
@@ -1535,10 +1569,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Meaning Of Life</title>
-            <link>https://joyneop.xyz/blog/?p=23</link>
+            <link>https://neruthes.xyz/blog/?p=23</link>
             <pubDate>2012-09-08 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=23</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=23</guid>
             <content:encoded>
 <![CDATA[
 <p>For long I have been seeking the meaning of life.</p>
@@ -1555,10 +1589,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>No Longer The Things, Non Longer The People</title>
-            <link>https://joyneop.xyz/blog/?p=22</link>
+            <link>https://neruthes.xyz/blog/?p=22</link>
             <pubDate>2012-09-07 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=22</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=22</guid>
             <content:encoded>
 <![CDATA[
 <p>A sunny day may also recall memories.</p>
@@ -1573,10 +1607,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Autumn Rain</title>
-            <link>https://joyneop.xyz/blog/?p=21</link>
+            <link>https://neruthes.xyz/blog/?p=21</link>
             <pubDate>2012-09-04 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=21</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=21</guid>
             <content:encoded>
 <![CDATA[
 <p>For long haven't I been enjoying the rain or early autumn.</p>
@@ -1598,10 +1632,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Hope</title>
-            <link>https://joyneop.xyz/blog/?p=19</link>
+            <link>https://neruthes.xyz/blog/?p=19</link>
             <pubDate>2012-08-30 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=19</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=19</guid>
             <content:encoded>
 <![CDATA[
 <p>A summer is enough for thinking something.</p>
@@ -1618,10 +1652,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Forever</title>
-            <link>https://joyneop.xyz/blog/?p=11</link>
+            <link>https://neruthes.xyz/blog/?p=11</link>
             <pubDate>2012-07-06 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=11</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=11</guid>
             <content:encoded>
 <![CDATA[
 <p>A line on the first page of the notebook</p>
@@ -1649,10 +1683,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>The Eternal</title>
-            <link>https://joyneop.xyz/blog/?p=10</link>
+            <link>https://neruthes.xyz/blog/?p=10</link>
             <pubDate>2012-06-28 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=10</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=10</guid>
             <content:encoded>
 <![CDATA[
 <p>The galaxy enshrine memory of those three years; Street lamps fainted faces of thee and me.</p>
@@ -1669,10 +1703,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Cool Night, Nice Wind</title>
-            <link>https://joyneop.xyz/blog/?p=9</link>
+            <link>https://neruthes.xyz/blog/?p=9</link>
             <pubDate>2012-06-17 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=9</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=9</guid>
             <content:encoded>
 <![CDATA[
 <p>Early summer. Cool wind at night. For long haven't it blowed me.</p>
@@ -1684,10 +1718,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>In Utter Darkness</title>
-            <link>https://joyneop.xyz/blog/?p=7</link>
+            <link>https://neruthes.xyz/blog/?p=7</link>
             <pubDate>2012-05-20 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=7</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=7</guid>
             <content:encoded>
 <![CDATA[
 <p>Age of youth was so short. All the dream, hope, love and fantasy of three years shall be sealed call be called memory in the future. When adolescence only remain in ink under pen, and youth only remain in tears with rain, everything would have lost.</p>
@@ -1700,10 +1734,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Life & Death</title>
-            <link>https://joyneop.xyz/blog/?p=5</link>
+            <link>https://neruthes.xyz/blog/?p=5</link>
             <pubDate>2012-04-27 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=5</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=5</guid>
             <content:encoded>
 <![CDATA[
 <blockquote><p>«I have never died. Neither shall I ever.»</p>-<cite>Tassadar</cite></blockquote>
@@ -1720,10 +1754,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Today's Wind Is So Noisy</title>
-            <link>https://joyneop.xyz/blog/?p=3</link>
+            <link>https://neruthes.xyz/blog/?p=3</link>
             <pubDate>2012-04-25 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=3</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=3</guid>
             <content:encoded>
 <![CDATA[
 <p>It's raining. Again.</p>
@@ -1737,10 +1771,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Earth Day 2012</title>
-            <link>https://joyneop.xyz/blog/?p=2</link>
+            <link>https://neruthes.xyz/blog/?p=2</link>
             <pubDate>2012-04-22 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=2</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=2</guid>
             <content:encoded>
 <![CDATA[
 <p>Did we predict indefinite inheritance, or falling of sky?</p>
@@ -1755,10 +1789,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Early In The Spring</title>
-            <link>https://joyneop.xyz/blog/?p=1</link>
+            <link>https://neruthes.xyz/blog/?p=1</link>
             <pubDate>2012-04-12 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=1</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=1</guid>
             <content:encoded>
 <![CDATA[
 <p>Peach flowers opened today, along the street, with decorative pinkness and freshness.</p>
@@ -1771,10 +1805,10 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
         </item>
         <item>
             <title>Hello World!</title>
-            <link>https://joyneop.xyz/blog/?p=0</link>
+            <link>https://neruthes.xyz/blog/?p=0</link>
             <pubDate>2012-04-05 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
-            <guid isPermaLink="false">https://joyneop.xyz/blog/?p=0</guid>
+            <guid isPermaLink="false">https://neruthes.xyz/blog/?p=0</guid>
             <content:encoded>
 <![CDATA[
 

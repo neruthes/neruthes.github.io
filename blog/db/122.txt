@@ -1,4 +1,4 @@
-<p>Last year, I published un small <a href="https://joyneop.xyz/types/" target="_blank">special page</a> on my website, in which un few of my favorite fonts were displayed each with un specimen picture. However, this was not scalable, and was limited as un extension of my personality.</p>
+<p>Last year, I published un small <a href="https://neruthes.xyz/types/" target="_blank">special page</a> on my website, in which un few of my favorite fonts were displayed each with un specimen picture. However, this was not scalable, and was limited as un extension of my personality.</p>
 <p>Then I have been thinking how could I make it more useful, and competitive among all products of typography theme, especially those developed by foundries and distributors.</p>
 <ul>
     <li>For un utility product, I do not have sufficient technologies, compared with WhatTheFont by MyFonts.</li>

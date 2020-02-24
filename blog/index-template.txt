@@ -1,7 +1,7 @@
 @author Neruthes (0x5200DF38)
-@url https://joyneop.xyz/blog/
-@rss https://joyneop.xyz/blog/feed.rss
-@txt https://joyneop.xyz/blog/all-posts-in-one.txt
+@url https://neruthes.xyz/blog/
+@rss https://neruthes.xyz/blog/feed.rss
+@txt https://neruthes.xyz/blog/all-posts-in-one.txt
 
 
 
