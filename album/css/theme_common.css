@@ -1,5 +1,6 @@
 @import url(/fonts/seravek.css);
 @import url(/fonts/realtimerounded.css);
+@import url(/fonts/jetbrains-mono.css);
 @import url(/fonts/erato.css);
 
 * {
@@ -7,7 +8,7 @@
 	box-sizing: border-box !important;
 }
 
-html, body, pre, code {
+html, body {
 	font-family: 'Seravek', 'Myriad Pro', 'Myriad', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-family: 'RealtimeRounded', 'Seravek', 'Myriad Pro', 'Myriad', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -31,8 +32,9 @@ header.global {
 }
 
 h1 {
-	font-weight: 200;
+	font-weight: 400;
 	text-decoration: none;
+	text-transform: uppercase;
 	display: inline-block;
 	padding: 0 0 0 15px;
 	margin: 0;
@@ -120,6 +122,24 @@ h1, h2, h3 {
 	/*padding-top: 10px;*/
 }
 
+.post-text h3,
+.post-text h4,
+.post-text h5,
+.post-text h6,
+.post-text p,
+.post-text blockquote,
+.post-text ul,
+.post-text ul li,
+.post-text ol,
+.post-text ol li,
+.post-text aside,
+.post-text figure,
+.post-text figcaption,
+.post-text pre,
+.post-text code {
+	font-family: 'JetBrains Mono', 'Myriad Pro', 'Myriad', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
 .post-text > h3 {
 	font-size: 2.8rem;
 	font-weight: 500;
@@ -133,8 +153,8 @@ h1, h2, h3 {
 }
 
 .post-text > p, .post-text > ul > li, .post-text > ol > li, .post-text > pre, .post-text > aside {
-	line-height: 1.65em;
-	margin: 17px 0;
+	line-height: 1.6em;
+	margin: 1em 0;
 }
 
 .post-text > aside {
@@ -245,12 +265,12 @@ p code {
 }
 
 nav.prevandnext {
-	/*display: none;*/
+	
 }
 
 nav.prevandnext span, nav.prevandnext span a {
-	font-size: 1.4rem;
-	font-weight: 300;
+	font-size: 2rem;
+	font-weight: 500;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	display: block;
@@ -259,7 +279,7 @@ nav.prevandnext span, nav.prevandnext span a {
 
 footer.global {
 	font-size: 1.4rem;
-	font-weight: 300;
+	font-weight: 400;
 	color: #585858;
 	text-align: center;
 }
