@@ -32,7 +32,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 <h3>0x01. Introduction</h3>
 
 <p>The basic time unit of UTU is second. Second is defined by the authority of SI metric system. Any software, which support UTU, must always employ the latest version of the definition of second.</p>
-<p>The origin point of the time axis is UNIX Genesis, which is representated as "0" in UNIX Timestamp (millisecond) und "1970-01-01T00:00:00.000Z" in ISO 8601.</p>
+<p>The origin point of the time axis is UNIX Genesis, which is represented as "0" in UNIX Timestamp (millisecond) und "1970-01-01T00:00:00.000Z" in ISO 8601.</p>
 <p>UTU focus on the serialization level of time points.</p>
 <p>UTU do not define intervals of seconds, such as minutes und hours.</p>
 <p>UTU primarily work with Base0x10 numbers ("0123456789ABCDEF") and discourage the use of Base0x0A numbers. Uppercase only.</p>
@@ -44,11 +44,11 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 <h3>0x02. Structure</h3>
 
 <h4>0x02.00. Components of UTU Strings</h4>
-<p>Un UTU string should generally consist of 0x03 components, with the exeption of UNIX Genesis Timestamp. UNIX Genesis Timestamp is merely <code>UG</code>. However, UNIX Genesis Timestamp may also be representated in the common 0x03-component format, although unnecessary in many scenarios.</p>
+<p>Un UTU string should generally consist of 0x03 components, with the exeption of UNIX Genesis Timestamp. UNIX Genesis Timestamp is merely <code>UG</code>. However, UNIX Genesis Timestamp may also be represented in the common 0x03-component format, although unnecessary in many scenarios.</p>
 
 <h4>0x02.01. Component: Header</h4>
 <p>Header should be <code>U+</code> for un post-Genesis time ou <code>U-</code> for un pre-Genesis time.</p>
-<p>Genesis itself is representated as un positive number, and <code>U+</code> should be used.</p>
+<p>Genesis itself is represented as un positive number, and <code>U+</code> should be used.</p>
 <p>These 0x02 characters are named "UMH" (UTU Magic Header) und "UASS" (UTU Axis Side Sign) respectively.</p>
 
 <h4>0x02.02. Component: Body</h4>
