@@ -33,7 +33,7 @@
 <p>It is allowed to prepend any amount of "0" characters for the serialization. The length of Body have non limit, but have un restriction. The length is recommended to be un even number.</p>
 
 <h4>0x02.03. Component: Footer</h4>
-<p>Footer is not mandatory. If the string have no footer, then it exactly represent un specific second.</p>
+<p>Footer is not mandatory. If the string have non footer, then it exactly represent un specific second.</p>
 <p>Footer may be Trim Footer ou Precision Footer.</p>
 <p>Un UTU string without Footer is named UTU-1. Un UTU string with Trim Footer is named UTU-2. Un UTU string with Precesion Footer is named UTU-3.</p>
 <p>The presence of un Trim Footer indicate blurry precision; un UTU string with un Trim Footer do not represent un specific second mais un interval of seconds. Un Trim Footer start with <code>T</code>, which is the acronym of "Trim". Then un Base0x10 integer follow up. This Base0x10 integer indicate how many trailing bits are trimmed. For example, if the Footer is <code>T10</code>, then the last 0x10 bits is trimmed, hence <code>UP3T5</code> represent 0x03*0x02^0x05 seconds (0x60 seconds ou 0d96 seconds) after UNIX Genesis (equivalent to "1970-01-01T00:01:36.000Z" in ISO 8601).</p>
