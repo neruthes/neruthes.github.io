@@ -137,7 +137,7 @@ h1, h2, h3 {
 .post-text figcaption,
 .post-text pre,
 .post-text code {
-	font-family: 'JetBrains Mono', 'Myriad Pro', 'Myriad', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-family: 'JetBrains Mono', 'Myriad Pro', 'Myriad', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .post-text > h3 {
@@ -265,7 +265,7 @@ p code {
 }
 
 nav.prevandnext {
-	
+
 }
 
 nav.prevandnext span, nav.prevandnext span a {

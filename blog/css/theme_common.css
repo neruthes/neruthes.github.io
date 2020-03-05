@@ -120,7 +120,7 @@ a {
 .post-text figcaption,
 .post-text pre,
 .post-text code {
-	font-family: 'JetBrains Mono', 'Myriad Pro', 'Myriad', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-family: 'JetBrains Mono', 'Myriad Pro', 'Myriad', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .post-text > h3 {
