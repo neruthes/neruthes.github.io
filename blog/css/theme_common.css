@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-text strong {
-	font-weight: 400;
+	font-weight: 600;
 }
 
 .post-text > ol, .post-text > ul {
@@ -197,7 +197,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-text code {
-	font-family: 'RealtimeRounded', 'Inconsolata', 'Menlo', monospace;
 	background: #EEE;
 	box-shadow: #EEE 0 0 0 2px;
 	border-radius: 3px;
