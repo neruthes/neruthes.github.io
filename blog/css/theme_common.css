@@ -235,13 +235,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: italic;
 	border-left: 3px solid #F5F5F5;
 	padding-left: 7px;
-	/* margin-left: -17px; */
 }
 
 .post-text pre {
-	font-family: 'RealtimeRounded', 'Inconsolata', 'Menlo', monospace;
-	line-height: 1.5em;
-	color: #333;
 	background: #F9F9F9;
 	border-radius: 4px;
 	overflow-x: scroll;
