@@ -23,7 +23,14 @@ window.addEventListener('load', function () {
                 dateRange: [ 'Mar 31', 'Apr 04' ],
                 action: function () {
                     var st = document.createElement('style');
-                    st.innerHTML = 'html, body, h1, h2, h3, h4, h5, h6, div, article, section, header, footer, nav, p, pre, code, span, strong, em, button, label, input, textarea, form { font-family: "Comic Sans MS", Seravek, "Open Sans", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", sans-serif !important; }'
+                    st.innerHTML = `
+                        html, body, h1, h2, h3, h4, h5, h6, div, article, section, header, footer, nav, p, pre, code, span, strong, em, button, label, input, textarea, form {
+                            font-family: "Comic Sans MS", Seravek, "Open Sans", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", sans-serif !important;
+                        }
+                        #avatar.avatar {
+                            background-image: url(/neruthes_pixelart-forceCircle-padded.png) !important;
+                        }
+                    `;
                     document.head.appendChild(st);
                 }
             },

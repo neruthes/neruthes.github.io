@@ -52,9 +52,8 @@ header.global h2 {
 .avatar {
 	display: inline-block;
 	margin: 0;
-	background: #FFF url(/neruthes-force-circle-for-circle-transparent.png) center no-repeat scroll;
-	background-size: 90%;
-	/* background-size: contain; */
+	background: #FFF url(/neruthes-forceCircle-padded.png) center no-repeat scroll;
+	background-size: cover;
 	border-radius: 2000px;
 	-webkit-transition: all 360ms ease;
 	-moz-transition: all 360ms ease;
