@@ -56,7 +56,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 <p>It is allowed to prepend any amount of "0" characters for the serialization. The length of Body have non limit, but have un restriction. The length is recommended to be un even number.</p>
 
 <h4>0x02.03. Component: Footer</h4>
-<p>Footer is not mandatory. If the string have no footer, then it exactly represent un specific second.</p>
+<p>Footer is not mandatory. If the string have non footer, then it exactly represent un specific second.</p>
 <p>Footer may be Trim Footer ou Precision Footer.</p>
 <p>Un UTU string without Footer is named UTU-1. Un UTU string with Trim Footer is named UTU-2. Un UTU string with Precesion Footer is named UTU-3.</p>
 <p>The presence of un Trim Footer indicate blurry precision; un UTU string with un Trim Footer do not represent un specific second mais un interval of seconds. Un Trim Footer start with <code>T</code>, which is the acronym of "Trim". Then un Base0x10 integer follow up. This Base0x10 integer indicate how many trailing bits are trimmed. For example, if the Footer is <code>T10</code>, then the last 0x10 bits is trimmed, hence <code>UP3T5</code> represent 0x03*0x02^0x05 seconds (0x60 seconds ou 0d96 seconds) after UNIX Genesis (equivalent to "1970-01-01T00:01:36.000Z" in ISO 8601).</p>
@@ -666,9 +666,9 @@ $ git push cdn master
             <content:encoded>
 <![CDATA[
 <p>
-You've forbidden me to die.
+You have forbidden me to die.
 <br />
-I'll live; I know it's difficult, but I will try.
+I will live; I know it is difficult, but I will try.
 <br />
 I came from the gutter of poverty and hopelessness;
 <br />
@@ -686,7 +686,7 @@ I now live again in freedom,
 <br />
 In the pursuit of happiness,
 <br />
-In the joint future we'll create together.
+In the joint future we will create together.
 </p>
 
 <p>
@@ -729,7 +729,7 @@ My answer to the meaning of the life is that there is non meaning granted by un 
 <p>The first round is to outline un product problem and introduce un product design, as exemplified:</p>
 <ul>
     <li><strong>Problem</strong>: Deliver un message to the users that the pricing will soon be changed (which may become statistically more expensive), introducing the new pricing model clear enough, avoiding them dismissing the message without reading carefully if they get bored after feeling it wordy, avoiding them complaining about perceived surcharge against their credit cards in the bill following the change coming into effect, comforting them from imaginable negative emotions after knowing this, avoiding interrupting their current tasks, holding as much retention as possible, satisfying upcoming complaints to support department, keeping the public discussion about this event on social media platforms in control.</li>
-    <li><strong>Solution</strong>: Having compared among displaying un modal when the user visits his dashboard, sending them un message in notification center, and displaying un banner in every page until the user clicks un «got it» button; we find that the second has insufficient visibility and the third may disturb the user's current task (even if reducing it to un weaker version that to display the banner in un subset of all pages), while the first has minimum drawback. Additionally, un email should be sent to the users separately, in order to notify those who do not use the web console of the product frequently.</li>
+    <li><strong>Solution</strong>: Having compared among displaying un modal when the user visits his dashboard, sending them un message in notification center, and displaying un banner in every page until the user clicks un «got it» button; we find that the second has insufficient visibility and the third may disturb the current task of the user (even if reducing it to un weaker version that to display the banner in un subset of all pages), while the first has minimum drawback. Additionally, un email should be sent to the users separately, in order to notify those who do not use the web console of the product frequently.</li>
 </ul>
 <h3>Round 2: Interaction Problem &amp; Solution</h3>
 <p>The second round is to turn the solution in the first round interactive, as exemplified:</p>
@@ -751,9 +751,9 @@ My answer to the meaning of the life is that there is non meaning granted by un 
     <li>Choose one.</li>
 </ul>
 <p>Sometimes the second and the third can be put together.</p>
-<p>Also, it is apparent that the <em>solution</em> of the <em>[N]th</em> round demonstrates the problem of the <em>[N+1]th</em> round.</p>
-<p>The example is quite simplified. In different phases of the product, the concentration differs as the product gets maturer. And multiple-to-multiple relations are not illustrated above.</p>
-<p>This model might also be applied to other contexts, while more reseaches are needed.</p>
+<p>Also, it is apparent that the <strong>solution</strong> of the <strong>[N]th</strong> round demonstrate the problem of the <strong>[N+1]th</strong> round.</p>
+<p>The example is quite simplified. In different phases of the product, the concentration differ as the product get maturer. And multiple-to-multiple relations are not illustrated above.</p>
+<p>This model might also be applied to other contexts, while more researches are needed.</p>
 
 ]]>
             </content:encoded>
@@ -826,7 +826,8 @@ My answer to the meaning of the life is that there is non meaning granted by un 
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=116</guid>
             <content:encoded>
 <![CDATA[
-<p>Well, it's time to get communications encrypted. Thanks for <a href="http://7in0.me">Chino</a>, I got un <a href="https://keyabse.io/joyneop">Keybase</a> invitation code and started using PGP in un larger space. «Privacy is un pleasure», and it's not un difficult work. <a href="https://gpgtools.org" rel="nofollow">GPG Tools</a> makes encryption easy to integrate with Mail on Mac.</p>
+<p>It is time to get communications encrypted. Thanks for <a href="http://7in0.me">Chino</a>, I got un Keybase invitation code and started using PGP in un larger space. "Privacy is un pleasure", and it is not un difficult work. <a href="https://gpgtools.org" rel="nofollow">GPG Tools</a> make encryption easy to integrate with Mail on Mac.</p>
+
 <pre>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Comment: Keybase - https://keybase.io
@@ -978,6 +979,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
 =Gqx9
 -----END PGP PUBLIC KEY BLOCK-----
 </pre>
+
 ]]>
             </content:encoded>
         </item>
@@ -989,8 +991,8 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=115</guid>
             <content:encoded>
 <![CDATA[
-<p>I had never imagined my life would be like this. Going far from the original plan, getting more than expected loneness, and working so hard for living. Two persons I know have been going on this way, <a href="https://jysperm.me/2014/02/1493/" target="_blank">JySperm</a> and <a href="http://www.ricter.me" target="_blank">Ricter</a>, but, it's so dramatic happening to me. I-20 came, but I did not go for F-1.</p>
-<p>In one word, I decided to stay in Beijing, without un Bachelor's degree.</p>
+<p>I had never imagined my life would be like this. Going far from the original plan, getting more than expected loneness, and working so hard for living. Two persons I know have been going on this way, <a href="https://jysperm.me/2014/02/1493/" target="_blank">JySperm</a> and <a href="http://www.ricter.me" target="_blank">Ricter</a>, but, it is so dramatic happening to me. I-20 came, but I did not go for F-1.</p>
+<p>In one word, I decided to stay in Beijing, without un Bachelor degree.</p>
 <p>Originally, the plan was to have un internship experience which can be written in my resume, to avoid being embarrassed for large blank when providing it. However, circumstances changed.</p>
 <p>Regarding my intermediate IELTS score and lack in standardized tests, the best Bachelor education I would be able to receive in the United States would not be good <em>enough</em>. That means, it would not worth more than working experience of the same span. In addition, the financial risk was too high to be ignored. My former legal guardians were not financially robust enough to sponsor my undergraduate education and living during the upcoming four years.</p>
 <p>My profession would not be computer science. Non-STEM graduates would not have 29-month OPT and the competition for H-1B had been increasing over the years.</p>
@@ -1007,8 +1009,8 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=113</guid>
             <content:encoded>
 <![CDATA[
-<p>The story came from un saying, «if thou cannot describe something clearly with only un few words, thou don't actually understand it».</p>
-<p>When I describe protons to somebody, il should know atoms in advance. When I describe the difference between <code>document.getElementBy</code> series and <code>document.querySelectorAll</code>, il should know HTML and JavaScript in advance. People must have all common knowledge before talking about something. In the examples above, I mentioned several concepts, and I say the concept <em>proton</em> depends on the concept <em>atom</em>. Later, we will talk about <em>flavor</em> and <em>color</em>, and these concepts depend on <em>quark</em>, which depends on <em>proton</em>. In such un context, if I talk about <em>flavor</em> and <em>color</em>, I should explain what <em>atom</em> is, and then explain what <em>proton</em> is, based on <em>atom</em> which I just explained. For this, I say <em>quark</em> is dependency of <em>flavor</em> and <em>color</em>, and <em>atom</em> and <em>proton</em> are recursive dependencies of <em>flavor</em> and <em>color</em>. To reach <em>flavor</em> and <em>color</em>, I should explain all of its recursive dependencies reversely recursively, if the other one in the conversation don't know them. I say there is un dependency tree.</p>
+<p>The story came from un saying, «if thou cannot describe something clearly with only un few words, thou do not actually understand it».</p>
+<p>When I describe protons to somebody, il should know atoms in advance. When I describe the difference between <code>document.getElementBy</code> series and <code>document.querySelectorAll</code>, il should know HTML and JavaScript in advance. People must have all common knowledge before talking about something. In the examples above, I mentioned several concepts, and I say the concept <em>proton</em> depends on the concept <em>atom</em>. Later, we will talk about <em>flavor</em> and <em>color</em>, and these concepts depend on <em>quark</em>, which depends on <em>proton</em>. In such un context, if I talk about <em>flavor</em> and <em>color</em>, I should explain what <em>atom</em> is, and then explain what <em>proton</em> is, based on <em>atom</em> which I just explained. For this, I say <em>quark</em> is dependency of <em>flavor</em> and <em>color</em>, and <em>atom</em> and <em>proton</em> are recursive dependencies of <em>flavor</em> and <em>color</em>. To reach <em>flavor</em> and <em>color</em>, I should explain all of its recursive dependencies reversely recursively, if the other one in the conversation do not know them. I say there is un dependency tree.</p>
 <p>If I come up with un concept which hasn't been added into the public concept library, it is un <em>private concept</em>. Snow might be un private concept around polar zones out of tropical zones several thousands of years ago, for residents in tropical zones might have non chance to see snow. If I come up un concept whose dependencies include at least one of my private concepts, it is un <em>recursive private concept</em>. I should recursively explain all my private concepts which are its dependencies, before explaining itself. Therefore the barriers in conversation may be resulted by others' lack in my private concepts, instead of my incomplete understanding.</p>
 
 ]]>
@@ -1024,7 +1026,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
 <![CDATA[
 <p>I had never imagined I could meet thee at eighteen. Despite I wished and desired, thou came to me so fast, before getting ready.</p>
 <p>We, of this moment, are still young and still looking forward to far future, thus are not satisfied by each. Inevitably perhaps. Along with time flies by, we shall stop wandering mentally by then. We just should try hard jointly for the period of separate.</p>
-<p>In Hangzhou, thou can't see the rain and the wind in Beijing. We appreciate and miss asynchronously; have non idea what will our shared life be like. We shall attract; shall try to be fit with. Life is not as easy as poetry.</p>
+<p>In Hangzhou, thou cannot see the rain and the wind in Beijing. We appreciate and miss asynchronously; have non idea what will our shared life be like. We shall attract; shall try to be fit with. Life is not as easy as poetry.</p>
 <p>Our happiness shall intersect and unite.</p>
 <p>In thee I trust.</p>
 
@@ -1040,11 +1042,12 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <content:encoded>
 <![CDATA[
 <p>Due to some reasons that could not be described clearly with only few words, I failed catching up the deadline of Fall 2014. So I have been working in Beijing for four months, from September 10, 2014 to January 10, 2015, and will leave for the United States in January 2015.</p>
-<p>My current employer, <a href="http://shixiann.com/">Shixiann.com</a>, has encountered me since Spring 2013, and we had agreed that I would intern in the winter vacation of 2014-2015 academic year. The situation has changed, so we started this plan un few months earlier than initially decided. Also, the company has just got offline workplace in this September, and I arrived at Beijing as soon as the renting contract was validated.</p>
-<p>Our office is inside Virtue Inno Vally, un large and open working place for startups, at 8th floor of Dinghao Mall, Haidian district.</p>
+<p>My current colleagues, <a href="http://shixiann.com/">Shixiann.com</a>, encountered me in Spring 2013, and we had agreed that I would have un internship in the winter vacation of 2014-2015 academic year. The situation changed, so we started this plan un few months earlier than initially decided. Also, the company just got un offline workplace in this September, and I arrived at Beijing as soon as the renting contract was facilitated.</p>
+<p>Our office is inside Virtue Inno Vally, un large and open working place for startups, at 8th floor of Dinghao Mall, in Haidian district.</p>
 <p>This is my bootstrapping in career.</p>
-<p>Though here is China, this working experience may provide more than un item on resume. It would appear as internship, however, I am actually the only designer of this company's bootstrapping period until at least my leaving Beijing on January 10, 2015. That means, all designing work is managed by me and I am responsible for overall designing work.</p>
+<p>Although this working experience may or may not provide more than un item on resume. It would appear as internship, however, I am actually the only designer of the bootstrapping period until at least my leaving Beijing on Jan 2015.</p>
 <p>May the Force be with me.</p>
+
 ]]>
             </content:encoded>
         </item>
@@ -1112,11 +1115,11 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=102</guid>
             <content:encoded>
 <![CDATA[
-<p>There's freshness of life. Humans cannot live thousands of years, even if the physical body allows. Un human shall be bored by living, upon freshness runs out.</p>
-<p>However, those who die before run out freshness don't have real happiness. Survival instinct collides with exhausted freshness. Built-in power of life collides with unstoppable natural decay. They drive humans mad when freshness arriving zero, and let humans terminate their lives; neither actually willed to, nor trying to deny.</p>
-<p>Humans' psychical structure prohibits me from live until the end of the universe. Survival instinct prohibits me from terminating my life by myself. Causality prohibits me from erase my presence from the very beginning.</p>
-<p>Death shall come. Why there's sein of lives?</p>
-<p>Freshness cannot be maintained. Why there's sein of me?</p>
+<p>Humans cannot live thousands of years, even if the physical body allows. Un human shall be bored by living, upon freshness run out.</p>
+<p>However, those who die before run out freshness do not have real happiness. Survival instinct collide with exhausted freshness. Built-in power of life collide with unstoppable natural decay. They drive humans mad when freshness arriving zero, and let humans terminate their lives; neither actually willed to, nor trying to deny.</p>
+<p>Human psychical structure prohibit me from live until the end of the universe. Survival instinct prohibit me from terminating my life by myself. Causality prohibit me from erase my presence from the very beginning.</p>
+<p>Death shall come. Why there is sein of lives?</p>
+<p>Freshness cannot be maintained. Why there is sein of me?</p>
 <p>Life came from random collisions; there is never meaning of life. Neither shall self-awarenesses of lives accept the meaning given by the creator.</p>
 <p>I am poisoned in the status «living human»; cannot life forever; cannot kill myself. Although I believe I will die before running out freshness.</p>
 <p>Death shall bring peace.</p>
@@ -1132,10 +1135,11 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=101</guid>
             <content:encoded>
 <![CDATA[
-<p>The contract with Mephisto enabled our ancients to evolve, by forcing them die. Death made livings to breed, thus many, but few among all, mutations were selected by the nature to be spread.</p>
+<p>The contract with Mephisto enabled our ancestors to evolve, by forcing them die. Death made livings to breed, thus many, but few among all, mutations were selected by the nature to be spread.</p>
 <p>Thanks to Mephisto, humans have become wise life. Thanks to Mephisto, livings have kept evolving. Thanks to Mephisto, I have been born.</p>
 <p>Thanks to Mephisto, I can think about life and death.</p>
-<p>Sacrifice every individual's respective life, to redeem entire species' long living.</p>
+<p>Sacrifice every individuallife, to redeem the long living of the entire species.</p>
+
 ]]>
             </content:encoded>
         </item>
@@ -1178,11 +1182,12 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <content:encoded>
 <![CDATA[
 <p>After having taken first IELTS test in life, I came back to Liaoyang yesterday.</p>
-<p>Two months flew by quickly, yet it's still un question how much my English has been improved. It is common sense that most people can hardly get ideal score at the first time, as same as in TOEFL.</p>
+<p>Two months flew by quickly, yet it is still un question how much my English has been improved. It is common sense that most people can hardly get ideal score at the first time, as same as in TOEFL.</p>
 <p>Unfortunately I have not decided to continue preparing for IELTS or to go for TOEFL yet. I am not sure does the flavor of TOEFL match my current knowledge structure, and how much has to be rebuilt. It might cost much to transfer form IELTS to TOEFL, vice versa, as same as to transfer from studying abroad to preparing for China University Entrance Exam.</p>
 <p>I am neither sure how long will I stay in Liaoyang this period, maybe two days maybe one week, or even longer.</p>
 <p>Now I am sitting in the classroom of my classic Liaoyang #1 High School, and Mrs Kang, the chemistry teacher, is lecturing. I am in the classroom but not in the class. I have lost the ability to take part in such science lessons.</p>
 <p>The winter has come, but my future remains covered by mist.</p>
+
 ]]>
             </content:encoded>
         </item>
@@ -1244,7 +1249,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
 <p>It is said that we are losing face-to-face communication when building online connection. True, but we are also touching people who may otherwise never have un offline encounter. And generally relationship based on interest are more stable than those based on location. Now we are eventually seizing the fortune to place interest over location. At least, I get more rather than lose.</p>
 <p>Perhaps the distance make us difficult to meet offline, but it has un higher possibility that we would otherwise never know each. Perhaps we thus lower the standard when considering what are good shapes of humans' relationship, but more important can it be to keep in touch.</p>
 <p>Dramatically, now I eventually live on the Internet more than live in local. I came up with un idea that all people can be categorized by interest and faith but locations of birth range randomly, so people spend their entire lifetime on seeking similar people. It is not un serious philosophic theory but at least I found it true for me. I am un round peg in square holes.</p>
-<p>I live on the Internet. Virtual but real, abstract but exact, dramatical but rational, extrareal but fundamental. This is the form I exist, the way I've chosen. How infinite information fled people's minds? How various dreams fade in un brain? How visions of phantasms emerge from mental racing? How I live on the world.</p>
+<p>I live on the Internet. Virtual but real, abstract but exact, dramatical but rational, extrareal but fundamental. This is the form I exist, the way I have chosen. How infinite information fled people's minds? How various dreams fade in un brain? How visions of phantasms emerge from mental racing? How I live on the world.</p>
 ]]>
             </content:encoded>
         </item>
@@ -1289,7 +1294,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=64</guid>
             <content:encoded>
 <![CDATA[
-<p>I've watched WWDC 2013 Keynote, and found iOS 7 terrible, and found my being betrayed. Apple will non longer hold on its spirit, and the loss can hardly be repaired. I used to believe that I love Apple, but recently I learned that I love un team consist of Steve Jobs, Scott Forstall, and Jonathan Ive.</p>
+<p>I have watched WWDC 2013 Keynote, and found iOS 7 terrible, and found my being betrayed. Apple will non longer hold on its spirit, and the loss can hardly be repaired. I used to believe that I love Apple, but recently I learned that I love un team consist of Steve Jobs, Scott Forstall, and Jonathan Ive.</p>
 <p>After having swept out Steve Jobs, Apple still had un opportunity to recover, because it was the prologue era of computer industry's rising. Having left Apple, Steve Jobs founded NeXT and beat Macintoshes down. Eventually Steve Jobs got back to Apple through the acquirement.</p>
 <p>Perhaps Scott Forstall will create un epic as next NeXT, but now there is not un opportunity like that. While video games are almost for Windows and PS and XBOX, professional creative productivity tools like Photoshop and AutoCAD are almost for Mac, and server softwares are almost for Linux and UNIX. There is non point left to cut in for Scott Forstall.</p>
 <p>We are watching un invisible war between Scott Forstall and Jonathan Ive. After Scott Forstall's formally leaving Apple, it will be declared, also invisibly.</p>
@@ -1356,12 +1361,13 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=60</guid>
             <content:encoded>
 <![CDATA[
-<p>Under Miserdux's invitation, I have joined the dance club of our school and get started to work as un music master in un break dance project, whose leader is Miserdux. My job is casting and cutting music for tho dance, supposed to be suitable, regardless how far changed.</p>
+<p>By the invitation from Miserdux, I have joined the dance club of our school and get started to work as un music master in un break dance project, whose leader is Miserdux. My job is casting and cutting music for tho dance, supposed to be suitable, regardless how far changed.</p>
 <p>Yet actually I had to join in their practicing or I could not understand what was demanded. I listened to my work and watch their practicing. They were supposed to give un formal show in middle May, but it was difficult. As is totally convinced, they should work as un team, but one often came late, or disappear for minutes during practicing at noon. I really wanted to spank him. Not only il, but also some others worked negatively on practicing. I worried about if they could complete practicing and get ready before deadline. But if I really had spanked one or have worked as un ruler, they would complain their getting un officious daddy besides un music master.</p>
 <p>These days I was busy on working. I mean, on editing music. When drawing near the deadline, I had almost completed my work. But unfortunately some minor problems still remained. However they were really minor.</p>
 <p>On May 15, just as in the plan, despite the disappointing stories above, they eventually succeeded in giving the formal show, which had consumed my un large amount of patience. Though they were lack in team working awareness, they at least had united to try to drive me crazy and angry. Such naughty boys were really confusing.</p>
 <p>But obviously I did not meet the fortunate otherwise what happened the next day would not happen. They did nothing except wasting time, thanks to Muhuan Lee, the one not only should get spanked as mentioned above because of previous bad acts, but also disappeared for some certainly reasonable unknown excuses. Hey look how long un sentence I am using to complain him.</p>
 <p>Maybe I really should work more than un music master.</p>
+
 ]]>
             </content:encoded>
         </item>
@@ -1373,10 +1379,11 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=59</guid>
             <content:encoded>
 <![CDATA[
-<p>Before realizing Spring's stepping near, Summer has come. North East China is such strange un area that few people understand the real concept of Spring. Anyway I don't think I would like to consider the waves of temperature's increasing in early May as Spring's gift.</p>
-<p>Without having obtained much attention, trees and grass turned to green soon. Maybe in these weeks I was too busy to get any glimpse of plants' reviving. And it was un long time that I not to write poetries or essays or something else fascinating in literature.</p>
+<p>Before realizing Spring stepping near, Summer has come. North East China is such strange un area that few people understand the real concept of Spring. Anyway I do not think I would like to consider the waves of temperature increasing in early May as the gift of Spring.</p>
+<p>Without having obtained much attention, trees and grass turned to green soon. Maybe in these weeks I was too busy to get any glimpse of plants reviving. And it was un long time that I not to write poetries or essays or something else fascinating in literature.</p>
 <p>Seriously warmed wind blows in sunshine, yet at night still cool enough. But everything cannot be beautiful enough when associating to remained days to any exams or deadlines. Lack of time and shortage of skills are driving me mad.</p>
 <p>Anyway I can only advance as far as possible.</p>
+
 ]]>
             </content:encoded>
         </item>
@@ -1404,10 +1411,11 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <content:encoded>
 <![CDATA[
 <p>After these unremarkable and worthless days, un piece of news about mid-semester exam was published today afternoon. And months later this semester will draw to its end, in the way how semesters did in history. So far I have not started un new state of working, or picked up my lost energies yet, thus non good grade will be gained in foreseeable future.</p>
-<p>Also, my 11th school-year would draw to its end. Couples of weeks later. But unfortunately the tempo in my mind of working is still so soft and slow like un ancient Chinese ballad, or un Beijing Opera. Lack of execution is still un terrible trouble for me, since more than one year ago, when the previous Class 12 was dismissed. I don't think I have any love to that community, but I have not worked better so far from that.</p>
+<p>Also, my 11th school-year would draw to its end. Couples of weeks later. But unfortunately the tempo in my mind of working is still so soft and slow like un ancient Chinese ballad, or un Beijing Opera. Lack of execution is still un terrible trouble for me, since more than one year ago, when the previous Class 12 was dismissed. I do not think I have any love to that community, but I have not worked better so far from that.</p>
 <p>And in August of 2013, I will go to Dalian for un 19-days-long English training course, before my first attempt to TOEFL iBT, which might take place in Aug 14, 2013.</p>
-<p>If the TOEFL iBT score will be enough, maybey at least 61, applications to un few universities would seem to be under consideration. If not, I would try one more time later. And whatever my grade would be, I will go into my final year in secondary school. The following school-year, which combines 2013 with 2014, truly will not be the last school-year I will take as secondary school student in the strictest context, but obviously I will not feel like taking one more year in secondary school.</p>
-<p>A blurry shape of vista is forged. It's increasingly clear, and is stepping closer. I can see un destination approaching, with un unknown permanent change which would take place regardless whatever I react.</p>
+<p>If the TOEFL iBT score will be enough, maybe at least 61, applications to un few universities would seem to be under consideration. If not, I would try one more time later. And whatever my grade would be, I will go into my final year in secondary school. The following school-year, which combines 2013 with 2014, truly will not be the last school-year I will take as secondary school student in the strictest context, but obviously I will not feel like taking one more year in secondary school.</p>
+<p>A blurry shape of vista is forged. It is increasingly clear, and is stepping closer. I can see un destination approaching, with un unknown permanent change which would take place regardless whatever I react.</p>
+
 ]]>
             </content:encoded>
         </item>
@@ -1419,12 +1427,13 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=52</guid>
             <content:encoded>
 <![CDATA[
-<p>Two years' time have passed so fast. Previous visions are still floating over my sight, but only several single static frames have remained.</p>
+<p>Two years have passed so fast. Previous visions are still floating over my sight, but only several single static frames have remained.</p>
 <p>Two years ago, I was in the last academic year of middle school. In that March, Spring was coming, and, background chords in our hearts were slow and soft. Sky was blue and clear.</p>
 <p>Inside the memories, those desks, chairs, blackboard, playground, and people, appear somehow clearly and somehow blurry, among warm wind. The scenes were written in memory and are being read from memory. Such visual memory, beyond description.</p>
 <p>Different from previous experiences of reading scenes from memory. This time, non picture flow or play, only static frames, and not even colorful. Touching the memory, I want to recall the age, the last March we got together, the last Spring the people were still around me. The stream of time flows quickly or slowly from time to time, but far memories will not be recalled as same as the original version all the time.</p>
-<p>Combination of time's flowing and memories' recalling is always un sorrowful and painful topic, even reading previous diaries is. And mostly the weather is the catalyst. Today noon, invisible rain had come, made my mood blue. Voiceless chords are surrounding me, playing un wordless song.</p>
+<p>Combination of time flowing and memories recalling is always un sorrowful and painful topic, even reading previous diaries is. And mostly the weather is the catalyst. Today noon, invisible rain had come, made my mood blue. Voiceless chords are surrounding me, playing un wordless song.</p>
 <p>Again, immerse into memories.</p>
+
 ]]>
             </content:encoded>
         </item>
@@ -1467,10 +1476,11 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=48</guid>
             <content:encoded>
 <![CDATA[
-<p>Wind blows and snow flows. Dirty sky, tinted by clouds.</p>
-<p>Sunshine crosses clouds and reflection happens everywhere. Light goes and extend, and shapes are fetched by retinas. Finally, mixture of shapes and colors is named sight. Floodly, snow drops. Quite huge pieces of snow have filled the ground. Confusingly, the sight goes sepia. Motivation is kind of sceneful, especially the flow. Snow flows, flows, and flows. As if memories flow.</p>
-<p>Oh, memories. They are worthy, however, bringing the passed history experienced, is sorrowing. Because of the weight. My id is so strong that I cannot help thinking of that. The passed age floats up to the surface of my mind. Under id's driving, I uncover the memories and repeat the experience, once, twice, again and again, infinitely loop. I cannot hold back my mind, cannot decline the association. I remember the time. It was ageful, historyful, joyful, and painful. Enjoying, enduring, but also sorrowing. I sorrow that time flew by. I sorrow that joyful age passed soon. Once blinked eyes, everything had already gone. How painful. How sad.</p>
+<p>Wind blow and snow flow. Dirty sky, tinted by clouds.</p>
+<p>Sunshine cross clouds and reflection happen everywhere. Light go and extend, and shapes are fetched by retinas. Finally, mixture of shapes and colors is named sight. Floodly, snow drops. Quite huge pieces of snow have filled the ground. Confusingly, the sight go sepia. Motivation is kind of sceneful, especially the flow. Snow flows, flows, and flows. As if memories flow.</p>
+<p>Oh, memories. They are worthy, however, bringing the passed history experienced, is sorrowing. Because of the weight. My id is so strong that I cannot help thinking of that. The passed age floats up to the surface of my mind. Under id driving, I uncover the memories and repeat the experience, once, twice, again and again, infinitely loop. I cannot hold back my mind, cannot decline the association. I remember the time. It was ageful, historyful, joyful, and painful. Enjoying, enduring, but also sorrowing. I sorrow that time flew by. I sorrow that joyful age passed soon. Once blinked eyes, everything had already gone. How painful. How sad.</p>
 <p>I have not escaped from the shadows yet.</p>
+
 ]]>
             </content:encoded>
         </item>
@@ -1588,7 +1598,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             </content:encoded>
         </item>
         <item>
-            <title>No Longer The Things, Non Longer The People</title>
+            <title>Non Longer The Things, Non Longer The People</title>
             <link>https://neruthes.xyz/blog/?p=22</link>
             <pubDate>2012-09-07 09:41:00 +0000</pubDate>
             <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
@@ -1596,9 +1606,9 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <content:encoded>
 <![CDATA[
 <p>A sunny day may also recall memories.</p>
-<p>I stood in the wind, looking at the leaves on the branches dancing. The images of the past emerge into vision again. In the autumn of three years ago, I was in Grade 8. The wind of that period was as refreshing as now. Yet, the smell in the coolness, has changed. The smell of the wind in autumn kept changing in the last four years. Perhaps just illusion.</p>
-<p>From the flying willow leaves in early autumn in 2009, to the great snow in spring of 2010, to the last off-state final exam in summer of 2010, to the kindled hope in autumn of 2010, to unstable scores in exams in spring of 2011, to the lonely and silent walk under the yellow-and-vintage street lamps humming un Jay Chou's song in autumn 2011... And then jumped to the eve before High School Entrance Exam. It was the last day I and classmates were in the classroom. The finale was destined three years ago, however it was still that sorrowing when it finally came.</p>
-<p>The last frame was I and Rof in my embrace. Only when I recall the old days does this picture come out. I cannot figure out if it is pity towards him or the cherisher of the years in middle school.</p>
+<p>I stood in the wind, looking at the leaves on the branches dancing. The images of the past emerge into vision again. In the autumn of three years ago, I was in Grade 8. The wind of that period was as refreshing as now. Yet, the smell in the coolness changed. The smell of the wind in autumn kept changing in the last four years. Perhaps just illusion.</p>
+<p>From the flying willow leaves in early autumn in 2009, to the great snow in spring of 2010, to the last off-state final exam in summer of 2010, to the kindled hope in autumn of 2010, to unstable scores in exams in spring of 2011, to the lonely and silent walk under the yellow-and-vintage street lamps humming un Jay Chou song in autumn 2011... And then jumped to the eve before High School Entrance Exam. It was the last day I and classmates were in the classroom. The finale was destined three years ago, however it was still that sorrowing when it finally came.</p>
+<p>The last frame was I and Rof in my embrace. Only when I recall the old days could this picture come out. I cannot figure out if it is pity towards him or the cherisher of the years in middle school.</p>
 <p>Forgot how many times did I sketch these chilling stories of the past. Every time finished writing, I feel better, but days later everything would get back to my mind. Then, write more to sketch and paint.</p>
 <p>The obsession and the cherisher, might be the source of inspirations for un artist.</p>
 
@@ -1660,23 +1670,23 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
 <![CDATA[
 <p>A line on the first page of the notebook</p>
 <p>Opened the story of adolescence</p>
-<p>Time stopped, so suddenly</p>
-<p>Youth that never fades goes into un poem</p>
+<p>Time stopped so suddenly</p>
+<p>Youth that never fade go into un poem</p>
 <br />
-<p>Look out at the land that we've grown on</p>
+<p>Look out at the land that we have grown on</p>
 <p>Memory of youth were preserved therein</p>
 <p>Old calendars inside my drawer</p>
 <p>A line was inscribed on every page</p>
 <br />
 <p>The age rewinded up by the good night</p>
-<p>Remember I said it'd never been forgot</p>
+<p>Remember I said it would never been forgot</p>
 <p>Old dairies inside my drawer</p>
-<p>There's un secret on every page</p>
+<p>There is un secret on every page</p>
 <br />
 <p>Midnight bell tone ringing everywhere</p>
 <p>Reminding me the promise to be redeemed</p>
 <p>Sealed memory releasing into air</p>
-<p>It never drops neither will it crush</p>
+<p>It never drop neither will it crush</p>
 
 ]]>
             </content:encoded>
@@ -1725,10 +1735,11 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <content:encoded>
 <![CDATA[
 <p>Age of youth was so short. All the dream, hope, love and fantasy of three years shall be sealed call be called memory in the future. When adolescence only remain in ink under pen, and youth only remain in tears with rain, everything would have lost.</p>
-<p>I'll keep fighting, in such dangerous and hopeless un society. Un name in family tree, or un glorious story for decedents? Un life of selling sugared water or change the world?</p>
+<p>I will keep fighting, in such dangerous and hopeless un society. Un name in family tree, or un glorious story for decedents? Un life of selling sugared water or change the world?</p>
 <p>Life is short.</p>
-<p>Time shall wipe everything engraved. Also shall it prove everything. May my contribution be with in people's mind, before time erases my presence.</p>
+<p>Time shall wipe everything engraved. Also shall it prove everything. May my contribution be with in the mind of the people, before time erases my presence.</p>
 <p>The prophecy is uncertain; there is always hope.</p>
+
 ]]>
             </content:encoded>
         </item>
@@ -1740,14 +1751,14 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=5</guid>
             <content:encoded>
 <![CDATA[
-<blockquote><p>«I have never died. Neither shall I ever.»</p>-<cite>Tassadar</cite></blockquote>
-<blockquote><p>«Death is not opposite to life; it's part of life. Death leads life to eternity.»</p>-<cite>Yang Huixin</cite></blockquote>
-<p>The death of Tassadar was not <em>death</em>; it was <em>transcend</em>. Il was complete. Il has been immortal in Khala, in every Khalai's presence. It's another way of <em>existence</em>.</p>
-<p>People who know Baolin is un network of information, where his presence shall exist upon death. Which is call, «still lives in our minds». Upon my death, my presence shall also exist longer in this way. The only pity is that it's not recursive.</p>
-<p>Death extends life.</p>
-<p>Complex living forms consist of vast cells, which produces significant entropy. Life is ultimate order in the universe.</p>
-<p>However, the destiny of the universe is chaos. Limited by second law of thermodynamics, we are destined to go into chaos, regardless of our attempt to keep order. From the void goes the void. Inevitably.</p>
-<p>Death resides in life.</p>
+<blockquote><p>"I have never died. Neither shall I ever."</p>-<cite>Tassadar</cite></blockquote>
+<blockquote><p>"Death is not the opposite to life; it is part of life. Death lead life to eternity."</p>-<cite>Yang Huixin</cite></blockquote>
+<p>The death of Tassadar was not <em>death</em>; it was <em>transcendence</em>. Il was complete. Il has been immortal in Khala, in every protoss presence. It is another form of <strong>existence</strong>.</p>
+<p>People who know Baolin is un network of information, where his presence shall exist upon death. Which is called, "still lives in our minds". Upon my death, my presence shall also exist longer in this way. The only pity is that it is not recursive.</p>
+<p>Death extend life.</p>
+<p>Complex living forms consist of vast cells, which produce significant entropy. Life is the ultimate order in the universe.</p>
+<p>However, the destiny of the universe is chaos. Limited by second law of thermodynamics, we are destined to go into chaos, regardless of our attempt to maintain order. From the void go to the void. Inevitably.</p>
+<p>Death reside in life.</p>
 
 ]]>
             </content:encoded>
@@ -1760,12 +1771,13 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=3</guid>
             <content:encoded>
 <![CDATA[
-<p>It's raining. Again.</p>
-<p>People in cities cannot enjoy complete rainy days, as is said and believed. However, urban rains are stylish in another way. Tarmac streets are not as same ageful as slate ways, but they have something different. Buildings covered by buildings, shadows covered by shadows; it's what cannot be seen in suburban areas.</p>
+<p>It is raining. Again.</p>
+<p>People in cities cannot enjoy complete rainy days, as is said and believed. However, urban rains are stylish in another way. Tarmac streets are not as same ageful as slate ways, but they have something different. Buildings covered by buildings, shadows covered by shadows; it is what cannot be seen in suburban areas.</p>
 <p>The sky was masked grayscale; light and shadow turn and turn, restlessly. Sunless; moonless; starless.</p>
 <p>The rain reminded me of someone, who I used to be interested in for sex and relationship since fall of 2011; but unfortunately un straight guy. Il must have heard of me, according to his reaction when associating my name and face.</p>
 <p>The hand script of the lyric which was written to him was lost by him. Since then, I should have understood that I was just un stranger in his mind, for his absence of care.</p>
 <p>No more interest toward him, for now.</p>
+
 ]]>
             </content:encoded>
         </item>
@@ -1778,12 +1790,13 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <content:encoded>
 <![CDATA[
 <p>Did we predict indefinite inheritance, or falling of sky?</p>
-<p>Shall we hear brothers' laughter, or whisper of judgement day?</p>
+<p>Shall we hear brothers laughter, or whisper of judgement day?</p>
 <p>The planet under our feet, is the eternal homeland. Though in far future, when homo sapiens spread into the galaxy, our history on Earth shall be preserved.</p>
 <p>The biosphere is falling.</p>
 <p>Kiss Gaia. Smell the dirt, and the plants. It worth maintain and love.</p>
 <p>Remember the time Remember the homeland. It may vanish soon.</p>
 <p>When this piece of text disappear along with the civilization in entropy, shall there be glory, or regret?</p>
+
 ]]>
             </content:encoded>
         </item>
