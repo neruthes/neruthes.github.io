@@ -24,9 +24,35 @@ window.addEventListener('load', function () {
                 action: function () {
                     var st = document.createElement('style');
                     st.innerHTML = `
+                        @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap&subset=latin-ext');
                         html, body, h1, h2, h3, h4, h5, h6, div, article, section, header, footer, nav, p, pre, code, span, strong, em, button, label, input, textarea, form {
-                            font-family: "Comic Sans MS", Seravek, "Open Sans", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", sans-serif !important;
+                            font-family: "Comic Sans MS", "Permanent Marker", "Open Sans", "Helvetica", "Arial", "Wawati SC", "Yuppy SC", "PingFang SC", "Hiragino Sans GB", cursive !important;
                         }
+                        #avatar.avatar {
+                            background-image: url(/neruthes_pixelart-forceCircle-padded.png) !important;
+                        }
+                    `;
+                    document.head.appendChild(st);
+                }
+            },
+            'piday': {
+                paths: [
+                    /.+/
+                ],
+                preventedPaths: [],
+                dateRange: [ 'Mar 13', 'Mar 15' ],
+                action: function () {
+                    var st = document.createElement('style');
+                    st.innerHTML = `
+                        @import url('https://fonts.googleapis.com/css?family=VT323&display=swap&subset=latin-ext');
+                        html, body, h1, h2, h3, h4, h5, h6, div, article, section, header, footer, nav, p, pre, code, span, strong, em, button, label, input, textarea, form {
+                            font-family: "VT323", "Joystix", "Bitblox", "Wawati SC", "Yuppy SC", "PingFang SC", "Hiragino Sans GB", monosapce !important;
+                        }
+                        html, body { font-size: 24px !important; }
+                        h1 { font-size: 2rem !important; }
+                        h2 { font-size: 1.4rem !important; }
+                        h3 { font-size: 1.2rem !important; }
+                        h4, h5, h6, p { font-size: 1rem !important; }
                         #avatar.avatar {
                             background-image: url(/neruthes_pixelart-forceCircle-padded.png) !important;
                         }
