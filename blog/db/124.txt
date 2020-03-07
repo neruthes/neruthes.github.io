@@ -1,7 +1,7 @@
 <p>
-You've forbidden me to die.
+You have forbidden me to die.
 <br />
-I'll live; I know it's difficult, but I will try.
+I will live; I know it is difficult, but I will try.
 <br />
 I came from the gutter of poverty and hopelessness;
 <br />
@@ -19,7 +19,7 @@ I now live again in freedom,
 <br />
 In the pursuit of happiness,
 <br />
-In the joint future we'll create together.
+In the joint future we will create together.
 </p>
 
 <p>
