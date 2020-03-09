@@ -46,7 +46,7 @@ window.addEventListener('load', function () {
                     st.innerHTML = `
                         @import url('https://fonts.googleapis.com/css?family=VT323&display=swap&subset=latin-ext');
                         html, body, h1, h2, h3, h4, h5, h6, div, article, section, header, footer, nav, p, pre, code, span, strong, em, button, label, input, textarea, form {
-                            font-family: "VT323", "Joystix", "Bitblox", "Wawati SC", "Yuppy SC", "PingFang SC", "Hiragino Sans GB", monosapce !important;
+                            font-family: "VT323", "Joystix", "Bitblox", "GB18030 Bitmap", "Wawati SC", "Yuppy SC", "PingFang SC", "Hiragino Sans GB", monosapce !important;
                         }
                         html, body { font-size: 24px !important; }
                         h1 { font-size: 2rem !important; }
