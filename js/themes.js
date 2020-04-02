@@ -35,13 +35,14 @@ window.addEventListener('load', function () {
                             left: -50px;
                             width: ${window.innerWidth + 100}px;
                             height: ${window.innerHeight + 400}px;
-                            background: #F00 url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDAwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA0MDAgNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ny4xICg4MzA4OCkgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+YmctYmxpc3M8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjgwLjE3MzUxNiUiIHkxPSIwJSIgeDI9IjM2LjY4MDM2NTMlIiB5Mj0iNjMuMzIxOTE3OCUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzFDNzdGRSIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjOThDNkZEIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgIDxwYXRoIGQ9Ik0xNCwyMzUgQzk2LjY2NjY2NjcsMjA2LjMzMzMzMyAxNjguNjY2NjY3LDE5MiAyMzAsMTkyIEMzMjIsMTkyIDM0OC4xOTM0MjYsMjE1LjA5Mzk4OSA0MjAsMjI0IEM0OTEuODA2NTc0LDIzMi45MDYwMTEgNTYwLjkxNDg0NSwyMjcuNDkzNDk1IDYzMywyMjQgTDU4OCw0NzAgTDAsNDcwIEwxNCwyMzUgWiIgaWQ9InBhdGgtMiI+PC9wYXRoPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCB4MT0iNi44ODU4NDQ3NSUiIHkxPSIxMDAlIiB4Mj0iMTIuMjc2MjU1NyUiIHkyPSI1Ni4yNzYyNTU3JSIgaWQ9ImxpbmVhckdyYWRpZW50LTQiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzk1RTAzIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNBRkQ2MzQiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iYmctYmxpc3MiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTE5LjAwMDAwMCwgMC4wMDAwMDApIj4KICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0xKSIgeD0iMTE5IiB5PSIwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCI+PC9yZWN0PgogICAgICAgICAgICA8bWFzayBpZD0ibWFzay0zIiBmaWxsPSJ3aGl0ZSI+CiAgICAgICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTIiPjwvdXNlPgogICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgIDxnIGlkPSJNYXNrIj48L2c+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtNCkiIG1hc2s9InVybCgjbWFzay0zKSIgeD0iMTE5IiB5PSIwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+') scroll center no-repeat;
+                            background: #FFF ${bgImgUrl} scroll center no-repeat;
                             background-size: cover;
                             z-index: -1;
                         `);
                         document.body.appendChild(bg);
                     };
                     // Style
+                    var bgImgUrl = `url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDAwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA0MDAgNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ny4xICg4MzA4OCkgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+YmctYmxpc3M8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjgwLjE3MzUxNiUiIHkxPSIwJSIgeDI9IjM2LjY4MDM2NTMlIiB5Mj0iNjMuMzIxOTE3OCUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzFDNzdGRSIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjOThDNkZEIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgIDxwYXRoIGQ9Ik0xNCwyMzUgQzk2LjY2NjY2NjcsMjA2LjMzMzMzMyAxNjguNjY2NjY3LDE5MiAyMzAsMTkyIEMzMjIsMTkyIDM0OC4xOTM0MjYsMjE1LjA5Mzk4OSA0MjAsMjI0IEM0OTEuODA2NTc0LDIzMi45MDYwMTEgNTYwLjkxNDg0NSwyMjcuNDkzNDk1IDYzMywyMjQgTDU4OCw0NzAgTDAsNDcwIEwxNCwyMzUgWiIgaWQ9InBhdGgtMiI+PC9wYXRoPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCB4MT0iNi44ODU4NDQ3NSUiIHkxPSIxMDAlIiB4Mj0iMTIuMjc2MjU1NyUiIHkyPSI1Ni4yNzYyNTU3JSIgaWQ9ImxpbmVhckdyYWRpZW50LTQiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzk1RTAzIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNBRkQ2MzQiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iYmctYmxpc3MiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTE5LjAwMDAwMCwgMC4wMDAwMDApIj4KICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0xKSIgeD0iMTE5IiB5PSIwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCI+PC9yZWN0PgogICAgICAgICAgICA8bWFzayBpZD0ibWFzay0zIiBmaWxsPSJ3aGl0ZSI+CiAgICAgICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTIiPjwvdXNlPgogICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgIDxnIGlkPSJNYXNrIj48L2c+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtNCkiIG1hc2s9InVybCgjbWFzay0zKSIgeD0iMTE5IiB5PSIwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+')`;
                     var st = document.createElement('style');
                     var styleText = `
                         @import url('https://neruthes.xyz/web-misc/fonts/free-pixel.css?t=${t}');
@@ -49,9 +50,8 @@ window.addEventListener('load', function () {
                         @import url('https://neruthes.now.sh/web-misc/fonts/free-pixel.css?t=${t}');
                         body {
                             background: none;
-                            // background: #000 no-repeat fixed center;
-                            /*background-size: cover;*/
-                            // background-size: auto 100vh;
+                            background: #FFF ${bgImgUrl} fixed center no-repeat;
+                            background-size: cover;
                         }
                         html, body, h1, h2, h3, h4, h5, h6, div, article, section, header, footer, nav, p, pre, code, span, strong, em, button, label, input, textarea, form {
                             font-family: "Free Pixel", "Calibri", "Tahoma", "Trebuchet", "Open Sans", "Helvetica", "Arial", "Songti SC", "Yuppy SC", "PingFang SC", "Hiragino Sans GB", cursive !important;
@@ -107,7 +107,6 @@ window.addEventListener('load', function () {
                                 font-size: 18px;
                             }
                             .post-text code, .post-text pre {
-                                // font-family: 'Courier', 'Menlo', monospace !important;
                                 color: #000;
                                 background: rgba(0, 0, 0, 0.08);
                                 box-shadow: rgba(0, 0, 0, 0.08) 0 0 0 2px;
