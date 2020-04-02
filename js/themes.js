@@ -24,7 +24,10 @@ window.addEventListener('load', function () {
                 action: function () {
                     var t = Date.now();
                     // Insert
-                    if (document.body.offsetWidth < 700) {
+                    if (document.body.offsetWidth < 700 ||
+                        navigator.userAgent.indexOf('iPhone') > -1 ||
+                        navigator.userAgent.indexOf('iPad') > -1
+                    ) {
                         var bg = document.createElement('div');
                         bg.setAttribute('style', `
                             position: fixed;
