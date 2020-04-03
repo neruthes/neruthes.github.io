@@ -54,7 +54,7 @@ window.addEventListener('load', function () {
                             background-size: cover;
                         }
                         html, body, h1, h2, h3, h4, h5, h6, div, article, section, header, footer, nav, p, pre, code, span, strong, em, button, label, input, textarea, form {
-                            font-family: "Free Pixel", "Calibri", "Tahoma", "Trebuchet", "Open Sans", "Helvetica", "Arial", "Songti SC", "Yuppy SC", "PingFang SC", "Hiragino Sans GB", cursive !important;
+                            font-family: "Free Pixel", "Calibri", "Tahoma", "Trebuchet", "Open Sans", "Helvetica", "Arial", "Songti SC", "Yuppy SC", "PingFang SC", "Hiragino Sans GB", sans-serif !important;
                         }
                         #avatar.avatar {
                             background-image: url(/neruthes_pixelart-forceCircle-padded.png) !important;
@@ -63,6 +63,7 @@ window.addEventListener('load', function () {
                     if (location.pathname.indexOf('/blog/') === 0) {
                         styleText += `
                             .post {
+                                font-family: "Arial", "Helvetica", "SimSun", "Songti SC", "Yuppy SC", "PingFang SC", "Hiragino Sans GB", sans-serif !important;
                                 color: #000;
                                 background: #ECE8D9;
                                 background: #F5F3EB;
@@ -75,6 +76,9 @@ window.addEventListener('load', function () {
                                 position: relative;
                                 padding-top: 70px;
                                 padding: 70px 20px 40px;
+                            }
+                            .post * {
+                                font-family: "Arial", "Helvetica", "SimSun", "Songti SC", "Yuppy SC", "PingFang SC", "Hiragino Sans GB", sans-serif !important;
                             }
                             .post::before {
                                 content: "Neruthes Blog Post";
