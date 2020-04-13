@@ -8,7 +8,7 @@
         document.getElementById('node_15c51a6bba1d48e6b5ec4b10fbafcaf0').remove();
         document.body.style.paddingTop = '0px';
     };
-    if (location.search.indexOf('mortality_notice=yes') > 0 || Date.now() > (new Date('2020-04-15T00:00:00.000Z')).getTime()) {
+    if (location.search.indexOf('mortality_notice=yes') > 0 || Date.now() > (new Date('2020-04-20T00:00:00.000Z')).getTime()) {
         document.body.style.paddingTop = '80px';
         document.body.appendChild((function () {
             var tag = document.createElement('div');
@@ -93,7 +93,7 @@
                     ">
                         <div style="max-width: 600px; margin: 0 auto;">
                             <h1>Mortality Statement</h1>
-                            <p>I update the mortality notice trigger date monthly. The notice should appear when I fail to update the date.</p>
+                            <p>I update the mortality notice trigger date periodically. The notice should appear when I fail to update the date.</p>
                             <p>I have prepared several copies of my Mortality Statement on different places. Please consult any of them, in the event of un unexpected death of me. They should be digitally signed by my OpenPGP keypair "5200DF38".</p>
                             <p><a href="https://gist.github.com/neruthes/8543970503da4e1cd738899ec1bc5412">GitHub Gist</a></p>
                             <button onclick="window.func_d7b11a086afa420aae24bb5467e9765e_close()">Close & Continue Browsing</button>
