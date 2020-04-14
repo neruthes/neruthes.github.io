@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="500px" viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Aqua Aoi</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#5286C2" offset="0%"></stop>
+            <stop stop-color="#1A327C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#5996C3" offset="0%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.508659309" offset="9.38071922%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.2" offset="17.8081032%"></stop>
+            <stop stop-color="#5C94BE" stop-opacity="0" offset="25.0091358%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#5996C3" offset="0%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.508659309" offset="9.38071922%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.2" offset="17.8081032%"></stop>
+            <stop stop-color="#5C94BE" stop-opacity="0" offset="25.0091358%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#5996C3" offset="0%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.508659309" offset="9.38071922%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.2" offset="17.8081032%"></stop>
+            <stop stop-color="#5C94BE" stop-opacity="0" offset="25.0091358%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#5996C3" offset="0%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.508659309" offset="9.38071922%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.2" offset="17.8081032%"></stop>
+            <stop stop-color="#5C94BE" stop-opacity="0" offset="25.0091358%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#5996C3" offset="0%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.508659309" offset="9.38071922%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.2" offset="17.8081032%"></stop>
+            <stop stop-color="#5C94BE" stop-opacity="0" offset="25.0091358%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#5996C3" offset="0%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.508659309" offset="9.38071922%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.2" offset="17.8081032%"></stop>
+            <stop stop-color="#5C94BE" stop-opacity="0" offset="25.0091358%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#5996C3" offset="0%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.508659309" offset="9.38071922%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.2" offset="17.8081032%"></stop>
+            <stop stop-color="#5C94BE" stop-opacity="0" offset="25.0091358%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-9">
+            <stop stop-color="#5996C3" offset="0%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.508659309" offset="9.38071922%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0.2" offset="17.8081032%"></stop>
+            <stop stop-color="#5C94BE" stop-opacity="0" offset="25.0091358%"></stop>
+            <stop stop-color="#5894C0" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-10">
+            <stop stop-color="#1A327C" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#1A327C" stop-opacity="0.0559631563" offset="20.7351096%"></stop>
+            <stop stop-color="#1A327C" stop-opacity="0.183754923" offset="45.3908583%"></stop>
+            <stop stop-color="#1A327C" stop-opacity="0.346141882" offset="65.045101%"></stop>
+            <stop stop-color="#1A327C" stop-opacity="0.534584392" offset="83.9092235%"></stop>
+            <stop stop-color="#1A327C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Aqua-Aoi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#2E5F9C" x="0" y="0" width="800" height="500"></rect>
+        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="800" height="500"></rect>
+        <ellipse id="Oval" fill="url(#linearGradient-2)" transform="translate(610.000000, 204.000000) rotate(307.000000) translate(-610.000000, -204.000000) " cx="610" cy="204" rx="910" ry="371"></ellipse>
+        <ellipse id="Oval" fill="url(#linearGradient-3)" opacity="0.100000001" transform="translate(758.255752, 394.746742) rotate(-70.000000) translate(-758.255752, -394.746742) " cx="758.255752" cy="394.746742" rx="420.5" ry="224.5"></ellipse>
+        <ellipse id="Oval" fill="url(#linearGradient-4)" transform="translate(12.000000, 43.000000) rotate(-257.000000) translate(-12.000000, -43.000000) " cx="12" cy="43" rx="449" ry="241"></ellipse>
+        <ellipse id="Oval" fill="url(#linearGradient-5)" opacity="0.699999988" transform="translate(-198.683221, -176.364745) rotate(-306.000000) translate(198.683221, 176.364745) " cx="-198.683221" cy="-176.364745" rx="780.5" ry="176.5"></ellipse>
+        <ellipse id="Oval" fill="url(#linearGradient-6)" transform="translate(671.000000, 274.000000) rotate(-35.000000) translate(-671.000000, -274.000000) " cx="671" cy="274" rx="556" ry="250"></ellipse>
+        <ellipse id="Oval" fill="url(#linearGradient-7)" opacity="0.400000006" transform="translate(719.000000, 417.000000) rotate(-30.000000) translate(-719.000000, -417.000000) " cx="719" cy="417" rx="556" ry="337"></ellipse>
+        <ellipse id="Oval" fill="url(#linearGradient-8)" opacity="0.600000024" transform="translate(524.000000, -113.000000) rotate(138.000000) translate(-524.000000, 113.000000) " cx="524" cy="-113" rx="1055" ry="389"></ellipse>
+        <ellipse id="Oval" fill="url(#linearGradient-9)" opacity="0.300000012" transform="translate(850.500000, 25.000000) rotate(148.000000) translate(-850.500000, -25.000000) " cx="850.5" cy="25" rx="660.5" ry="236"></ellipse>
+        <rect id="Rectangle" fill="url(#linearGradient-10)" opacity="0.900000036" x="0" y="0" width="800" height="500"></rect>
+    </g>
+</svg>
