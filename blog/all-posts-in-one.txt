@@ -56,7 +56,7 @@ Un good example of UTU string is <code>U+005E4DT10</code>.
 
 <h4>0x02.00. Components of UTU Strings</h4>
 
-Un UTU string should generally consist of 0x03 components, with the exeption of UNIX Genesis Timestamp. UNIX Genesis Timestamp is merely <code>UG</code>. However, UNIX Genesis Timestamp may also be represented in the common 0x03-component format, although unnecessary in many scenarios.
+Un UTU string should generally consist of 0x03 components, with the exception of UNIX Genesis Timestamp. UNIX Genesis Timestamp is merely <code>UG</code>. However, UNIX Genesis Timestamp may also be represented in the common 0x03-component format, although unnecessary in many scenarios.
 
 
 <h4>0x02.01. Component: Header</h4>

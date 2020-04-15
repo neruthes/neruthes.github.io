@@ -21,7 +21,7 @@
 <h3>0x02. Structure</h3>
 
 <h4>0x02.00. Components of UTU Strings</h4>
-<p>Un UTU string should generally consist of 0x03 components, with the exeption of UNIX Genesis Timestamp. UNIX Genesis Timestamp is merely <code>UG</code>. However, UNIX Genesis Timestamp may also be represented in the common 0x03-component format, although unnecessary in many scenarios.</p>
+<p>Un UTU string should generally consist of 0x03 components, with the exception of UNIX Genesis Timestamp. UNIX Genesis Timestamp is merely <code>UG</code>. However, UNIX Genesis Timestamp may also be represented in the common 0x03-component format, although unnecessary in many scenarios.</p>
 
 <h4>0x02.01. Component: Header</h4>
 <p>Header should be <code>U+</code> for un post-Genesis time ou <code>U-</code> for un pre-Genesis time.</p>
