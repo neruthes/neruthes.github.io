@@ -190,7 +190,7 @@ window.addEventListener('load', function () {
                             background-size: cover;
                         }
                         html, body, h1, h2, h3, h4, h5, h6, div, article, section, header, footer, nav, p, pre, code, span, strong, em, button, label, input, textarea, form {
-                            font-family: "Lucida Grande", "Lucida", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+                            font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
                         }
                         body > * {
                             color: #FFF;
@@ -211,7 +211,7 @@ window.addEventListener('load', function () {
                                 text-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
                             }
                             .post {
-                                font-family: "Lucida Grande", "Lucida", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+                                font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
                                 color: #000;
                                 background: #EDEDED;
                                 text-shadow: rgba(255, 255, 255, 0.6) 0 1px 1px;
@@ -225,7 +225,7 @@ window.addEventListener('load', function () {
                                 padding: 70px 20px 40px;
                             }
                             .post * {
-                                font-family: "Lucida Grande", "Lucida", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+                                font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
                             }
                             .post::before {
                                 content: "Neruthes Blog Post";
