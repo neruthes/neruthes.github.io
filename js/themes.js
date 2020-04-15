@@ -261,6 +261,7 @@ window.addEventListener('load', function () {
                                 font-size: 16px;
                             }
                             .post-text code, .post-text pre {
+                                font-family: "Menlo", "Courier", "Consolas", "Inconsolata", monospace !important;
                                 color: #000;
                                 background: rgba(0, 0, 0, 0.08);
                                 box-shadow: rgba(0, 0, 0, 0.08) 0 0 0 2px;
