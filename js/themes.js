@@ -274,10 +274,33 @@ window.addEventListener('load', function () {
                                 background: rgba(0, 0, 0, 0.08);
                                 box-shadow: rgba(0, 0, 0, 0.08) 0 0 0 2px;
                             }
+                            #prev {
+                                text-align: right;
+                            }
+                            #next {
+                                text-align: left;
+                            }
+                            #prevlink, #nextlink {
+                                font-size: 13px;
+                                color: #000;
+                                line-height: 23px;
+                                text-align: center;
+                                background-image: linear-gradient(180deg, #FCFCFC 0%, #F5F5F5 48%, #ECECEC 50%, #F0F0F0 100%);
+                                border: 1px solid #9E9E9E;
+                                box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2);
+                                border-radius: 4px;
+                                display: inline-block;
+                                width: 120px;
+                                height: 23px;
+                                padding: 0px;
+                            }
                         `;
                     };
                     st.innerHTML = styleText;
                     document.head.appendChild(st);
+
+                    document.querySelector('#prevlink').innerHTML = 'Previous Post';
+                    document.querySelector('#nextlink').innerHTML = 'Next Post';
 
                     var mockDockArea = document.createElement('div');
                     mockDockArea.setAttribute('class', 'uuid_c2ec00beadf342f0987dcef09146084e');
