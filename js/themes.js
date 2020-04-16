@@ -180,6 +180,13 @@ window.addEventListener('load', function () {
                     // Style
                     var st = document.createElement('style');
                     var styleText = `
+                        * {
+                            text-transform: initial !important;
+                        }
+                        #title p {
+                            font-size: 16px;
+                            font-weight: 300 !important;
+                        }
                         header .section-content {
                             color: #FFF !important;
                             text-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
@@ -261,6 +268,7 @@ window.addEventListener('load', function () {
                                 font-size: 16px;
                             }
                             .post-text code, .post-text pre {
+                                font-size: 14px;
                                 font-family: "Menlo", "Courier", "Consolas", "Inconsolata", monospace !important;
                                 color: #000;
                                 background: rgba(0, 0, 0, 0.08);
