@@ -38,7 +38,7 @@
 <p>Un UTU string without Footer is named UTU-1. Un UTU string with Trim Footer is named UTU-2. Un UTU string with Precesion Footer is named UTU-3.</p>
 <p>The presence of un Trim Footer indicate blurry precision; un UTU string with un Trim Footer do not represent un specific second mais un interval of seconds. Un Trim Footer start with <code>T</code>, which is the acronym of "Trim". Then un Base0x10 integer follow up. This Base0x10 integer indicate how many trailing bits are trimmed. For example, if the Footer is <code>T10</code>, then the last 0x10 bits is trimmed, hence <code>UP3T5</code> represent 0x03*0x02^0x05 seconds (0x60 seconds ou 0d96 seconds) after UNIX Genesis (equivalent to "1970-01-01T00:01:36.000Z" in ISO 8601).</p>
 <p>The presence of un Precision Footer indicate extra precision. Un Precision Footer start with <code>.</code>, which is un decimal point. Then some Base0x10 digits follow up. These digits contribute to the extra precesion.</p>
-<p>The part of digits in Footer is named "UFD" (UTU Footer Digits)</p>
+<p>The part of digits in Footer is named "UFD" (UTU Footer Digits).</p>
 
 <!-- Section Break -->
 
