@@ -81,6 +81,10 @@ a {
 	box-shadow: rgba(0, 0, 0, 0.08) 0 16px 48px 4px;
 }
 
+.post * {
+	font-variant-ligatures: none !important;
+}
+
 .post-h2 {
 	font-size: 2.6rem;
 	font-weight: 500;
