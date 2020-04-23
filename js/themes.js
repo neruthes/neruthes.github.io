@@ -100,7 +100,7 @@ window.addEventListener('load', function () {
                                 font-family: "Arial", "Helvetica", "SimSun", "Songti SC", "Yuppy SC", "PingFang SC", "Hiragino Sans GB", sans-serif !important;
                             }
                             .post::before {
-                                content: "Neruthes Blog Post";
+                                content: attr(data-title);
                                 display: block;
                                 position: absolute;
                                 top: 0;
@@ -235,7 +235,7 @@ window.addEventListener('load', function () {
                                 font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
                             }
                             .post::before {
-                                content: "Neruthes Blog Post";
+                                content: attr(data-title);
                                 font-size: 13px;
                                 color: #2E2D2E;
                                 text-align: center;
