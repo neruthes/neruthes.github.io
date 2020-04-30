@@ -151,9 +151,13 @@ window.addEventListener('load', function () {
             },
             'macosxtiger': {
                 paths: [
-                    /.+/
+                    /^\/$/,
+                    /^\/blog\//,
+                    /^\/album\//
                 ],
-                preventedPaths: [],
+                preventedPaths: [
+                    /album.+?[?&]p=\d+/
+                ],
                 dateRange: [ 'Apr 28', 'Apr 30' ],
                 action: function () {
                     var t = Date.now();
@@ -293,6 +297,13 @@ window.addEventListener('load', function () {
                                 width: 120px;
                                 height: 23px;
                                 padding: 0px;
+                            }
+                        `;
+                    };
+                    if (location.pathname.indexOf('/album/') === 0) {
+                        styleText += `
+                            #global-header, #global-footer {
+                                color: #FFF;
                             }
                         `;
                     };
