@@ -8,7 +8,7 @@
         document.getElementById('node_15c51a6bba1d48e6b5ec4b10fbafcaf0').remove();
         document.body.style.paddingTop = '0px';
     };
-    if (location.search.slice(1).split('&').indexOf('mortality_notice=yes') > -1 || Date.now() > (new Date('2020-05-31T00:00:00.000Z')).getTime()) {
+    if (location.search.slice(1).split('&').indexOf('mortality_notice=yes') > -1 || Date.now() > (new Date('2020-06-03T00:00:00.000Z')).getTime()) {
         document.body.style.paddingTop = '80px';
         document.body.appendChild((function () {
             var tag = document.createElement('div');
