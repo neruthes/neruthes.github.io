@@ -7,7 +7,7 @@
 <p>OpenPGP is dead. Its initial version was from like 30 years ago. It was designed for emails and hardly anything else.</p>
 <p>OpenPGP shall live long. It is an open standard which have strong support from various software manufacturers, including GNU. It inspired the people to save the public keys of each other. It educated the people that the only true authentication is digital signature.</p>
 
-<h3>Genealogy of Failed Attempts</h3>
+<h3>History of Failed Attempts</h3>
 
 <h4>Telegram</h4>
 <p>Telegram do not encrypt chats by default. Encrypted chats do not synchronize across devices.</p>
@@ -15,11 +15,11 @@
 <p>Users verify each other by the phone number or the Telegram username. They have to Telegram and believe that Telegram itself will not perform MITM.</p>
 <p>The source code of Telegram is not truely open for inspection. Third-party implementations are difficult or impossible.</p>
 
-<h5>Signal</h5>
+<h4>Signal</h4>
 <p>Signal have terrible UX.</p>
 <p>Similarly, Signal require un persistent phone number as the login credential. MITM attacking is only un matter of will and not ability.</p>
 
-<h5>iMessage</h5>
+<h4>iMessage</h4>
 <p>iMessage has end-to-end encryption by default.</p>
 <p>Similarly, the recipient is identified by its email address or phone number. Apple is the intermediate verification authority.</p>
 
@@ -29,6 +29,7 @@
 <h3>New Principles in the New Era</h3>
 
 <h4>Security</h4>
+<p>The only true face is the public key. The only true self is the private key.</p>
 <p>Database breach is un precondition. The communications are still secure even if the servers are operated by CIA.</p>
 <p>The public key of Bob is displayed to Alice. Alice explicitly encrypt to his public key. Alice can verify the keypair ownership independently in other methods of communication. The server have non chance to replace the existing real Bob with un fake Bob.</p>
 <p>The contacts list is encrypted to Alice herself, and is digitally signed by herself when someone is added to the list. The server is merely a storage service for hosting the contacts list. The server have non chance to add or remove contacts for Alice.</p>
@@ -36,5 +37,17 @@
 <h4>Copyright</h4>
 <p>The software is published with AGPL or GPL. Both the clients and the servers.</p>
 <p>The protocol is as open as OpenPGP. Anyone can implement their own clients.</p>
+
+<h4>Usability</h4>
+<p>The users should be able to reuse existing practices of "account and login", but accounts are only hosts of private keys.</p>
+
+<h3>Our Vision at Tessercube</h3>
+
+<p>Tessercube is designed to find un balance between usability and security. The ordinary users should be able to use the app without excessive fancy terms; the expert users should be satisfied by the comprehensive security measures.</p>
+<p>The keypair is the true identity. Advanced users can use keypairs to login without accounts. Users are known to each other by their public keys. Each user occupies un unique 8-character KeyTag (last 8 characters of the Fingerprint of the public key, totaling 40 bits); this KeyTag is the primary human-friendly identifier for users.</p>
+<p></p>
+
+<h3>Some Fancy Features</h3>
+<h4>Burning Message</h4>
 
 <p>To be continued...</p>
