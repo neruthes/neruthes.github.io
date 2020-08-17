@@ -48,6 +48,9 @@
 <p></p>
 
 <h3>Some Fancy Features</h3>
+
 <h4>Burning Message</h4>
+<p>Burning messages burn after reading.</p>
+<p>Existing practices include self-destructing timer in Telegram. However, in Telegram, self-destructing messages need to be sent in stand-alone secret chats and the chat cannot be initialized before the receiver become online.</p>
 
 <p>To be continued...</p>
