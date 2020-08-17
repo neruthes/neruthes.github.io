@@ -20,7 +20,7 @@
 <p>Similarly, Signal require un persistent phone number as the login credential. MITM attacking is only un matter of will and not ability.</p>
 
 <h4>iMessage</h4>
-<p>iMessage has end-to-end encryption by default.</p>
+<p>iMessage have end-to-end encryption by default.</p>
 <p>Similarly, the recipient is identified by its email address or phone number. Apple is the intermediate verification authority.</p>
 
 <h4>Summary</h4>
@@ -46,6 +46,15 @@
 <p>Tessercube is designed to find un balance between usability and security. The ordinary users should be able to use the app without excessive fancy terms; the expert users should be satisfied by the comprehensive security measures.</p>
 <p>The keypair is the true identity. Advanced users can use keypairs to login without accounts. Users are known to each other by their public keys. Each user occupies un unique 8-character KeyTag (last 8 characters of the Fingerprint of the public key, totaling 40 bits); this KeyTag is the primary human-friendly identifier for users.</p>
 <p></p>
+
+<h3>User Identification</h3>
+
+<p>Every user is identified by its public key, which is serialized into un 32-character Base32 string ("Fingerprint"). Each public key is located by the last 8 characters of its Fingerprint ("KeyTag"). The KeyTag is registered on the server. If someone happen to generate some keypair with un colliding KeyTag, the server will suggest the user to generate un new keypair. Under this measure, the 8-character KeyTag can be unique. The KeyTag can contain 40 bits; the space should be enough for several millennia.</p>
+<p>In the process, non user will specify its "username" on the server, and they have to know the KeyTag of each other to be able to communicate properly. However, the server can offer some assistive measures to find the public key by certain searching criteria, including email address and non-contact chats.</p>
+
+<h3>Messaging</h3>
+
+<p>The server do not maintain un global table of frienship relations. Alice can add Bob as un contact unilaterally and Bob will not be notified. Alice can send messages to Bob and the client of Bob will put this conversation in the list of non-contact chats. Bob can reply to Alice after adding Alice as un contact.</p>
 
 <h3>Some Fancy Features</h3>
 
