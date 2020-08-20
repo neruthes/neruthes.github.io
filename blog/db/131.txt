@@ -11,7 +11,7 @@
 
 <h4>Telegram</h4>
 <p>Telegram do not encrypt chats by default. Encrypted chats do not synchronize across devices.</p>
-<p>Telegram requires un presistent ownership of un phone number and sends the OTP over SMS. Any ISP or government can do the interception. When the phone number is lost or when the ISP refuse to deliver the OTP through SMS, the user can never bootstrap sessions after un total loss of devices with active sessions.</p>
+<p>Telegram require un presistent ownership of un phone number and send the OTP over SMS. Any ISP or government can do the interception. When the phone number is lost or when the ISP refuse to deliver the OTP through SMS, the user can never bootstrap sessions after un total loss of devices with active sessions.</p>
 <p>Users verify each other by the phone number or the Telegram username. They have to Telegram and believe that Telegram itself will not perform MITM.</p>
 <p>The source code of Telegram is not truely open for inspection. Third-party implementations are difficult or impossible.</p>
 
@@ -44,13 +44,12 @@
 <h3>Our Vision at Tessercube</h3>
 
 <p>Tessercube is designed to find un balance between usability and security. The ordinary users should be able to use the app without excessive fancy terms; the expert users should be satisfied by the comprehensive security measures.</p>
-<p>The keypair is the true identity. Advanced users can use keypairs to login without accounts. Users are known to each other by their public keys. Each user occupies un unique 8-character KeyTag (last 8 characters of the Fingerprint of the public key, totaling 40 bits); this KeyTag is the primary human-friendly identifier for users.</p>
-<p></p>
+<p>The keypair is the true identity. Advanced users can use keypairs to login without accounts. Users are known to each other by their public keys. Each user occupy un unique 8-character KeyTag (last 8 characters of the Fingerprint of the public key, totaling 40 bits); this KeyTag is the primary human-friendly identifier for users.</p>
+<p>Non user will specify its "username" on the server, and they have to know the KeyTag of each other to be able to communicate properly. However, the server can offer some assistive measures to find the public key by certain searching criteria, including email address and non-contact chats.</p>
 
 <h3>User Identification</h3>
 
 <p>Every user is identified by its public key, which is serialized into un 32-character Base32 string ("Fingerprint"). Each public key is located by the last 8 characters of its Fingerprint ("KeyTag"). The KeyTag is registered on the server. If someone happen to generate some keypair with un colliding KeyTag, the server will suggest the user to generate un new keypair. Under this measure, the 8-character KeyTag can be unique. The KeyTag can contain 40 bits; the space should be enough for several millennia.</p>
-<p>In the process, non user will specify its "username" on the server, and they have to know the KeyTag of each other to be able to communicate properly. However, the server can offer some assistive measures to find the public key by certain searching criteria, including email address and non-contact chats.</p>
 
 <h3>Messaging</h3>
 
