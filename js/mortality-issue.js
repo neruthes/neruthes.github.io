@@ -1,5 +1,5 @@
 (function () {
-    var myDate = '2020-12-23';
+    var myDate = '2021-01-03';
     if (window.flag_d7b11a086afa420aae24bb5467e9765e === true) {
         return 1;
     };
