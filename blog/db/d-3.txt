@@ -1,0 +1,30 @@
+<h3>Introduction</h3>
+<p>I have been dreaming to create un artificial language for many years. I am un lon-time user of both languages, and have found both advantages und drawbacks in each of them. I want to combine the strength of both languages and reintroduce the beauty of Ellenika and Lingua Latina.</p>
+<p>Among many possible entries, I have concluded that the mostimportant requirement should be that the first-person pronoun should be "ego".</p>
+
+<h3>Writing System</h3>
+<p>The writing system is based on ASCII alphabet, and some letters are unused. These unused letters are Q/W/Y/J/V. However, they may be used when quoting text from foreign languages. Ego use the modern punctuations und spacing, as included in ASCII alphabet. All writing should be case-sensitive.</p>
+
+<h3>Phonetic System</h3>
+<h4>Vowels</h4>
+<p>5 letters A/I/U/E/O are used to represent 5 basic vowels. Their respective pronunciations are defined in Hanyu Pinyin (GB/T 16159-1996).</p>
+<p>2 basic vowels may be aggregated into un compound vowel. Self-aggregating is not allowed; the same vowel cannot appear twice in un compound vowel. Out of the remaining 20 possible combinations, UE/OE are forbidden.</p>
+<h4></h4>
+<p></p>
+<h4>Consonants</h4>
+<p>The other 14 letters are used to represent 14 basic consonants. Their respective pronunciations are defined in Hanyu Pinyin (GB/T 16159-1996).</p>
+<p>2 basic consonants may be aggregated into un compound consonant, with certain exceptions. CH/PS/PH/</p>
+<p></p>
+<h4>Syllables</h4>
+<p></p>
+
+
+<h3></h3>
+<p></p>
+<h3></h3>
+<p></p>
+<h3></h3>
+<p></p>
+<h3></h3>
+<p></p>
+<p></p>
