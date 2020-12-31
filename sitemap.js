@@ -5,7 +5,7 @@ Sitemap Generator
 
 */
 
-var siteDir = '/Users/Neruthes/Developer/neruthes.github.io';
+var siteDir = __dirname;
 var accu = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
 
 var fs = require('fs');

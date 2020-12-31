@@ -1,0 +1,489 @@
+<h3>Introduction</h3>
+<p>I have been dreaming to create un artificial language for many years. I am un lon-time user of both languages, and have found both advantages und drawbacks in each of them. I want to combine the strength of both languages and reintroduce the beauty of Ellenika and Lingua Latina.</p>
+<p>Among many possible entries, I have concluded that the mostimportant requirement should be that the first-person pronoun should be "ego".</p>
+
+<h3>Writing System</h3>
+<p>The writing system is based on ASCII alphabet, and some letters are unused. These unused letters are Q/W/Y/J/V. However, they may be used when quoting text from foreign languages. Ego use the modern punctuations und spacing, as included in ASCII alphabet. All writing should be case-sensitive.</p>
+
+<h3>Phonetic System</h3>
+<h4>Vowels</h4>
+<p>5 letters A/I/U/E/O are used to represent 5 basic vowels. Their respective pronunciations are defined in Hanyu Pinyin (GB/T 16159-1996).</p>
+<p>2 basic vowels may be aggregated into un compound vowel. Self-aggregating is not allowed; the same vowel cannot appear twice in un compound vowel. Out of the remaining 20 possible combinations, UE/OE are forbidden.</p>
+<h4>Nasal Consonants</h4>
+<p>Nasao consonants include M/N/NG. N/N can be used as starters; M/N/NG can be used as enders.</p>
+<h4>Non-Nasal Consonants</h4>
+<p>The other 14 letters are used to represent 14 basic consonants. Their respective pronunciations are defined in Hanyu Pinyin (GB/T 16159-1996).</p>
+<p>2 basic consonants may be aggregated into un compound consonant, with certain exceptions. Pseudo-compounds like CH/PS/PH are not allowed; original basic consonants in Ellenika should be used.</p>
+<h4>Syllables</h4>
+<p>Un multi-syllable word consist of multiple syllables. Each syllable may have un starter consonant und un vowel und un ender consonant. If only 1 vowel exist between 2 consonants, unless otherwise required, the left consonant should be used as the starter of this syllable instead of the ender of the last syllable.</p>
+
+<h3>Numbers</h3>
+<h4>Basic Numerals</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Value</th><th>Word</th>
+        </tr>
+        <tr><td>0</td><td>Nilu</td></tr>
+        <tr><td>1</td><td>Ario</td></tr>
+        <tr><td>2</td><td>Imuo</td></tr>
+        <tr><td>3</td><td>Utei</td></tr>
+        <tr><td>4</td><td>Esou</td></tr>
+        <tr><td>5</td><td>Olai</td></tr>
+        <tr><td>6</td><td>Lada</td></tr>
+        <tr><td>7</td><td>Cili</td></tr>
+        <tr><td>8</td><td>Bulu</td></tr>
+        <tr><td>9</td><td>Kere</td></tr>
+        <tr><td>10</td><td>Soro</td></tr>
+        <tr><td>11</td><td>Taun</td></tr>
+        <tr><td>12</td><td>Mian</td></tr>
+        <tr><td>13</td><td>Puon</td></tr>
+        <tr><td>14</td><td>Zeon</td></tr>
+        <tr><td>15</td><td>Doun</td></tr>
+    </tbody>
+</table>
+<h4>Powers of 10</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Value</th><th>Word</th>
+        </tr>
+        <tr><td>1e1</td><td>Soro</td></tr>
+        <tr><td>1e2</td><td>Buna</td></tr>
+        <tr><td>1e3</td><td>Kilo</td></tr>
+        <tr><td>1e4</td><td>Uoli</td></tr>
+        <tr><td>1e5</td><td>Sorouoli</td></tr>
+        <tr><td>1e6</td><td>Bunauoli</td></tr>
+        <tr><td>1e7</td><td>Kilouoli</td></tr>
+        <tr><td>1e8</td><td>Eius</td></tr>
+        <tr><td>1e100</td><td>Gugo</td></tr>
+        <tr><td>1e1000</td><td>Mira</td></tr>
+    </tbody>
+</table>
+<h4>Examples</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Value</th><th>Phrase</th>
+        </tr>
+        <tr><td>11</td><td>Soro ario</td></tr>
+        <tr><td>21</td><td>Imuosoro ario</td></tr>
+        <tr><td>77</td><td>Cilisoro cili</td></tr>
+        <tr><td>101</td><td>Buna ario</td></tr>
+        <tr><td>199</td><td>Buna keresoro kere</td></tr>
+        <tr><td>200</td><td>Imuobuna</td></tr>
+        <tr><td>1000</td><td>Kilo</td></tr>
+        <tr><td>1001</td><td>Kilo ario</td></tr>
+        <tr><td>1234</td><td>Kilo imuobuna uteisoro esou</td></tr>
+        <tr><td>90009</td><td>Kereuoli kere</td></tr>
+    </tbody>
+</table>
+
+<h3>Fundamental Words (1)</h3>
+<h4>Elemental Roots</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Phrase</th><th>Element</th>
+        </tr>
+        <tr><td>Anemo</td><td>Wind</td></tr>
+        <tr><td>Hidro</td><td>Water</td></tr>
+        <tr><td>Peiro</td><td>Fire</td></tr>
+        <tr><td>Georo</td><td>Earth</td></tr>
+        <tr><td>Eltro</td><td>Electro</td></tr>
+        <tr><td>Magno</td><td>Magnet</td></tr>
+        <tr><td>Ceiro</td><td>Frost</td></tr>
+    </tbody>
+</table>
+<h4>Pseudo Elemental Roots</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Phrase</th><th>Pseudo Element</th>
+        </tr>
+        <tr><td>Andro</td><td>Human</td></tr>
+        <tr><td>Kosmo</td><td>Universe</td></tr>
+        <tr><td>Akuro</td><td>Void</td></tr>
+        <tr><td>Cibro</td><td>Cyber</td></tr>
+        <tr><td>Korpo</td><td>Corporal</td></tr>
+        <tr><td>Mento</td><td>Mental</td></tr>
+        <tr><td>Parto</td><td>Particle</td></tr>
+        <tr><td>?</td><td>Wave</td></tr>
+        <tr><td>Pedio</td><td>Field</td></tr>
+    </tbody>
+</table>
+<h4>Positions</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Phrase</th><th>Position</th>
+        </tr>
+        <tr><td>Uper</td><td>Up/Above/Beyond/Over</td></tr>
+        <tr><td>Urar</td><td>Down/Below/Beneath/Under</td></tr>
+        <tr><td>Zere</td><td>Left</td></tr>
+        <tr><td>Rore</td><td>Right</td></tr>
+        <tr><td>Meta</td><td>After/Back</td></tr>
+        <tr><td>Preo</td><td>Before/Front</td></tr>
+        <tr><td>En</td><td>In</td></tr>
+        <tr><td>Ex</td><td>Out</td></tr>
+        <tr><td>Orie</td><td>East</td></tr>
+        <tr><td>Adie</td><td>West</td></tr>
+        <tr><td>Nodi</td><td>North</td></tr>
+        <tr><td>Sudi</td><td>South</td></tr>
+        <tr><td>Orienodi</td><td>Northeast</td></tr>
+        <tr><td>Oriesudi</td><td>Southeast</td></tr>
+        <tr><td>Adienodi</td><td>Northwest</td></tr>
+        <tr><td>Adiesudi</td><td>Southwest</td></tr>
+    </tbody>
+</table>
+<h4>Nature (1)</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Phrase</th><th>Reference</th>
+        </tr>
+        <tr><td>Kosmos</td><td>Cosmos</td></tr>
+        <tr><td>Solius</td><td>Sun</td></tr>
+        <tr><td>Leunas</td><td>Moon</td></tr>
+        <tr><td>Astras</td><td>Star</td></tr>
+        <tr><td>Georus</td><td>Earth</td></tr>
+        <tr><td>Uranos</td><td>Sky</td></tr>
+        <tr><td>Sarsas</td><td>Ocean</td></tr>
+        <tr><td>Saelis</td><td>Lake</td></tr>
+        <tr><td>Geolis</td><td>Stone</td></tr>
+        <tr><td>Bounis</td><td>Mountain</td></tr>
+        <tr><td>Fos</td><td>Light</td></tr>
+        <tr><td>Tus</td><td>Darkness</td></tr>
+    </tbody>
+</table>
+<h4>Nature (2)</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Phrase</th><th>Reference</th>
+        </tr>
+        <tr><td>Mentus</td><td>Mind</td></tr>
+        <tr><td>Korpus</td><td>Form</td></tr>
+        <tr><td>Xonros</td><td>Space</td></tr>
+        <tr><td>Xronos</td><td>Time</td></tr>
+        <tr><td>Xromus</td><td>Color</td></tr>
+    </tbody>
+</table>
+<h4>Cognitive Words (1)</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Phrase</th><th>Reference</th>
+        </tr>
+        <tr><td>Initus</td><td>Beginning</td></tr>
+        <tr><td>Termus</td><td>Finale</td></tr>
+    </tbody>
+</table>
+
+<h3>Fundamental Words (2)</h3>
+<h4>Logical Expressions</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Phrase</th><th>Operator</th>
+        </tr>
+        <tr><td>Isi</td><td>Be</td></tr>
+        <tr><td>Omi</td><td>All</td></tr>
+        <tr><td>Ari</td><td>Any</td></tr>
+        <tr><td>Upa</td><td>Existence</td></tr>
+        <tr><td>Nil</td><td>Nonexistence</td></tr>
+        <tr><td>Kai</td><td>And</td></tr>
+        <tr><td>Ehe</td><td>Or</td></tr>
+        <tr><td>Xor</td><td>Xor</td></tr>
+        <tr><td>Dis</td><td>Not</td></tr>
+    </tbody>
+</table>
+<h4>Rules on Negation</h4>
+<p>"Nin" mean no; it connect with the left component. Usually placed after verbs.</p>
+<p>"Nil" mean no; it connect with the right component. Usually placed before nouns und adjectives.</p>
+<p>"Nil uidi polis" mean "not see the city"; "nil" emphasize the negation of seeing.</p>
+<p>"Uidi nil polis" mean "see no city"; "nil" emphasize that the quantity of seen cities is 0.</p>
+<p>In subjunctive mood where the initiator pretend to be the recipient hypothetically, the conditional clause should use the generic assumptive form, and the main clause should use un form according to the semantic purpose.</p>
+<h4>Basic Adjectives</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Phrase</th><th>Counterpart in English</th>
+        </tr>
+        <tr><td>Maxeon</td><td>Big</td></tr>
+        <tr><td>Mineon</td><td>Small</td></tr>
+        <tr><td>Foseon</td><td>Bright</td></tr>
+        <tr><td>Tuseon</td><td>Dark</td></tr>
+        <tr><td>Luneon</td><td>Long</td></tr>
+        <tr><td>Reseon</td><td>Short</td></tr>
+        <tr><td>?</td><td>Thick</td></tr>
+        <tr><td>?</td><td>Thin</td></tr>
+    </tbody>
+</table>
+<h4>Person Pronouns</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Person</th>
+            <th>Number</th>
+            <th>Subjective &amp; Objective</th>
+            <th>Possessive</th>
+        </tr>
+        <tr><td>1</td><td>Singular</td><td>Ego</td><td>Ega</td></tr>
+        <tr><td>1</td><td>Plural</td><td>Egi</td><td>Ege</td></tr>
+        <tr><td>2</td><td>Singular</td><td>Tuo</td><td>Tua</td></tr>
+        <tr><td>2</td><td>Plural</td><td>Tui</td><td>Tue</td></tr>
+        <tr><td>3</td><td>Singular</td><td>Ato</td><td>Ata</td></tr>
+        <tr><td>3</td><td>Plural</td><td>Ati</td><td>Ate</td></tr>
+    </tbody>
+</table>
+<h4>Copulas (1)</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Word</th>
+            <th>Form</th>
+        </tr>
+        <tr><td>Isi</td><td>Base</td></tr>
+        <tr><td>Ise</td><td>Generic</td></tr>
+        <tr><td>Isam</td><td>Perfect</td></tr>
+        <tr><td>Iso</td><td>Future</td></tr>
+        <tr><td>Isimi</td><td>Generic, Assumptive</td></tr>
+    </tbody>
+</table>
+<h4>Copulas (2)</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Person</th>
+            <th>Number</th>
+            <th>Generic</th>
+            <th>Perfect</th>
+            <th>Future</th>
+            <th>Generic, Assumptive</th>
+        </tr>
+        <tr><td>1</td><td>Singular</td><td>Ese</td><td>Esam</td><td>Eso</td><td>Esemi</td></tr>
+        <tr><td>1</td><td>Plural</td><td>Esu</td><td>Esuz</td><td>Eso</td><td>Esomi</td></tr>
+        <tr><td>2</td><td>Singular</td><td>Ede</td><td>Edam</td><td>Edo</td><td>Edemi</td></tr>
+        <tr><td>2</td><td>Singular</td><td>Edu</td><td>Eduz</td><td>Edo</td><td>Edumi</td></tr>
+        <tr><td>3</td><td>Plural</td><td>Ebe</td><td>Ebam</td><td>Ebo</td><td>Esomi</td></tr>
+        <tr><td>3</td><td>Plural</td><td>Ebu</td><td>Ebuz</td><td>Ebo</td><td>Ebumi</td></tr>
+    </tbody>
+</table>
+<h4>Copulas (3)</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Person</th>
+            <th>Number</th>
+            <th>Imperative</th>
+        </tr>
+        <tr><td>2</td><td>Singular</td><td>Edai</td></tr>
+        <tr><td>2</td><td>Plural</td><td>Edai</td></tr>
+    </tbody>
+</table>
+<h4>Fundamental Activities (1)</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Reference</th>
+            <th>Base</th>
+            <th>Genric</th>
+            <th>Imperative</th>
+            <th>Perfect</th>
+            <th>Future</th>
+        </tr>
+        <tr><td>See</td><td>Uid</td><td>Uidi</td><td>Uidai</td><td>Uidaz</td><td>Uido</td></tr>
+        <tr><td>Hear</td><td>Kos</td><td>Kosi</td><td>Kosai</td><td>Kosaz</td><td>Kodo</td></tr>
+        <tr><td>Say</td><td>Log</td><td>Logi</td><td>Logai</td><td>Logaz</td><td>Logo</td></tr>
+        <tr><td>Walk</td><td>Ped</td><td>Pedi</td><td>Pedai</td><td>Pedaz</td><td>Pedo</td></tr>
+        <tr><td>Run</td><td>Rud</td><td>Rudi</td><td>Rudai</td><td>Rudaz</td><td>Rudo</td></tr>
+    </tbody>
+</table>
+
+<h3>Sample Phrases</h3>
+<ul>
+    <li>Ego ese Neruthes. (I am Neruthes.)</li>
+    <li>Edai ega leunas. (Become my moon.)</li>
+</ul>
+
+<h3>Lexical Conventions</h3>
+<h4>Basic Conventions</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Essence</th>
+            <th>Feature</th>
+        </tr>
+        <tr><td>Verb, Genric</td><td>-i</td></tr>
+        <tr><td>Verb, Genric, Passive</td><td>-ipa</td></tr>
+        <tr><td>Verb, Future</td><td>-o</td></tr>
+        <tr><td>Verb, Future, Passive</td><td>-opa</td></tr>
+        <tr><td>Verb, Perfect</td><td>-az</td></tr>
+        <tr><td>Verb, Perfect, Passive</td><td>-azpa</td></tr>
+        <tr><td>Verb, Imperative</td><td>-ai</td></tr>
+        <tr><td>Verb, Imperative, Passive</td><td>-aipa</td></tr>
+        <tr><td>Verb, Generic, Assumptive</td><td>-imi</td></tr>
+        <tr><td>Verb, Generic, Assumptive, Passive</td><td>-imipa</td></tr>
+        <tr><td>Verb, Future, Assumptive</td><td>-imio</td></tr>
+        <tr><td>Verb, Future, Assumptive, Passive</td><td>-imiopa</td></tr>
+        <tr><td>Verb, Perfect, Assumptive</td><td>-imiz</td></tr>
+        <tr><td>Verb, Perfect, Assumptive, Passive</td><td>-imizpa</td></tr>
+        <tr><td>Noun, Singular</td><td>-[a/i/o/u]s</td></tr>
+        <tr><td>Noun, Plural</td><td>-[a/i/o/u]x</td></tr>
+        <tr><td>Noun, Initiator of Verb</td><td>-or[s/x]</td></tr>
+        <tr><td>Noun, Recipient of Verb</td><td>-ope[s/x]</td></tr>
+        <tr><td>Adj, Attribute-owning</td><td>-eon</td></tr>
+        <tr><td>Adj, Effect-performing</td><td>-if</td></tr>
+        <tr><td>Noun, Collectional</td><td>-[u/o/i]nmos</td></tr>
+        <tr><td>Verb, Adjective-applying</td><td>-[a/i/o/u]s > -zati</td></tr>
+    </tbody>
+</table>
+<h4>Prefixes</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Prefix</th>
+            <th>Purpose</th>
+        </tr>
+        <tr><td>Pro-</td><td>Affirmative</td></tr>
+        <tr><td>Dis-</td><td>Negative</td></tr>
+        <tr><td>Anti-</td><td>Counter</td></tr>
+        <tr><td>Auto-</td><td>Self</td></tr>
+    </tbody>
+</table>
+<h4>Suffixes</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Suffix</th>
+            <th>Purpose</th>
+        </tr>
+        <tr><td>-ia</td><td>Noun, Abstract concept</td></tr>
+        <tr><td>-ia</td><td>Noun, Geographical region</td></tr>
+        <tr><td>-ian</td><td>Adjective, Geographical region</td></tr>
+        <tr><td>-ins</td><td>Noun, People of geographical region</td></tr>
+        <tr><td>-ine</td><td>Adjective, People of geographical region</td></tr>
+        <tr><td>-ika</td><td>Noun, Language of geographical region</td></tr>
+        <tr><td>-ens</td><td>Noun, Nation/tribe of geographical region</td></tr>
+    </tbody>
+</table>
+
+<h3>Grammar (1)</h3>
+<h4>Component Ordering</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>Structure</th>
+            <th>Ordering</th>
+        </tr>
+        <tr><td>Subject.Verb(Object)</td><td>Subject Verb Object</td></tr>
+        <tr><td>Subject.Verb(Object1, Object2)</td><td>Subject Verb Object1 Object2</td></tr>
+        <tr><td>Noun[Adjective]</td><td>Noun Adjective</td></tr>
+        <tr><td>Noun[Pronoun_Possesive]</td><td>Pronoun_Possesive Noun</td></tr>
+    </tbody>
+</table>
+<h4>Examples</h4>
+<ul>
+    <li>Auto lingus ebe non Ellasika ehe Latinusika. Ato ebe androparageon. (This language is not Ellasika or Lingua Latina. It is artificial.)</li>
+    <li>Ato migratopa para serlors disdependeon en futurus. (It will be migrated to an independent server in future.)</li>
+    <li>Nil hororimi Anemodinamaestratus, ati ebuz nin politix koineon. Prepri impekti poteneom. (Not fearing aerotransport troops, they are not ordinary civilians. We must impact forcefully.)</li>
+    <li>Esemi tuo, ego nil uidimiz solius. (If I were you, I would not look at the sun.)</li>
+</ul>
+<h3>Prepositions</h3>
+<table>
+    <tbody>
+        <tr>
+            <th>Phrase</th>
+            <th>Reference</th>
+        </tr>
+        <tr><td>Uper</td><td>Up/Above/Beyond/Over</td></tr>
+        <tr><td>Urar</td><td>Down/Below/Beneath/Under</td></tr>
+        <tr><td>En</td><td>In</td></tr>
+        <tr><td>Ex</td><td>Out</td></tr>
+        <tr><td>Ex</td><td>Out</td></tr>
+        <tr><td>De</td><td>Of</td></tr>
+        <tr><td>Afmi</td><td>Around</td></tr>
+        <tr><td>Epie</td><td>For</td></tr>
+        <tr><td>Para</td><td>With</td></tr>
+        <tr><td>Anti</td><td>Against</td></tr>
+        <tr><td>Preo</td><td>Before</td></tr>
+        <tr><td>Meta</td><td>After</td></tr>
+        <tr><td>Aepo</td><td>From</td></tr>
+        <tr><td>Pros</td><td>To</td></tr>
+        <tr><td>Eisa</td><td>Into</td></tr>
+        <tr><td>Duta</td><td>Because</td></tr>
+    </tbody>
+</table>
+<h3>Noun Classification</h3>
+<table>
+    <tbody>
+        <tr>
+            <th>Category</th>
+            <th>Examples</th>
+            <th>Traits</th>
+            <th>Explanation</th>
+        </tr>
+        <tr><td>1</td><td>Fos (Light), Tus (Darkness)</td><td>-[a/i/u/o]s</td><td>The most ancient words.</td></tr>
+        <tr><td>2</td><td>Anemo (Wind), Hidro (Water)</td><td>-o</td><td>Elemental roots & pseudo elemental roots.</td></tr>
+        <tr><td>3A</td><td>Initus (Beginning), Termus (Finale)</td><td>-us</td><td>Countable basic artificial concepts.</td></tr>
+        <tr><td>3B</td><td>Polis (City), Geolis (Stone)</td><td>-is</td><td>Countable concrete objects.</td></tr>
+        <tr><td>3C</td><td>Kosmos (Cosmos), Uranos (Sky)</td><td>-os</td><td>Gradually developed concepts to describe the world.</td></tr>
+        <tr><td>3D</td><td>Sarsas (Ocean)</td><td>-as</td><td>Uncountable continuum, consisting of average small components.</td></tr>
+    </tbody>
+</table>
+<p>Un small cup of water taken away from the ocean cannot be called un cup of ocean. Ocean is un construction of water molecules, and not something concretely self-explanatory.</p>
+<h3>Fundamental Words (3)</h3>
+<table>
+    <tbody>
+        <tr>
+            <th>Phrase</th>
+            <th>Speechpart</th>
+            <th>Reference</th>
+        </tr>
+        <tr><td>Andras</td><td>n</td><td>Man</td></tr>
+        <tr><td>Guakas</td><td>n</td><td>Woman</td></tr>
+        <tr><td>Paragi</td><td>vt</td><td>Make</td></tr>
+        <tr><td>Polis</td><td>n</td><td>City</td></tr>
+        <tr><td>Politis</td><td>n</td><td>Civizen, civilian</td></tr>
+        <tr><td>Logos</td><td>n</td><td>Speech</td></tr>
+        <tr><td>Logonmos</td><td>n</td><td>Language</td></tr>
+        <tr><td>Cibroxonros</td><td>n</td><td>Cyberspace</td></tr>
+        <tr><td>Sinas</td><td>n</td><td>China</td></tr>
+        <tr><td>Ellas</td><td>n</td><td>Ellas</td></tr>
+        <tr><td>Maxitus</td><td>n</td><td>Soldier</td></tr>
+        <tr><td>Strati</td><td>v</td><td>Fight</td></tr>
+        <tr><td>Stratus</td><td>v</td><td>Company (military unit)</td></tr>
+        <tr><td>Dinami</td><td>v</td><td>Move</td></tr>
+        <tr><td>Limiti</td><td>v</td><td>Limit</td></tr>
+        <tr><td>Krati</td><td>v</td><td>Rule</td></tr>
+        <tr><td>Kratus</td><td>n</td><td>Reign</td></tr>
+        <tr><td>Krators</td><td>n</td><td>Ruler</td></tr>
+        <tr><td>Autokrators</td><td>n</td><td>Autocrator</td></tr>
+        <tr><td>Omikrators</td><td>n</td><td>President</td></tr>
+        <tr><td>Demokratus</td><td>n</td><td>Democracy</td></tr>
+        <tr><td>Demokrateon</td><td>n</td><td>Democratic</td></tr>
+        <tr><td>Impekti</td><td>v</td><td>Impact</td></tr>
+        <tr><td>Impektus</td><td>n</td><td>Impact</td></tr>
+        <tr><td>Senatus</td><td>n</td><td>Senate</td></tr>
+        <tr><td>Solietus</td><td>n</td><td>Soviet</td></tr>
+        <tr><td>Arxus</td><td>n</td><td>Arch</td></tr>
+        <tr><td>Arxonus</td><td>n</td><td>Archon</td></tr>
+        <tr><td>Arxonus</td><td>n</td><td>Archon</td></tr>
+        <tr><td>Prepri</td><td>v</td><td>Must, generic</td></tr>
+        <tr><td>Prepraz</td><td>v</td><td>Must, perfect</td></tr>
+        <tr><td>Prepro</td><td>v</td><td>Must, future</td></tr>
+        <tr><td>Potenus</td><td>n</td><td>Power</td></tr>
+        <tr><td>Poteneon</td><td>adj</td><td>Powerful</td></tr>
+        <tr><td>Koineon</td><td>adj</td><td>Ordinary</td></tr>
+        <tr><td>Fisikos</td><td>n</td><td>Physics</td></tr>
+        <tr><td>Ximeros</td><td>n</td><td>Chemistry</td></tr>
+        <tr><td>Mazemos</td><td>n</td><td>Mathematics</td></tr>
+        <tr><td>Mexanos</td><td>n</td><td>Engineering</td></tr>
+        <tr><td>Metafisikos</td><td>n</td><td>Metaphysics</td></tr>
+        <tr><td>Ontologia</td><td>n</td><td>Ontology</td></tr>
+        <tr><td>Anemodinamologia</td><td>n</td><td>Aerodynamics</td></tr>
+        <tr><td>Kriptologia</td><td>n</td><td>Cryptography</td></tr>
+        <tr><td>Eltromagnopedios</td><td>n</td><td>Electromagnetic field</td></tr>
+    </tbody>
+</table>

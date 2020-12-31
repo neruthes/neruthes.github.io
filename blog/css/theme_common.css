@@ -86,7 +86,7 @@ a {
 }
 
 .post-h2 {
-	font-size: 2.6rem;
+	font-size: 3.4rem;
 	font-weight: 500;
 	padding: 0 10px;
 	margin: 0 0 0;
@@ -121,17 +121,22 @@ a {
 .post-text aside,
 .post-text figure,
 .post-text figcaption,
+.post-text table,
+.post-text tbody,
+.post-text tr,
+.post-text th,
+.post-text td,
 .post-text pre,
 .post-text code {
 	font-family: 'JetBrains Mono', 'Myriad Pro', 'Myriad', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .post-text > h3 {
-	font-size: 2.6rem;
+	font-size: 2.8rem;
 	/* margin: 20px 0 20px; */
 }
 .post-text > h4 {
-	font-size: 2.2rem;
+	font-size: 2rem;
 }
 
 .post-text > h3,
@@ -149,10 +154,18 @@ h1, h2, h3, h4, h5, h6 {
     hyphens: none;
 }
 
-.post-text > p, .post-text > blockquote, .post-text > pre, .post-text > aside {
+.post-text > p,
+.post-text > blockquote,
+.post-text > pre,
+.post-text > figure,
+.post-text > table,
+.post-text > aside {
 	padding: 0 10px;
 }
-.post-text p, .post-text blockquote, .post-text pre, .post-text aside {
+.post-text p,
+.post-text blockquote,
+.post-text pre,
+.post-text aside {
 	line-height: 1.6em;
 	margin: 1em 0;
 }
@@ -192,8 +205,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
 }
 
-.post-text > ol, .post-text > ul {
-	padding: 0 15px 0 30px;
+.post-text > ol,
+.post-text > ul {
+	font-size: inherit;
+	padding: 0 15px 0 calc(10px + 1.2em);
 }
 
 .post-text > ol > li, .post-text > ul > li {
@@ -252,7 +267,22 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 10px;
 }
 
-.post-text > canvas {
+.post-text table {
+	border-collapse:collapse;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.post-text tbody,
+.post-text tbody tr,
+.post-text tbody tr * {
+	font-size: inherit;
+}
+.post-text tbody tr * {
+	/* font-size: 1.6rem; */
+	text-align: left;
+	border: 1px solid #000;
+	padding: 5px;
+	min-width: 100px;
 }
 
 .post-date {

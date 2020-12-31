@@ -41,6 +41,12 @@
 	
 	
 	<url>
+		<loc>https://neruthes.xyz/blog/?p=132</loc>
+		<lastmod>2020-12-30</lastmod>
+		<priority>0.8</priority>
+	</url>
+	
+	<url>
 		<loc>https://neruthes.xyz/blog/?p=130</loc>
 		<lastmod>2020-02-20</lastmod>
 		<priority>0.8</priority>
