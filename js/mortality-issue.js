@@ -1,5 +1,5 @@
 (function () {
-    var myDate = '2021-02-23';
+    var myDate = '2021-03-13';
     if (window.flag_d7b11a086afa420aae24bb5467e9765e === true) {
         return 1;
     };
@@ -31,7 +31,7 @@
             `);
             tag.innerHTML = `<style>#node_d7b11a086afa420aae24bb5467e9765e {color:#000;background:#FE2;}
             #node_d7b11a086afa420aae24bb5467e9765e:hover {color:#FFF;background:#000}</style>`;
-            tag.innerHTML += `If you can see this notice, I should have died some time earlier.`
+            tag.innerHTML += `If you can see this notice, I might have died some time earlier.`
             tag.addEventListener('click', function () {
                 var myScreen = document.createElement('div');
                 myScreen.setAttribute('id', 'node_15c51a6bba1d48e6b5ec4b10fbafcaf0')
