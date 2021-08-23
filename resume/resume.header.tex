@@ -1,0 +1,166 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,lmargin=20mm,rmargin=20mm,tmargin=15mm,bmargin=15mm]{geometry}
+\usepackage{calc}
+\usepackage{amsmath,xltxtra,fontspec,xunicode}
+\usepackage{titlesec}
+
+
+\usepackage[PunctStyle=plain]{xeCJK}
+\XeTeXlinebreaklocale "zh" 
+\XeTeXlinebreakskip = 0pt plus 1pt 
+
+% =========================================
+\usepackage{listings}
+\usepackage{paralist}
+\usepackage{pbox}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{fontawesome5}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{soul}
+\usepackage{ragged2e}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=false,
+    pdfpagemode=UseOutlines
+}
+\setmainfont{Myriad Pro}
+\setromanfont{Myriad Pro}
+\setsansfont{Myriad Pro Semibold}
+\setmainfont{Seravek}
+\setromanfont{Seravek}
+\setsansfont{Seravek Medium}
+\setmonofont{JetBrains Mono}
+\setCJKmainfont{Noto Sans SC}
+\setCJKromanfont{Noto Sans SC}
+\setCJKsansfont{Noto Sans SC Medium}
+\setCJKmonofont{Noto Sans SC}
+\title{Neruthes - Resume}
+\author{Neruthes}
+\date{2021-08-23}
+% =========================================
+
+% =========================================
+% START NERUTHES CONFIG
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\baselineskip}{19pt}
+% END NERUTHES CONFIG
+% =========================================
+
+% =========================================
+% START COMMON STYLESHEET
+\titleformat*{\section}{\Large\bfseries\sffamily}
+% \titleformat*{\subsection}{\large\bfseries\sffamily}
+% \titleformat*{\subsubsection}{\bfseries\sffamily}
+% Table
+% \renewcommand\theadalign{l}
+\renewcommand\theadfont{\sffamily\bfseries}
+% Font Size
+
+% END COMMON STYLESHEET
+% =========================================
+
+\graphicspath{ {/home/neruthes/DEV/neruthes.github.io/} }
+
+
+\pagestyle{empty}
+
+% ===========================
+% HEADER
+% ===========================
+\tabcolsep=0pt
+\tabulinesep=5pt
+\baselineskip=17pt
+\parskip=5pt
+\sffamily\mdseries
+
+
+
+% ===========================
+% COMMANDS
+% ===========================
+\definecolor{mygray}{gray}{0.4}
+
+\newcommand{\makeinfosection}{
+    \begin{minipage}{110mm}
+        {\Huge\fontspec{Realtime Rounded} NERUTHES\vspace{1mm}\hspace{2mm}}
+
+        \vspace{20pt}
+        \ttfamily\small
+        \begin{tabu}{cll}
+            {} & {\hspace{1.5em}} & {} \\
+            {\faIcon{globe-asia}} & {} & \fontspec{JetBrains Mono NL Medium}\href{https://neruthes.xyz}{neruthes.xyz} \\
+            {\faIcon{at}} & {} & \fontspec{JetBrains Mono NL Medium}\href{mailto:i@neruthes.xyz}{i@neruthes.xyz} \\
+            {\faIcon{github}} & {} & \fontspec{JetBrains Mono NL Medium}\href{https://github.com/neruthes}{github.com/neruthes} \\
+            {\faIcon{dribbble}} & {} & \fontspec{JetBrains Mono NL Medium}\href{https://dribbble.com/neruthes}{dribbble.com/neruthes} \\
+        \end{tabu}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{50mm}
+        \hfill\includegraphics[width=28mm, height=28mm]{neruthes-force-circle-for-square.png} \\
+    \end{minipage}
+}
+
+
+\newcommand{\mysection}[1]{
+    \begingroup
+        \vspace{30pt}
+        {\fontspec{Realtime Rounded Semibold}\Large\mdseries\letterspacingbig{#1}}
+        \vspace{12pt}
+        \hrule
+        \vspace{10pt}
+    \endgroup
+
+}
+\newcommand{\subsecexp}[5]{
+    % 1=title  2=company  3=start  4=end  5=text
+    \vspace{12pt}
+
+    \begingroup
+        \myspan{#3 - #4}\vspace{3pt}\\
+        \mytitle{#1} @ \mycompany{#2}\vspace{3pt}\\            
+        \mydesctext{#5}
+
+    \endgroup
+
+}
+
+\newcommand{\subsecproj}[3]{
+    % 1=role  2=name  3=intro
+    \vspace{12pt}
+
+    \begingroup
+        \mytitle{#2}\vspace{0pt}\\
+        \myspan{\sffamily\scshape#1}\vspace{3pt}\\
+        \mydesctext{#3}
+
+    \endgroup
+
+}
+
+
+
+\newcommand{\myref}[1]{
+    \vspace{1pt}%
+    {\rmfamily\small\mdseries\itshape \textcolor{mygray}{#1}}
+}
+\newcommand{\mytitle}[1]{
+    \large\sffamily{#1}
+}
+\newcommand{\mycompany}[1]{
+    \large\sffamily{#1}
+}
+\newcommand{\myspan}[1]{
+    \baselineskip=15pt
+    \fontspec{JetBrains Mono}\mdseries\small\textcolor{black}{#1}
+}
+\newcommand{\mydesctext}[1]{
+    \rmfamily\normalsize\mdseries{#1}
+
+}
