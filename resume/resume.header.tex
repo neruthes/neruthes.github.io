@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
 
 \usepackage[a4paper,lmargin=20mm,rmargin=20mm,tmargin=15mm,bmargin=15mm]{geometry}
 \usepackage{calc}
@@ -37,10 +37,10 @@
 \setromanfont{Seravek}
 \setsansfont{Seravek Medium}
 \setmonofont{JetBrains Mono}
-\setCJKmainfont{Noto Sans SC}
-\setCJKromanfont{Noto Sans SC}
-\setCJKsansfont{Noto Sans SC Medium}
-\setCJKmonofont{Noto Sans SC}
+\setCJKmainfont{Noto Sans CJK SC}
+\setCJKromanfont{Noto Sans CJK SC}
+\setCJKsansfont{Noto Sans CJK SC Medium}
+\setCJKmonofont{Noto Sans CJK SC}
 \title{Neruthes - Resume}
 \author{Neruthes}
 \date{2021-08-23}
@@ -62,6 +62,7 @@
 % Table
 % \renewcommand\theadalign{l}
 \renewcommand\theadfont{\sffamily\bfseries}
+\setdefaultleftmargin{0.9em}{2.2em}{1.87em}{1.7em}{1em}{1em}
 % Font Size
 
 % END COMMON STYLESHEET
@@ -94,6 +95,7 @@
 
         \vspace{20pt}
         \ttfamily\small
+        \tabulinesep=3pt
         \begin{tabu}{cll}
             {} & {\hspace{1.5em}} & {} \\
             {\faIcon{globe-asia}} & {} & \fontspec{JetBrains Mono NL Medium}\href{https://neruthes.xyz}{neruthes.xyz} \\
@@ -113,18 +115,23 @@
         \vspace{30pt}
         {\fontspec{Realtime Rounded Semibold}\Large\mdseries\letterspacingbig{#1}}
         \vspace{12pt}
-        \hrule
+        \hrule height 1.5pt
         \vspace{10pt}
     \endgroup
 
 }
 \newcommand{\subsecexp}[5]{
     % 1=title  2=company  3=start  4=end  5=text
-    \vspace{12pt}
+    \vspace{18pt}
 
     \begingroup
-        \myspan{#3 - #4}\vspace{3pt}\\
-        \mytitle{#1} @ \mycompany{#2}\vspace{3pt}\\            
+        \raggedright
+        \myspan{#3 - #4}\vspace{3pt}\par
+        \mytitle{#1} \hfill \mycompany{#2}\par
+
+        {\color{white}\hrule height 7pt}
+        \hrule
+        {\color{white}\hrule height 7pt}
         \mydesctext{#5}
 
     \endgroup
@@ -133,7 +140,7 @@
 
 \newcommand{\subsecproj}[3]{
     % 1=role  2=name  3=intro
-    \vspace{12pt}
+    \vspace{18pt}
 
     \begingroup
         \mytitle{#2}\vspace{0pt}\\
