@@ -1,5 +1,5 @@
 (function () {
-    var myDate = '2022-01-06';
+    var myDate = '2022-01-07';
     if (window.flag_d7b11a086afa420aae24bb5467e9765e === true) {
         return 1;
     };
