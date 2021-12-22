@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="560px" height="560px" viewBox="0 0 560 560" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>neruthes-force-circle-for-square</title>
+    <defs>
+        <linearGradient x1="50%" y1="-2.72315773%" x2="50%" y2="100.943571%" id="linearGradient-1">
+            <stop stop-color="#FEDE75" offset="0%"></stop>
+            <stop stop-color="#FEC94A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="neruthes-force-circle-for-square" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="BG" fill="#FFFFFF" cx="280" cy="280" r="280"></circle>
+        <g id="Dist" transform="translate(45.000000, 45.000000)" stroke="#453613" stroke-width="18">
+            <g id="Group" transform="translate(34.000000, 192.000000)" fill="url(#linearGradient-1)" stroke-linecap="square" stroke-linejoin="round">
+                <path d="M369.43537,117.853596 L413.701282,143.411333 L409.740798,151.047773 C369.624898,228.397567 289.717538,278 201,278 C112.282041,278 32.3743634,228.397094 -7.74133991,151.046728 L-11.701888,143.410071 L32.5634942,117.854458 L111.000096,-17.9999939 L150.217183,49.9267955 L201.000051,20.607702 L251.781751,49.9267854 L291.000073,-17.9998244 L369.43537,117.853596 Z" id="Combined-Shape"></path>
+            </g>
+            <circle id="Border" cx="235" cy="235" r="235"></circle>
+        </g>
+    </g>
+</svg>
