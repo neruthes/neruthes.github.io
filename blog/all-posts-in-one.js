@@ -1,7 +1,7 @@
 /*
 
 Static Blog Generator
-(c) Copyright 2014 All Rights Reserved by Joy Neop
+(c) Copyright 2014 All Rights Reserved by Neruthes
 
 */
 
@@ -41,7 +41,7 @@ for (var i = 0; i <= maxId; i++) {
 		} else {
 			title = listJson[i]['T'];
 		}
-		accumulate = postTemplate.replace(/__neop.postId__/g, i).replace(/__neop.postTitle__/g, title).replace(/__neop.date__/g, listJson[i]['D']).replace(/__neop.postText__/g, real(fs.readFileSync(blogPath + '/db/' + i + '.txt', 'utf8').toString())) + accumulate;
+		accumulate = postTemplate.replace(/__Neruthes.postId__/g, i).replace(/__Neruthes.postTitle__/g, title).replace(/__Neruthes.date__/g, listJson[i]['D']).replace(/__Neruthes.postText__/g, real(fs.readFileSync(blogPath + '/db/' + i + '.txt', 'utf8').toString())) + accumulate;
 	};
 };
 
@@ -49,7 +49,7 @@ for (var i = 0; i < listJson.length; i++) {
 
 };
 
-entireHtml = htmlTemplate.replace('__neop.allPosts__', accumulate);
+entireHtml = htmlTemplate.replace('__Neruthes.allPosts__', accumulate);
 
 fs.writeFileSync(blogPath + '/all-posts-in-one.txt', entireHtml);
 

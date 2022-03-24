@@ -152,7 +152,7 @@ app.main = function () {
 		if ( 0 <= app.getPID() && app.getPID() < app.articlesList.length && app.doesArticleExist(app.getPID())) {
 			// This is a valid URL for a post
 			stringInAlbumContext = regularItemSectionTemplate.replace(/__INDEX__/g, app.getPID()).replace(/__DATE__/g, app.articlesList[app.getPID()].D);
-			document.title = app.articlesList[String(app.getPID())].T + ' — NERUTHES (a.k.a. Joy Neop) Album';
+			document.title = app.articlesList[String(app.getPID())].T + ' — Neruthes | Album';
 			AlbumContext.innerHTML = stringInAlbumContext;
 			app.loadCurrentPost(app.getPID());
 		} else {

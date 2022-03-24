@@ -1,7 +1,7 @@
 /*
 
 Sitemap Generator
-(c) Copyright 2014 All Rights Reserved by Joy Neop
+(c) Copyright 2014 All Rights Reserved by Neruthes
 
 */
 

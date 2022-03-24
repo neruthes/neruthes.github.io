@@ -4,7 +4,7 @@ xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/el
 xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
     <channel>
-        <title>Neruthes (a.k.a. Joy Neop)</title>
+        <title>Neruthes</title>
         <atom:link href="https://neruthes.xyz/blog/feed.rss" rel="self" type="application/rss+xml" />
         <link>https://neruthes.xyz/blog/</link>
         <description>CB0A BC77 5644 0D12 915E 3F25 AFB3 373F 5200 DF38</description>
@@ -14,10 +14,10 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
         <sy:updateFrequency>1</sy:updateFrequency>
 	    <generator>https://neruthes.xyz/blog/</generator>
         <item>
-            <title>Ega Logonmos Androparageon (1)</title>
+            <title>Ega Glossa Androparageon (1)</title>
             <link>https://neruthes.xyz/blog/?p=132</link>
             <pubDate>2020-12-30 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=132</guid>
             <content:encoded>
 <![CDATA[
@@ -518,7 +518,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
             <title>Universal UNIX Time (UTU): Technical Specification</title>
             <link>https://neruthes.xyz/blog/?p=130</link>
             <pubDate>2020-02-20 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=130</guid>
             <content:encoded>
 <![CDATA[
@@ -630,7 +630,7 @@ return utuStr;
             <title>Cybercommunist Party Manifesto</title>
             <link>https://neruthes.xyz/blog/?p=129</link>
             <pubDate>2019-04-26 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=129</guid>
             <content:encoded>
 <![CDATA[
@@ -752,7 +752,7 @@ return utuStr;
             <title>My OpenPGP SECP256K1 Public Key (Since 2019)</title>
             <link>https://neruthes.xyz/blog/?p=128</link>
             <pubDate>2019-04-23 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=128</guid>
             <content:encoded>
 <![CDATA[
@@ -889,7 +889,7 @@ QfaYQhu+eQ==
             <title>My OpenPGP RSA Public Key (Since 2018)</title>
             <link>https://neruthes.xyz/blog/?p=127</link>
             <pubDate>2018-12-04 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=127</guid>
             <content:encoded>
 <![CDATA[
@@ -1023,7 +1023,7 @@ QfaYQhu+eQ==
             <title>Neospeak, The Neoparian Dialect Of The English Language</title>
             <link>https://neruthes.xyz/blog/?p=126</link>
             <pubDate>2018-11-26 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=126</guid>
             <content:encoded>
 <![CDATA[
@@ -1123,7 +1123,7 @@ QfaYQhu+eQ==
             <title>GitHub + CloudFlare = CDN</title>
             <link>https://neruthes.xyz/blog/?p=125</link>
             <pubDate>2016-08-26 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=125</guid>
             <content:encoded>
 <![CDATA[
@@ -1162,7 +1162,7 @@ $ git push cdn master
             <title>To Boldly Live</title>
             <link>https://neruthes.xyz/blog/?p=124</link>
             <pubDate>2016-08-16 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=124</guid>
             <content:encoded>
 <![CDATA[
@@ -1217,7 +1217,7 @@ My answer to the meaning of the life is that there is non meaning granted by un 
             <title>Problems vs Solutions</title>
             <link>https://neruthes.xyz/blog/?p=123</link>
             <pubDate>2016-07-31 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=123</guid>
             <content:encoded>
 <![CDATA[
@@ -1263,7 +1263,7 @@ My answer to the meaning of the life is that there is non meaning granted by un 
             <title>The Story Behind RandomFont</title>
             <link>https://neruthes.xyz/blog/?p=122</link>
             <pubDate>2016-07-07 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=122</guid>
             <content:encoded>
 <![CDATA[
@@ -1288,11 +1288,11 @@ My answer to the meaning of the life is that there is non meaning granted by un 
             <title>From Joy Neop To Neruthes</title>
             <link>https://neruthes.xyz/blog/?p=121</link>
             <pubDate>2016-03-10 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=121</guid>
             <content:encoded>
 <![CDATA[
-<p>For half decade I have been using the name «Joy Neop», but I will hopefully get rid of it half decade later.</p>
+<p>For half decade I have been using the name "Joy Neop", but I will hopefully get rid of it half decade later.</p>
 <p>Selection of symbol is <em>arbitrary</em>. When my age was around 14, I happened to create un alias name for myself, to be different from my legal name which was not in my control. And it was this one, un name with anglophone characteristics.</p>
 <p>As years past, the name happened to be un bit problematic. Not only because this first name is supposed to be exclusive for female users in the prejudice of certain arrogant anglophone people, but I am not really fond of the first-last convention. As I have noticed, the last name component is simply un mark of Y chromosome, and the origins of common last names are usually locations (e.g. Yamada), jobs (e.g. Smith), and objects (e.g. Einstein).</p>
 <p>I then started to examine the necessity of last names. And my conclusion is that the last name component has non necessity. I embrace great spirits like Socrates, Plato, and Aristotle.</p>
@@ -1306,7 +1306,7 @@ My answer to the meaning of the life is that there is non meaning granted by un 
             <title>America Ist Tot, Viva La America</title>
             <link>https://neruthes.xyz/blog/?p=119</link>
             <pubDate>2015-06-28 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=119</guid>
             <content:encoded>
 <![CDATA[
@@ -1323,7 +1323,7 @@ My answer to the meaning of the life is that there is non meaning granted by un 
             <title>My OpenPGP RSA Public Key (Since 2015)</title>
             <link>https://neruthes.xyz/blog/?p=116</link>
             <pubDate>2015-01-26 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=116</guid>
             <content:encoded>
 <![CDATA[
@@ -1488,7 +1488,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>I Can (Not) Restart</title>
             <link>https://neruthes.xyz/blog/?p=115</link>
             <pubDate>2015-01-23 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=115</guid>
             <content:encoded>
 <![CDATA[
@@ -1506,7 +1506,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Private Concepts</title>
             <link>https://neruthes.xyz/blog/?p=113</link>
             <pubDate>2014-11-15 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=113</guid>
             <content:encoded>
 <![CDATA[
@@ -1521,7 +1521,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>At This Age</title>
             <link>https://neruthes.xyz/blog/?p=112</link>
             <pubDate>2014-10-02 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=112</guid>
             <content:encoded>
 <![CDATA[
@@ -1538,7 +1538,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Into The Stage</title>
             <link>https://neruthes.xyz/blog/?p=111</link>
             <pubDate>2014-09-24 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=111</guid>
             <content:encoded>
 <![CDATA[
@@ -1556,7 +1556,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Woodstocky</title>
             <link>https://neruthes.xyz/blog/?p=108</link>
             <pubDate>2014-07-30 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=108</guid>
             <content:encoded>
 <![CDATA[
@@ -1570,7 +1570,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>On The Way Of Youth</title>
             <link>https://neruthes.xyz/blog/?p=107</link>
             <pubDate>2014-07-12 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=107</guid>
             <content:encoded>
 <![CDATA[
@@ -1584,7 +1584,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Visionary</title>
             <link>https://neruthes.xyz/blog/?p=106</link>
             <pubDate>2014-07-10 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=106</guid>
             <content:encoded>
 <![CDATA[
@@ -1598,7 +1598,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Auromna</title>
             <link>https://neruthes.xyz/blog/?p=105</link>
             <pubDate>2014-07-05 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=105</guid>
             <content:encoded>
 <![CDATA[
@@ -1612,7 +1612,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Vitality Lily</title>
             <link>https://neruthes.xyz/blog/?p=102</link>
             <pubDate>2014-06-24 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=102</guid>
             <content:encoded>
 <![CDATA[
@@ -1632,7 +1632,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Mortality</title>
             <link>https://neruthes.xyz/blog/?p=101</link>
             <pubDate>2014-04-25 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=101</guid>
             <content:encoded>
 <![CDATA[
@@ -1648,7 +1648,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Macintosh, Thank Thee</title>
             <link>https://neruthes.xyz/blog/?p=95</link>
             <pubDate>2014-01-24 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=95</guid>
             <content:encoded>
 <![CDATA[
@@ -1664,7 +1664,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Happy New Year 2014</title>
             <link>https://neruthes.xyz/blog/?p=94</link>
             <pubDate>2014-01-01 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=94</guid>
             <content:encoded>
 <![CDATA[
@@ -1678,7 +1678,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Milestone</title>
             <link>https://neruthes.xyz/blog/?p=90</link>
             <pubDate>2013-12-16 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=90</guid>
             <content:encoded>
 <![CDATA[
@@ -1696,7 +1696,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Prometheus</title>
             <link>https://neruthes.xyz/blog/?p=88</link>
             <pubDate>2013-11-09 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=88</guid>
             <content:encoded>
 <![CDATA[
@@ -1713,7 +1713,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Lonely Leaf</title>
             <link>https://neruthes.xyz/blog/?p=87</link>
             <pubDate>2013-11-09 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=87</guid>
             <content:encoded>
 <![CDATA[
@@ -1727,7 +1727,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Leaves Horizon</title>
             <link>https://neruthes.xyz/blog/?p=85</link>
             <pubDate>2013-11-03 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=85</guid>
             <content:encoded>
 <![CDATA[
@@ -1742,7 +1742,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Live On The Internet</title>
             <link>https://neruthes.xyz/blog/?p=78</link>
             <pubDate>2013-08-29 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=78</guid>
             <content:encoded>
 <![CDATA[
@@ -1758,7 +1758,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Betrayer</title>
             <link>https://neruthes.xyz/blog/?p=71</link>
             <pubDate>2013-07-07 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=71</guid>
             <content:encoded>
 <![CDATA[
@@ -1777,7 +1777,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Mini White</title>
             <link>https://neruthes.xyz/blog/?p=67</link>
             <pubDate>2013-06-30 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=67</guid>
             <content:encoded>
 <![CDATA[
@@ -1791,7 +1791,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Next NeXT</title>
             <link>https://neruthes.xyz/blog/?p=64</link>
             <pubDate>2013-06-29 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=64</guid>
             <content:encoded>
 <![CDATA[
@@ -1807,7 +1807,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Hand In Hand</title>
             <link>https://neruthes.xyz/blog/?p=63</link>
             <pubDate>2013-06-29 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=63</guid>
             <content:encoded>
 <![CDATA[
@@ -1829,7 +1829,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Such Looooooooooong A Week Eventually Gone</title>
             <link>https://neruthes.xyz/blog/?p=62</link>
             <pubDate>2013-06-10 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=62</guid>
             <content:encoded>
 <![CDATA[
@@ -1844,7 +1844,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Corner Flower</title>
             <link>https://neruthes.xyz/blog/?p=61</link>
             <pubDate>2013-06-09 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=61</guid>
             <content:encoded>
 <![CDATA[
@@ -1858,7 +1858,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Such Deep A Whole I Jumped</title>
             <link>https://neruthes.xyz/blog/?p=60</link>
             <pubDate>2013-05-17 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=60</guid>
             <content:encoded>
 <![CDATA[
@@ -1876,7 +1876,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Bypassed Spring</title>
             <link>https://neruthes.xyz/blog/?p=59</link>
             <pubDate>2013-05-17 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=59</guid>
             <content:encoded>
 <![CDATA[
@@ -1892,7 +1892,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Silent Walk</title>
             <link>https://neruthes.xyz/blog/?p=58</link>
             <pubDate>2013-05-12 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=58</guid>
             <content:encoded>
 <![CDATA[
@@ -1907,7 +1907,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Approaching Destination Of Current Life</title>
             <link>https://neruthes.xyz/blog/?p=57</link>
             <pubDate>2013-04-27 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=57</guid>
             <content:encoded>
 <![CDATA[
@@ -1924,7 +1924,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>So Fast</title>
             <link>https://neruthes.xyz/blog/?p=52</link>
             <pubDate>2013-03-27 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=52</guid>
             <content:encoded>
 <![CDATA[
@@ -1942,7 +1942,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Chaotic Wind</title>
             <link>https://neruthes.xyz/blog/?p=51</link>
             <pubDate>2013-03-19 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=51</guid>
             <content:encoded>
 <![CDATA[
@@ -1956,7 +1956,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>White</title>
             <link>https://neruthes.xyz/blog/?p=50</link>
             <pubDate>2013-03-12 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=50</guid>
             <content:encoded>
 <![CDATA[
@@ -1973,7 +1973,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Snow And Memories</title>
             <link>https://neruthes.xyz/blog/?p=48</link>
             <pubDate>2013-02-28 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=48</guid>
             <content:encoded>
 <![CDATA[
@@ -1989,7 +1989,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Escape</title>
             <link>https://neruthes.xyz/blog/?p=40</link>
             <pubDate>2012-12-15 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=40</guid>
             <content:encoded>
 <![CDATA[
@@ -2013,7 +2013,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Cold Winter</title>
             <link>https://neruthes.xyz/blog/?p=36</link>
             <pubDate>2012-12-07 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=36</guid>
             <content:encoded>
 <![CDATA[
@@ -2033,7 +2033,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>The Lost Campus</title>
             <link>https://neruthes.xyz/blog/?p=33</link>
             <pubDate>2012-11-10 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=33</guid>
             <content:encoded>
 <![CDATA[
@@ -2064,7 +2064,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Single Travel</title>
             <link>https://neruthes.xyz/blog/?p=24</link>
             <pubDate>2012-09-14 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=24</guid>
             <content:encoded>
 <![CDATA[
@@ -2082,7 +2082,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Meaning Of Life</title>
             <link>https://neruthes.xyz/blog/?p=23</link>
             <pubDate>2012-09-08 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=23</guid>
             <content:encoded>
 <![CDATA[
@@ -2102,7 +2102,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Non Longer The Things, Non Longer The People</title>
             <link>https://neruthes.xyz/blog/?p=22</link>
             <pubDate>2012-09-07 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=22</guid>
             <content:encoded>
 <![CDATA[
@@ -2120,7 +2120,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Autumn Rain</title>
             <link>https://neruthes.xyz/blog/?p=21</link>
             <pubDate>2012-09-04 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=21</guid>
             <content:encoded>
 <![CDATA[
@@ -2145,7 +2145,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Hope</title>
             <link>https://neruthes.xyz/blog/?p=19</link>
             <pubDate>2012-08-30 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=19</guid>
             <content:encoded>
 <![CDATA[
@@ -2165,7 +2165,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Forever</title>
             <link>https://neruthes.xyz/blog/?p=11</link>
             <pubDate>2012-07-06 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=11</guid>
             <content:encoded>
 <![CDATA[
@@ -2196,7 +2196,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>The Eternal</title>
             <link>https://neruthes.xyz/blog/?p=10</link>
             <pubDate>2012-06-28 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=10</guid>
             <content:encoded>
 <![CDATA[
@@ -2216,7 +2216,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Cool Night, Nice Wind</title>
             <link>https://neruthes.xyz/blog/?p=9</link>
             <pubDate>2012-06-17 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=9</guid>
             <content:encoded>
 <![CDATA[
@@ -2231,7 +2231,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>In Utter Darkness</title>
             <link>https://neruthes.xyz/blog/?p=7</link>
             <pubDate>2012-05-20 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=7</guid>
             <content:encoded>
 <![CDATA[
@@ -2248,7 +2248,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Life & Death</title>
             <link>https://neruthes.xyz/blog/?p=5</link>
             <pubDate>2012-04-27 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=5</guid>
             <content:encoded>
 <![CDATA[
@@ -2268,7 +2268,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Today's Wind Is So Noisy</title>
             <link>https://neruthes.xyz/blog/?p=3</link>
             <pubDate>2012-04-25 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=3</guid>
             <content:encoded>
 <![CDATA[
@@ -2286,7 +2286,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Earth Day 2012</title>
             <link>https://neruthes.xyz/blog/?p=2</link>
             <pubDate>2012-04-22 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=2</guid>
             <content:encoded>
 <![CDATA[
@@ -2305,7 +2305,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Early In The Spring</title>
             <link>https://neruthes.xyz/blog/?p=1</link>
             <pubDate>2012-04-12 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=1</guid>
             <content:encoded>
 <![CDATA[
@@ -2321,7 +2321,7 @@ pRs9EhtUHHd5TTTRVrTyCWnoAhU=
             <title>Hello World!</title>
             <link>https://neruthes.xyz/blog/?p=0</link>
             <pubDate>2012-04-05 09:41:00 +0000</pubDate>
-            <dc:creator><![CDATA[Neruthes (a.k.a. Joy Neop)]]></dc:creator>
+            <dc:creator><![CDATA[Neruthes]]></dc:creator>
             <guid isPermaLink="false">https://neruthes.xyz/blog/?p=0</guid>
             <content:encoded>
 <![CDATA[

@@ -3,12 +3,12 @@
 
 
 
-# __neop.postTitle__
+# __Neruthes.postTitle__
 
-Post #__neop.postId__ / Date: __neop.date__
+Post #__Neruthes.postId__ / Date: __Neruthes.date__
 
 
-__neop.postText__
+__Neruthes.postText__
 
 
 

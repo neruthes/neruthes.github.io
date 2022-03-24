@@ -1,8 +1,8 @@
 /*
 
-Portfolio Sitemap Generator
+Album Sitemap Generator
 Run on Node.js
-(c) Copyright 2014 All Rights Reserved by Neruthes (a.k.a. Joy Neop)
+(c) Copyright 2014-2022 All Rights Reserved by Neruthes
 
 */
 

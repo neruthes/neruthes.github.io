@@ -2,7 +2,7 @@
 
 Insert a post to my blog
 Run on Node.js
-(c) Copyright 2014 All Rights Reserved by Joy Neop
+(c) Copyright 2014 All Rights Reserved by Neruthes
 
 */
 

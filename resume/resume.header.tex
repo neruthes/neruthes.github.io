@@ -1,6 +1,6 @@
 \documentclass[10pt,a4paper]{article}
 
-\usepackage[a4paper,lmargin=20mm,rmargin=20mm,tmargin=15mm,bmargin=15mm]{geometry}
+\usepackage[a4paper,textwidth=46em,tmargin=15mm,bmargin=15mm]{geometry}
 \usepackage{calc}
 \usepackage{amsmath,xltxtra,fontspec,xunicode}
 \usepackage{titlesec}
@@ -30,9 +30,9 @@
     colorlinks=false,
     pdfpagemode=UseOutlines
 }
-\setmainfont{Myriad Pro}
-\setromanfont{Myriad Pro}
-\setsansfont{Myriad Pro Semibold}
+% \setmainfont{Myriad Pro}
+% \setromanfont{Myriad Pro}
+% \setsansfont{Myriad Pro Semibold}
 \setmainfont{Seravek}
 \setromanfont{Seravek}
 \setsansfont{Seravek Medium}
@@ -90,43 +90,38 @@
 \definecolor{mygray}{gray}{0.4}
 
 \newcommand{\makeinfosection}{
-    \begin{minipage}{110mm}
+    \begin{minipage}{28em}
         {\Huge\fontspec{Realtime Rounded}\bfseries NERUTHES\vspace{1mm}\hspace{2mm}}
         % {\Huge\fontspec{Myriad Pro}\bfseries Neruthes\vspace{1mm}\hspace{2mm}}
         % {\Huge\fontspec{Seravek}\bfseries Neruthes\vspace{1mm}\hspace{2mm}}
 
         \vspace{20pt}
         \ttfamily\small
-        \tabulinesep=3pt
-        \begin{tabu}{cll}
-            {} & {\hspace{1.5em}} & {} \\
-            {\faIcon{globe-asia}} & {} & \fontspec{JetBrains Mono NL Medium}\href{https://neruthes.xyz}{neruthes.xyz} \\
-            {\faIcon{at}} & {} & \fontspec{JetBrains Mono NL Medium}\href{mailto:i@neruthes.xyz}{i@neruthes.xyz} \\
-            {\faIcon{github}} & {} & \fontspec{JetBrains Mono NL Medium}\href{https://github.com/neruthes}{github.com/neruthes} \\
-            {\faIcon{dribbble}} & {} & \fontspec{JetBrains Mono NL Medium}\href{https://dribbble.com/neruthes}{dribbble.com/neruthes} \\
-        \end{tabu}
+        \baselineskip=15pt
+        \parbox[t]{6mm}{\faIcon{globe-asia}}       \fontspec{JetBrains Mono NL Medium}\href{https://neruthes.xyz}{neruthes.xyz} \\
+        \parbox[t]{6mm}{\faIcon{at}}               \fontspec{JetBrains Mono NL Medium}\href{mailto:i@neruthes.xyz}{i@neruthes.xyz} \\
+        \parbox[t]{6mm}{\faIcon{github}}           \fontspec{JetBrains Mono NL Medium}\href{https://github.com/neruthes}{github.com/neruthes} \\
+        \parbox[t]{6mm}{\faIcon{dribbble}}         \fontspec{JetBrains Mono NL Medium}\href{https://dribbble.com/neruthes}{dribbble.com/neruthes}
     \end{minipage}\hfill
-    \begin{minipage}[t]{50mm}
-        \hfill\includegraphics[width=28mm, height=28mm]{neruthes-force-circle-for-square.png} \\
+    \begin{minipage}[t]{14em}
+        \hfill\includegraphics[width=22mm,height=22mm]{/home/neruthes/DEV/neruthes.github.io/neruthes-forceCircle-unpadded.png} \\
     \end{minipage}
 }
 
 
 \newcommand{\mysection}[1]{
-    \begingroup
+    \begin{minipage}{\linewidth}
         \vspace{30pt}
         {\fontspec{Realtime Rounded Semibold}\Large\mdseries\letterspacingbig{#1}}
         \vspace{12pt}
         \hrule height 1.5pt
         \vspace{10pt}
-    \endgroup
-
+    \end{minipage}\par
 }
 \newcommand{\subsecexp}[5]{
     % 1=title  2=company  3=start  4=end  5=text
-    \vspace{18pt}
-
-    \begingroup
+    \vspace{24pt}
+    \begin{minipage}{\linewidth}
         \raggedright
         \myspan{#3 - #4}\vspace{3pt}\par
         \mytitle{#1} \hfill \mycompany{#2}\par
@@ -135,23 +130,22 @@
         \hrule
         {\color{white}\hrule height 7pt}
         \mydesctext{#5}
-
-    \endgroup
-
+    \end{minipage}\par
 }
 
 \newcommand{\subsecproj}[3]{
     % 1=role  2=name  3=intro
-    \vspace{18pt}
-
-    \begingroup
+    \vspace{24pt}
+    \begin{minipage}{\linewidth}
         \mytitle{#2}\vspace{0pt}\\
-        \myspan{\sffamily\scshape#1}\vspace{3pt}\\
+        \myspan{\sffamily\scshape\CJKfontspec{Noto Sans CJK SC}\normalsize#1}\vspace{3pt}\\
         \mydesctext{#3}
-
-    \endgroup
-
+    \end{minipage}\par
 }
+
+
+
+\newcommand{\ifontmycompany}[0]{\mdseries\fontspec{Seravek}\CJKfontspec{Noto Sans CJK SC Medium}}
 
 
 
@@ -160,16 +154,15 @@
     {\rmfamily\small\mdseries\itshape \textcolor{mygray}{#1}}
 }
 \newcommand{\mytitle}[1]{
-    \large\sffamily\CJKfontspec{Noto Sans CJK SC Black}{#1}
+    \large\sffamily\CJKfontspec{Noto Sans CJK SC Bold}{#1}
 }
 \newcommand{\mycompany}[1]{
-    \large\sffamily{#1}
+    {\large\sffamily\ifontmycompany#1}
 }
 \newcommand{\myspan}[1]{
     \baselineskip=15pt
     \fontspec{JetBrains Mono}\bfseries\small\textcolor{black}{#1}
 }
 \newcommand{\mydesctext}[1]{
-    \rmfamily\normalsize\mdseries{#1}
-
+    \rmfamily\normalsize\mdseries{#1}\par
 }

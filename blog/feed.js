@@ -14,7 +14,7 @@ xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/el
 xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"\n\
 xmlns:slash="http://purl.org/rss/1.0/modules/slash/">\n\
     <channel>\n\
-        <title>Neruthes (a.k.a. Joy Neop)</title>\n\
+        <title>Neruthes</title>\n\
         <atom:link href="https://neruthes.xyz/blog/feed.rss" rel="self" type="application/rss+xml" />\n\
         <link>https://neruthes.xyz/blog/</link>\n\
         <description>CB0A BC77 5644 0D12 915E 3F25 AFB3 373F 5200 DF38</description>\n\
@@ -56,7 +56,7 @@ listJson.length = (function (list) {
 var maxId = listJson.length-1;
 for (var i = maxId; i >= 0; i--) {
 	if (listJson[i].D !== 0) {
-        accumulate += postTemplate.replace(/__AUTHOR__/g, 'Neruthes (a.k.a. Joy Neop)')
+        accumulate += postTemplate.replace(/__AUTHOR__/g, 'Neruthes')
     	.replace(/__URL__/g, 'https://neruthes.xyz/blog/?p=' + i)
     	.replace(/__TITLE__/g, listJson[i]['T'])
     	.replace(/__DATE__/g, listJson[i]['D'])
