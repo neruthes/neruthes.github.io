@@ -52,7 +52,6 @@ window.addEventListener('load', function () {
                     var styleText = `
                         @import url('https://neruthes.github.io/web-misc/fonts/free-pixel.css');
                         @import url('https://neruthes.github.io/web-misc/fonts/free-pixel.css');
-                        @import url('https://neruthes.now.sh/web-misc/fonts/free-pixel.css');
                         header .section-content {
                             color: #FFF !important;
                             text-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
@@ -66,7 +65,7 @@ window.addEventListener('load', function () {
                             font-family: "Free Pixel", "Calibri", "Tahoma", "Trebuchet", "Open Sans", "Helvetica", "Arial", "Songti SC", "Yuppy SC", "PingFang SC", "Hiragino Sans GB", sans-serif !important;
                         }
                         #avatar.avatar {
-                            background-image: url(/neruthes_pixelart-forceCircle-padded.png) !important;
+                            background-image: url(//neruthes.github.io/neruthes_pixelart-forceCircle-padded.png) !important;
                         }
                         body > * {
                             color: #FFF;
@@ -161,7 +160,7 @@ window.addEventListener('load', function () {
                 dateRange: [ 'Apr 28', 'Apr 30' ],
                 action: function () {
                     var t = Date.now();
-                    bgImgUrl = `url(/album/img/0000201302250001.svg)`;
+                    bgImgUrl = `url(//neruthes.github.io/album/img/0000201302250001.svg)`;
 
                     // Insert
                     if (document.body.offsetWidth < 700 ||
@@ -321,7 +320,7 @@ window.addEventListener('load', function () {
                         left: 0px;
                         width: 100vw;
                         height: 80px;
-                        background: url(/assets/themes/mac-dock-mockup.png) bottom no-repeat scroll;
+                        background: url(//neruthes.github.io/assets/themes/mac-dock-mockup.png) bottom no-repeat scroll;
                         background-size: contain;
                     `);
                     document.body.appendChild(mockDockArea);
@@ -350,7 +349,7 @@ window.addEventListener('load', function () {
                             font-family: "123456", "Comic Sans MS", "Permanent Marker", "Open Sans", "Helvetica", "Arial", "Wawati SC", "Yuppy SC", "PingFang SC", "Hiragino Sans GB", cursive !important;
                         }
                         #avatar.avatar {
-                            background-image: url(/neruthes_pixelart-forceCircle-padded.png) !important;
+                            background-image: url(//neruthes.github.io/neruthes_pixelart-forceCircle-padded.png) !important;
                         }
                     `;
                     document.head.appendChild(st);
@@ -375,7 +374,7 @@ window.addEventListener('load', function () {
                         h3 { font-size: 1.2rem !important; }
                         h4, h5, h6, p { font-size: 1rem !important; }
                         #avatar.avatar {
-                            background-image: url(/neruthes_pixelart-forceCircle-padded.png) !important;
+                            background-image: url(//neruthes.github.io/neruthes_pixelart-forceCircle-padded.png) !important;
                         }
                     `;
                     document.head.appendChild(st);

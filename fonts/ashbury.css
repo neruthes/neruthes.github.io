@@ -26,7 +26,7 @@
 
 @font-face {font-family: 'Ashbury-Light';src: url('/fonts/ashbury/2F4062_0_0.eot');src: url('/fonts/ashbury/2F4062_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/ashbury/2F4062_0_0.woff2') format('woff2'),url('/fonts/ashbury/2F4062_0_0.woff') format('woff'),url('/fonts/ashbury/2F4062_0_0.ttf') format('truetype');}
 
-@import url(/fonts/advanced.css);
+@import url(//neruthes.github.io/fonts/advanced.css);
 
 @font-face {
 	font-family: 'Ashbury-fallback';

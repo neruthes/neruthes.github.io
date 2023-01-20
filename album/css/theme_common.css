@@ -1,7 +1,7 @@
-@import url(/fonts/seravek.css);
-@import url(/fonts/realtimerounded.css);
-@import url(/fonts/jetbrains-mono.css);
-@import url(/fonts/erato.css);
+@import url(//neruthes.github.io/fonts/seravek.css);
+@import url(//neruthes.github.io/fonts/realtimerounded.css);
+@import url(//neruthes.github.io/fonts/jetbrains-mono.css);
+@import url(//neruthes.github.io/fonts/erato.css);
 
 * {
 	text-rendering: optimizeLegibility;
@@ -52,7 +52,7 @@ header.global h2 {
 .avatar {
 	display: inline-block;
 	margin: 0;
-	background: #FFF url(/neruthes-forceCircle-padded.png) center no-repeat scroll;
+	background: #FFF url(//neruthes.github.io/neruthes-forceCircle-padded.png) center no-repeat scroll;
 	background-size: cover;
 	border-radius: 2000px;
 	-webkit-transition: all 360ms ease;

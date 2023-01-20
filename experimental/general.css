@@ -1,4 +1,4 @@
-@import url(/fonts/seravek.css);
+@import url(//neruthes.github.io/fonts/seravek.css);
 * {
 	text-rendering: optimizeLegibility;
 	box-sizing: border-box;
@@ -39,7 +39,7 @@ header #title {
 	width: 180px;
 	height: 180px;
 	margin: 0 auto;
-	background: #FFF url(/joyneop.png) center no-repeat scroll;
+	background: #FFF url(//neruthes.github.io/neruthes.png) center no-repeat scroll;
 	background-size: contain;
 	border-radius: 50%;
 	box-shadow: rgba(0, 0, 0, 0.21322) 0 0 5px inset;
@@ -135,7 +135,7 @@ section h2:hover {
 	transition: all 270ms ease;
 }
 .circle.blog {
-	background-image: url(/assets/other-images/nav-blog-360px.jpg);
+	background-image: url(//neruthes.github.io/assets/other-images/nav-blog-360px.jpg);
 }
 .circle.lab {
 	background-image: linear-gradient(rgb(31, 97, 190), rgb(177, 206, 227));
