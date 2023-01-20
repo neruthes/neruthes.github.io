@@ -406,7 +406,7 @@ window.addEventListener('load', function () {
                         div.setAttribute('style', `position: fixed; top: 2vh; height: 96vh; ${align}: 2vh;`)
                         div.setAttribute('onclick', 'return false');
                         var img = document.createElement('img');
-                        img.setAttribute('src', `/assets/other-images/kotomatsu-chunlian-${align}.jpg`);
+                        img.setAttribute('src', `//neruthes.github.io/assets/other-images/kotomatsu-chunlian-${align}.jpg`);
                         img.setAttribute('style', `height: 100%; display: block; margin: 0 auto;`);
                         img.setAttribute('data-rotation', 'Y0');
                         img.setAttribute('data-scale', '1.00');
@@ -422,7 +422,7 @@ window.addEventListener('load', function () {
                         div.setAttribute('style', `position: fixed; top: 2vh; width: calc(100vw - 42vh); height: 15.6vh; left: 21vh;`)
                         div.setAttribute('onclick', 'return false');
                         var img = document.createElement('img');
-                        img.setAttribute('src', `/assets/other-images/kotomatsu-chunlian-hengpi.jpg`);
+                        img.setAttribute('src', `//neruthes.github.io/assets/other-images/kotomatsu-chunlian-hengpi.jpg`);
                         img.setAttribute('style', `height: 100%; display: block; margin: 0 auto;`);
                         img.setAttribute('data-rotation', 'X0');
                         img.setAttribute('data-scale', '1.00');
