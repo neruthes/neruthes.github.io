@@ -2,49 +2,49 @@
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 400;
-    src: local('JetBrainsMono-Regular'), url(/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2) format('woff2'), url(//neruthes.xyz/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2) format('woff2');
+    src: local('JetBrainsMono-Regular'), url(/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2) format('woff2');
 }
 @font-face {
     font-family: 'JetBrains Mono';
     font-style: italic;
     font-weight: 400;
-    src: local('JetBrainsMono-Italic'), url(/fonts/jetbrains-mono/JetBrainsMono-Italic.woff2) format('woff2'), url(//neruthes.xyz/fonts/jetbrains-mono/JetBrainsMono-Italic.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Italic.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-Italic.woff2) format('woff2');
+    src: local('JetBrainsMono-Italic'), url(/fonts/jetbrains-mono/JetBrainsMono-Italic.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Italic.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Italic.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-Italic.woff2) format('woff2');
 }
 @font-face {
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 500;
-    src: local('JetBrainsMono-Medium'), url(/fonts/jetbrains-mono/JetBrainsMono-Medium.woff2) format('woff2'), url(//neruthes.xyz/fonts/jetbrains-mono/JetBrainsMono-Medium.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Medium.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-Medium.woff2) format('woff2');
+    src: local('JetBrainsMono-Medium'), url(/fonts/jetbrains-mono/JetBrainsMono-Medium.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Medium.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Medium.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-Medium.woff2) format('woff2');
 }
 @font-face {
     font-family: 'JetBrains Mono';
     font-style: italic;
     font-weight: 500;
-    src: local('JetBrainsMono-Medium-Italic'), url(/fonts/jetbrains-mono/JetBrainsMono-Medium-Italic.woff2) format('woff2'), url(//neruthes.xyz/fonts/jetbrains-mono/JetBrainsMono-Medium-Italic.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Medium-Italic.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-Medium-Italic.woff2) format('woff2');
+    src: local('JetBrainsMono-Medium-Italic'), url(/fonts/jetbrains-mono/JetBrainsMono-Medium-Italic.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Medium-Italic.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Medium-Italic.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-Medium-Italic.woff2) format('woff2');
 }
 @font-face {
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 600;
-    src: local('JetBrainsMono-Bold'), url(/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2) format('woff2'), url(//neruthes.xyz/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2) format('woff2');
+    src: local('JetBrainsMono-Bold'), url(/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2) format('woff2');
 }
 @font-face {
     font-family: 'JetBrains Mono';
     font-style: italic;
     font-weight: 600;
-    src: local('JetBrainsMono-Bold-Italic'), url(/fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.woff2) format('woff2'), url(//neruthes.xyz/fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.woff2) format('woff2');
+    src: local('JetBrainsMono-Bold-Italic'), url(/fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.woff2) format('woff2');
 }
 @font-face {
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 700;
-    src: local('JetBrainsMono-ExtraBold'), url(/fonts/jetbrains-mono/JetBrainsMono-ExtraBold.woff2) format('woff2'), url(//neruthes.xyz/fonts/jetbrains-mono/JetBrainsMono-ExtraBold.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-ExtraBold.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-ExtraBold.woff2) format('woff2');
+    src: local('JetBrainsMono-ExtraBold'), url(/fonts/jetbrains-mono/JetBrainsMono-ExtraBold.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-ExtraBold.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-ExtraBold.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-ExtraBold.woff2) format('woff2');
 }
 @font-face {
     font-family: 'JetBrains Mono';
     font-style: italic;
     font-weight: 700;
-    src: local('JetBrainsMono-ExtraBold-Italic'), url(/fonts/jetbrains-mono/JetBrainsMono-ExtraBold-Italic.woff2) format('woff2'), url(//neruthes.xyz/fonts/jetbrains-mono/JetBrainsMono-ExtraBold-Italic.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-ExtraBold-Italic.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-ExtraBold-Italic.woff2) format('woff2');
+    src: local('JetBrainsMono-ExtraBold-Italic'), url(/fonts/jetbrains-mono/JetBrainsMono-ExtraBold-Italic.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-ExtraBold-Italic.woff2) format('woff2'), url(//neruthes.github.io/fonts/jetbrains-mono/JetBrainsMono-ExtraBold-Italic.woff2) format('woff2'), url(//neruthes.now.sh/fonts/jetbrains-mono/JetBrainsMono-ExtraBold-Italic.woff2) format('woff2');
 }
 
 @import url(/fonts/advanced.css);

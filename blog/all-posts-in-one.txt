@@ -1,7 +1,7 @@
 @author Neruthes (0x5200DF38)
-@url https://neruthes.xyz/blog/
-@rss https://neruthes.xyz/blog/feed.rss
-@txt https://neruthes.xyz/blog/all-posts-in-one.txt
+@url https://neruthes.github.io/blog/
+@rss https://neruthes.github.io/blog/feed.rss
+@txt https://neruthes.github.io/blog/all-posts-in-one.txt
 
 
 
@@ -1467,7 +1467,7 @@ Post #122 / Date: 2016-07-07
 
 
 
-Last year, I published un small [special page](https://neruthes.xyz/types/) on my website, in which un few of my favorite fonts were displayed each with un specimen picture. However, this was not scalable, and was limited as un extension of my personality.
+Last year, I published un small [special page](https://neruthes.github.io/types/) on my website, in which un few of my favorite fonts were displayed each with un specimen picture. However, this was not scalable, and was limited as un extension of my personality.
 
 Then I have been thinking how could I make it more useful, and competitive among all products of typography theme, especially those developed by foundries and distributors.
 

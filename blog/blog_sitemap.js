@@ -28,7 +28,7 @@ listJson.length = (function (list) {
 var maxId = listJson.length-1;
 for (var i = 0; i <= maxId; i++) {
 	if (listJson[i].D !== 0) {
-		accumulate = postTemplate.replace(/__LOC__/g, 'https://neruthes.xyz/blog/?p=' + i).replace(/__MOD__/g, listJson[i]['D']) + accumulate;
+		accumulate = postTemplate.replace(/__LOC__/g, 'https://neruthes.github.io/blog/?p=' + i).replace(/__MOD__/g, listJson[i]['D']) + accumulate;
 	};
 };
 

@@ -1,7 +1,7 @@
 @author Neruthes (0x5200DF38)
-@url https://neruthes.xyz/blog/
-@rss https://neruthes.xyz/blog/feed.rss
-@txt https://neruthes.xyz/blog/all-posts-in-one.txt
+@url https://neruthes.github.io/blog/
+@rss https://neruthes.github.io/blog/feed.rss
+@txt https://neruthes.github.io/blog/all-posts-in-one.txt
 
 
 
