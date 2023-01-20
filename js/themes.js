@@ -397,7 +397,7 @@ window.addEventListener('load', function () {
 
                     var linkTag = document.createElement('link');
                     linkTag.setAttribute('rel', 'stylesheet');
-                    linkTag.setAttribute('href', '/css/chunjie.css');
+                    linkTag.setAttribute('href', 'https://neruthes.github.io/css/chunjie.css');
                     document.head.appendChild(linkTag);
 
                     var makeElement = function (align) {
