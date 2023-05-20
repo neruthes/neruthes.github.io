@@ -1,5 +1,5 @@
 (function () {
-    var myDate = '2023-06-04';
+    var myDate = '2023-06-09';
     if (window.flag_d7b11a086afa420aae24bb5467e9765e === true) {
         return 1;
     };
