@@ -1,5 +1,5 @@
 (function () {
-    var myDate = '2025-09-30';
+    var myDate = '2025-10-05';
     if (window.flag_d7b11a086afa420aae24bb5467e9765e === true) {
         return 1;
     };
